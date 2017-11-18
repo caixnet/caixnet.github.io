@@ -1,1 +1,232 @@
-Hello,World
+
+<html>
+<head>
+<script>
+window.onload = function() { 
+// author: Daway.Cai 
+// email: caixnet@outlook.com
+// get DIV 
+var mi = {}; 
+    mi.x = 0;
+    mi.y = 0;
+    mi.weight = 30;
+    mi.hight = 40;
+    mi.left = 5;
+    mi.right = 3;
+    mi.top = 7;
+    mi.bottom = 5;
+console.log("x:"+x);
+var a = "1341";
+var b = "124134";
+var c = "1234";
+var d = "1241";
+var e = "12342";
+var f = "14324";
+var g = "123";
+var h = "13241";
+var i = "13";
+var j = "134";
+var k = "124";
+var l = "143";
+var m = "142132";
+var n = "1423";
+var o = "12341";
+var p = "12314";
+var q = "12413";
+var r = "123413";
+var s = "12431";
+var t = "1231";
+var u = "1432";
+var v = "142";
+var w = "1342";
+var x = "1324";
+var y = "132";
+var z = "1243";
+var ry = "234124";
+var ri = "24";
+var ne = "2134";
+var ca = "2143";
+var ko = "243";
+var tu = "2432";
+var fi = "23413";
+var ge = "214";
+var xa = "2413";
+var po = "21423";
+//
+var mu = "413423";
+var be = "213243";    
+var pa = "41243";
+var fe = "31234";
+var ie = "13412";
+var gu = "234";
+var iu = "4123";
+var nu = "4132";
+var wu = "4213";
+var ka = "213";
+var ve = "413";
+var va = "423";
+var qu = "24134";
+var qo = "42312";
+var qa = "13423";
+var gequ = "24143";
+var gaqu = "13234";
+var geqo = "41312";
+var gaqo = "12423";
+
+    
+var tri = ["0,0","20,20","40,20","40,60","20,60"];
+mi.tri = tri;
+//console.log(mi.tri); 
+   
+mi.tria = tria = function(chars){
+   //console.log(chars);
+    var points = "";
+    if (chars != "") {
+     for (var ii=0; ii< chars.length; ii++) {
+        //console.log(chars.charAt(i));
+        //console.log(tri[x]);
+        points += mi.tri[chars.charAt(ii)] + " ";
+    }    
+    }
+   
+    return points;
+}
+//console.log(mi.tria(a), mi.tri);
+
+mi.svg = function() {
+ var container = document.getElementById("svgContainer"); 
+ mi.container = container;
+
+// create svg object 
+ var svgURL = "http://www.w3.org/2000/svg";
+ var mySvg = document.createElementNS(svgURL, "svg"); 
+ mi.svgURL = svgURL;
+ mi.mySvg = mySvg;
+ mySvg.setAttribute("version", "1.2");
+//mySvg.setAttribute("baseProfile", "tiny"); 
+ mySvg.setAttribute("width",window.innerWidth);
+ mySvg.setAttribute("height",window.innerHeight);
+ container.appendChild(mySvg);    
+}    
+
+mi.svg();
+
+mi.char = function() {
+var c2 = document.createElementNS(mi.svgURL, "polyline");     
+//c3.setAttribute("points","120,120 140,120 140,140");
+c2.setAttribute("points",tria("12342"));    
+c2.setAttribute("fill", "rgb(255,255,255)"); 
+c2.setAttribute("stroke", "rgb(0,0,0)");
+c2.setAttribute("stroke-width", "2px");    
+mi.mySvg.appendChild(c2);         
+}
+///mi.char();
+
+//
+mi.charsfunc = function(xx, yy, vchar) {
+var c3 = document.createElementNS(mi.svgURL, "polyline");     
+
+var charxy = [];
+console.log("");
+//console.log("me:"+mi.hight +",x:"+x); 
+//console.log("" + (x + mi.weight - mi.right) + "," + (y + mi.hight - mi.bottom));
+charxy[1] = "" + (xx + mi.left) + "," + (yy + mi.top);
+charxy[2] = "" + (xx + mi.weight - mi.right) + "," + (yy + mi.top);
+charxy[3] = "" + (xx + mi.weight - mi.right) + "," + (yy + mi.hight - mi.bottom);
+charxy[4] = "" + (xx + mi.left) + "," + (yy + mi.hight - mi.bottom);
+mi.tri = charxy;
+console.log('A:'+charxy[1]+',B:'+charxy[2]+',C:'+charxy[3]+',D:'+charxy[4]);
+console.log("x:"+x+",y:"+yy+",char:"+mi.tria(String(eval(vchar))) +","+ eval(vchar));
+console.log("x:"+x+",y:"+yy+",char:" +","+ eval(vchar));
+if ( x != undefined){
+   c3.setAttribute("points", mi.tria(String(eval(vchar)))); 
+}
+
+//c3.setAttribute("points",tria("12342"));    
+c3.setAttribute("fill", "rgb(255,255,255)"); 
+c3.setAttribute("stroke", "rgb(0,0,0)");
+c3.setAttribute("stroke-width", "2px"); 
+c3.setAttribute("stroke-linejoin", "round");  //miter, round,bevel 
+c3.setAttribute("stroke-linecap", "round"); //butt, square, round
+//stroke-linejoin="round"    
+//var charxy = ["0,0","0,0","0,0","0,0","0,0"];    
+mi.mySvg.appendChild(c3);         
+}
+//
+
+var xx = 20;
+mi.charsfunc(xx+mi.weight*1,20,"a");
+mi.charsfunc(xx+mi.weight*2,20,"b");
+mi.charsfunc(xx+mi.weight*3,20,"c");
+mi.charsfunc(xx+mi.weight*4,20,"d");
+mi.charsfunc(xx+mi.weight*5,20,"e");
+mi.charsfunc(xx+mi.weight*6,20,"f");
+mi.charsfunc(xx+mi.weight*7,20,"g");
+mi.charsfunc(xx+mi.weight*8,20,"h");
+mi.charsfunc(xx+mi.weight*9,20,"i");
+mi.charsfunc(xx+mi.weight*10,20,"j");
+mi.charsfunc(xx+mi.weight*1,60,"k");
+mi.charsfunc(xx+mi.weight*2,60,"l");
+mi.charsfunc(xx+mi.weight*3,60,"m");
+mi.charsfunc(xx+mi.weight*4,60,"n");
+mi.charsfunc(xx+mi.weight*5,60,"o");
+mi.charsfunc(xx+mi.weight*6,60,"p");
+mi.charsfunc(xx+mi.weight*7,60,"q");
+mi.charsfunc(xx+mi.weight*8,60,"r");
+mi.charsfunc(xx+mi.weight*9,60,"s");
+mi.charsfunc(xx+mi.weight*10,60,"t");
+mi.charsfunc(xx+mi.weight*1,100,"u");
+mi.charsfunc(xx+mi.weight*2, 100,"v");
+mi.charsfunc(xx+mi.weight*3, 100,"w");
+mi.charsfunc(xx+mi.weight*4, 100,"x");
+mi.charsfunc(xx+mi.weight*5, 100,"y");
+mi.charsfunc(xx+mi.weight*6, 100,"z");
+mi.charsfunc(xx+mi.weight*1, 140,"ri");
+mi.charsfunc(xx+mi.weight*2, 140,"ne");
+mi.charsfunc(xx+mi.weight*3, 140,"ca");
+mi.charsfunc(xx+mi.weight*4, 140,"ko");
+mi.charsfunc(xx+mi.weight*5, 140,"tu");
+mi.charsfunc(xx+mi.weight*6, 140,"fi");
+mi.charsfunc(xx+mi.weight*7, 140,"ge");
+mi.charsfunc(xx+mi.weight*8, 140,"xa");    
+mi.charsfunc(xx+mi.weight*9, 140,"po");
+mi.charsfunc(xx+mi.weight*10, 140,"ry");
+mi.charsfunc(xx+mi.weight*1, 180,"mu");
+mi.charsfunc(xx+mi.weight*2, 180,"be");
+mi.charsfunc(xx+mi.weight*3, 180,"pa");
+mi.charsfunc(xx+mi.weight*4, 180,"fe");
+mi.charsfunc(xx+mi.weight*5, 180,"ie");
+mi.charsfunc(xx+mi.weight*6, 180,"gu");
+mi.charsfunc(xx+mi.weight*7, 180,"iu");
+mi.charsfunc(xx+mi.weight*8, 180,"nu");
+mi.charsfunc(xx+mi.weight*9, 180,"wu");
+mi.charsfunc(xx+mi.weight*10, 180,"ka");
+mi.charsfunc(xx+mi.weight*1, 220,"ve");
+mi.charsfunc(xx+mi.weight*2, 220,"va");
+mi.charsfunc(xx+mi.weight*3, 220,"qu");
+mi.charsfunc(xx+mi.weight*4, 220,"qo");
+mi.charsfunc(xx+mi.weight*5, 220,"qa");
+mi.charsfunc(xx+mi.weight*1, 260,"gequ");
+mi.charsfunc(xx+mi.weight*2, 260,"gaqu");
+mi.charsfunc(xx+mi.weight*3, 260,"geqo");
+mi.charsfunc(xx+mi.weight*4, 260,"gaqo");
+
+
+console.log("screenX:"+screenX+",screenY:"+screenY);
+console.log("height:"+screen.availHeight+",width:"+screen.availWidth);
+console.log("Wheight:"+window.innerHeight+",Wwidth:"+window.innerWidth);    
+
+    
+//////
+}
+</script>
+  
+</head>
+
+<body>
+Chia Alaphabet
+
+<div id="svgContainer"></div>
+
+</body>
+</html>
