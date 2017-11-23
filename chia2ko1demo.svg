@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="70">
+<!--  <script type="text/javascript" xlink:href="chia2kr.js"></script> -->
+<script type="text/javascript">
+//
+var chia2korean = {
+    "1":"1", "2":"2", "3":"3", "4":"4", "5":"5",
+    "6":"6", "7":"7", "8":"8", "9":"9", "0":"0",
+ 
+    "y":"ㅡ", "i":"ㅣ", "e":"ㅓ", "a":"ㅏ", "o":"ㅗ", "u":"ㅜ",     
+    "yi":"ㅢ", "ye":"ㅕ", "ya":"ㅑ", "yo":"ㅛ", "yu":"ㅠ",     
+    "ie":"ㅔ", "ia":"ㅐ", "io":"ㅚ", "iu":"ㅟ",    
+    "oa":"ㅘ", "oia":"ㅙ", "ue":"ㅝ", "uie":"ㅞ",   
+    "yie":"ㅖ", "yia":"ㅒ",
+
+    "d":"ㄷ", "w":"ㄸ", "t":"ㅌ",   
+    "r":"ㄹ", "n":"ㄴ", "h":"ㅎ",
+    "m":"ㅁ", "l":"ㅇ",
+    "f":"f", "v":"ㅂ", "b":"ㅃ", "p":"ㅍ", 
+    "g":"ㄱ", "q":"ㄲ", "k":"ㅋ",
+    "z":"ㅈ", "j":"ㅉ", "c":"ㅊ",
+    "s":"ㅅ", "x":"ㅆ",
+
+    "dy":"드", "di":"디", "de":"더", "da":"다", "do":"도", "du":"두",
+    "dyi":"듸", "dye":"뎌", "dya":"댜", "dyo":"됴", "dyu":"듀",
+    "die":"데", "dia":"대", "dio":"되", "diu":"뒤",
+    "doa":"돠", "doia":"돼", "due":"둬", "duie":"뒈",
+    "dyie":"뎨", "dyia":"댸",
+
+    "wy":"뜨", "wi":"띠", "we":"떠", "wa":"따", "wo":"또", "wu":"뚜",
+    "wyi":"띄", "wye":"뗘", "wya":"땨", "wyo":"뚀", "wyu":"뜌",
+    "wie":"떼", "wia":"때", "wio":"뙤", "wiu":"뛰",
+    "woa":"똬", "woia":"뙈", "wue":"뚸", "wuie":"뛔",
+    "wyie":"뗴", "wyia":"떄",
+
+    "ty":"트", "ti":"티", "te":"터", "ta":"타", "to":"토", "tu":"투",
+    "tyi":"틔", "tye":"텨", "tya":"탸", "tyo":"툐", "tyu":"튜",
+    "tie":"테", "tia":"태", "tio":"퇴", "tiu":"튀",
+    "toa":"톼", "toia":"퇘", "tue":"퉈", "tuie":"퉤",
+    "tyie":"톄", "tyia":"턔",
+
+    "ry":"르", "ri":"리", "re":"러", "ra":"라", "ro":"로", "ru":"루",
+    "ryi":"릐", "rye":"려", "rya":"랴", "ryo":"료", "ryu":"류",
+    "rie":"레", "ria":"래", "rio":"뢰", "riu":"뤼",
+    "roa":"롸", "roia":"뢔", "rue":"뤄", "ruie":"뤠",
+    "ryie":"례", "ryia":"럐",
+
+    "ny":"느", "ni":"니", "ne":"너", "na":"나", "no":"노", "nu":"누",
+    "nyi":"늬", "nye":"녀", "nya":"냐", "nyo":"뇨", "nyu":"뉴",
+    "nie":"네", "nia":"내", "nio":"뇌", "niu":"뉘",
+    "noa":"놔", "noia":"놰", "nue":"눠", "nuie":"눼",
+    "nyie":"녜", "nyia":"냬",
+
+    "hy":"흐", "hi":"히", "he":"허", "ha":"하", "ho":"호", "hu":"후",
+    "hyi":"희", "hye":"혀", "hya":"햐", "hyo":"효", "hyu":"휴",
+    "hie":"헤", "hia":"해", "hio":"회", "hiu":"휘",
+    "hoa":"화", "hoia":"홰", "hue":"훠", "huie":"훼",
+    "hyie":"혜", "hyia":"햬",
+
+    "my":"므", "mi":"미", "me":"머", "ma":"마", "mo":"모", "mu":"무",
+    "myi":"믜", "mye":"며", "mya":"먀", "myo":"묘", "myu":"뮤",
+    "mie":"메", "mia":"매", "mio":"뫼", "miu":"뮈",
+    "moa":"뫄", "moia":"뫠", "mue":"뭐", "muie":"뭬",
+    "myie":"몌", "myia":"먜",
+
+    "ly":"으", "li":"이", "le":"어", "la":"아", "lo":"오", "lu":"우",
+    "lyi":"의", "lye":"여", "lya":"야", "lyo":"요", "lyu":"유",
+    "lie":"에", "lia":"애", "lio":"외", "liu":"위",
+    "loa":"와", "loia":"왜", "lue":"워", "luie":"웨",
+    "lyie":"예", "lyia":"얘",
+
+    "fy":"읎", "fi":"잆", "fe":"없", "fa":"앖", "fo":"옶", "fu":"웂",
+    "fyi":"읪", "fye":"엾", "fya":"얎", "fyo":"욦", "fyu":"윲",
+    "fie":"엢", "fia":"앲", "fio":"욊", "fiu":"윖",
+    "foa":"왒", "foia":"왮", "fue":"웞", "fuie":"웺",
+    "fyie":"옚", "fyia":"얪",
+
+    "vy":"브", "vi":"비", "ve":"버", "va":"바", "vo":"보", "vu":"부",
+    "vyi":"븨", "vye":"벼", "vya":"뱌", "vyo":"뵤", "vyu":"뷰",
+    "vie":"베", "via":"배", "vio":"뵈", "viu":"뷔",
+    "voa":"봐", "voia":"봬", "vue":"붜", "vuie":"붸",
+    "vyie":"볘", "vyia":"뱨",
+
+    "by":"쁘", "bi":"삐", "be":"뻐", "ba":"빠", "bo":"뽀", "bu":"뿌",
+    "byi":"쁴", "bye":"뼈", "bya":"뺘", "byo":"뾰", "byu":"쀼",
+    "bie":"뻬", "bia":"빼", "bio":"뾔", "biu":"쀠",
+    "boa":"뽜", "boia":"뽸", "bue":"뿨", "buie":"쀄",
+    "byie":"뼤", "byia":"뺴",
+
+    "py":"프", "pi":"피", "pe":"퍼", "pa":"파", "po":"포", "pu":"푸",
+    "pyi":"픠", "pye":"펴", "pya":"퍄", "pyo":"표", "pyu":"퓨",
+    "pie":"페", "pia":"패", "pio":"푀", "piu":"퓌",
+    "poa":"퐈", "poia":"퐤", "pue":"풔", "puie":"풰",
+    "pyie":"폐", "pyia":"퍠",
+
+    "gy":"그", "gi":"기", "ge":"거", "ga":"가", "go":"고", "gu":"구",
+    "gyi":"긔", "gye":"겨", "gya":"갸", "gyo":"교", "gyu":"규",
+    "gie":"게", "gia":"개", "gio":"괴", "giu":"귀",
+    "goa":"과", "goia":"괘", "gue":"궈", "guie":"궤",
+    "gyie":"계", "gyia":"걔",
+
+    "qy":"끄", "qi":"끼", "qe":"꺼", "qa":"까", "qo":"꼬", "qu":"꾸",
+    "qyi":"끠", "qye":"껴", "qya":"꺄", "qyo":"꾜", "qyu":"뀨",
+    "qie":"께", "qia":"깨", "qio":"꾀", "qiu":"뀌",
+    "qoa":"꽈", "qoia":"꽤", "que":"꿔", "quie":"꿰",
+    "qyie":"꼐", "qyia":"꺠",
+
+    "ky":"크", "ki":"키", "ke":"커", "ka":"카", "ko":"코", "ku":"쿠",
+    "kyi":"킈", "kye":"켜", "kya":"캬", "kyo":"쿄", "kyu":"큐",
+    "kie":"케", "kia":"캐", "kio":"쾨", "kiu":"퀴",
+    "koa":"콰", "koia":"쾌", "kue":"쿼", "kuie":"퀘",
+    "kyie":"켸", "kyia":"컈",
+
+    "zy":"즈", "zi":"지", "ze":"저", "za":"자", "zo":"조", "zu":"주",
+    "zyi":"즤", "zye":"져", "zya":"쟈", "zyo":"죠", "zyu":"쥬",
+    "zie":"제", "zia":"재", "zio":"죄", "ziu":"쥐",
+    "zoa":"좌", "zoia":"좨", "zue":"줘", "zuie":"줴",
+    "zyie":"졔", "zyia":"쟤",
+
+    "jy":"쯔", "ji":"찌", "je":"쩌", "ja":"짜", "jo":"쪼", "ju":"쭈",
+    "jyi":"쯰", "jye":"쪄", "jya":"쨔", "jyo":"쬬", "jyu":"쮸",
+    "jie":"쩨", "jia":"째", "jio":"쬐", "jiu":"쮜",
+    "joa":"쫘", "joia":"쫴", "jue":"쭤", "juie":"쮀",
+    "jyie":"쪠", "jyia":"쨰",
+
+    "cy":"츠", "ci":"치", "ce":"처", "ca":"차", "co":"초", "cu":"추",
+    "cyi":"츼", "cye":"쳐", "cya":"챠", "cyo":"쵸", "cyu":"츄",
+    "cie":"체", "cia":"채", "cio":"최", "ciu":"취",
+    "coa":"촤", "coia":"쵀", "cue":"춰", "cuie":"췌",
+    "cyie":"쳬", "cyia":"챼",
+
+    "sy":"스", "si":"시", "se":"서", "sa":"사", "so":"소", "su":"수",
+    "syi":"싀", "sye":"셔", "sya":"샤", "syo":"쇼", "syu":"슈",
+    "sie":"세", "sia":"새", "sio":"쇠", "siu":"쉬",
+    "soa":"솨", "soia":"쇄", "sue":"숴", "suie":"쉐",
+    "syie":"셰", "syia":"섀",
+
+    "xy":"쓰", "xi":"씨", "xe":"써", "xa":"싸", "xo":"쏘", "xu":"쑤",
+    "xyi":"씌", "xye":"쎠", "xya":"쌰", "xyo":"쑈", "xyu":"쓔",
+    "xie":"쎄", "xia":"쌔", "xio":"쐬", "xiu":"쒸",
+    "xoa":"쏴", "xoia":"쐐", "xue":"쒀", "xuie":"쒜",
+    "xyie":"쎼", "xyia":"썌",
+
+    "dyl":"등", "dil":"딩", "del":"덩", "dal":"당", "dol":"동", "dul":"둥",
+    "dyil":"딍", "dyel":"뎡", "dyal":"댱", "dyol":"둉", "dyul":"듕",
+    "diel":"뎅", "dial":"댕", "diol":"됭", "diul":"뒹",
+    "doal":"돵", "doial":"됑", "duel":"뒁", "duiel":"뒝",
+    "dyiel":"뎽", "dyial":"덍",
+
+    "wyl":"뜽", "wil":"띵", "wel":"떵", "wal":"땅", "wol":"똥", "wul":"뚱",
+    "wyil":"띙", "wyel":"뗭", "wyal":"땽", "wyol":"뚕", "wyul":"뜡",
+    "wiel":"뗑", "wial":"땡", "wiol":"뙹", "wiul":"뜅",
+    "woal":"뙁", "woial":"뙝", "wuel":"뛍", "wuiel":"뛩",
+    "wyiel":"똉", "wyial":"떙",
+
+    "tyl":"틍", "til":"팅", "tel":"텅", "tal":"탕", "tol":"통", "tul":"퉁",
+    "tyil":"틩", "tyel":"텽", "tyal":"턍", "tyol":"툥", "tyul":"튱",
+    "tiel":"텡", "tial":"탱", "tiol":"툉", "tiul":"튕",
+    "toal":"퇑", "toial":"퇭", "tuel":"퉝", "tuiel":"퉹",
+    "tyiel":"톙", "tyial":"턩",
+
+    "ryl":"릉", "ril":"링", "rel":"렁", "ral":"랑", "rol":"롱", "rul":"룽",
+    "ryil":"릥", "ryel":"령", "ryal":"량", "ryol":"룡", "ryul":"륭",
+    "riel":"렝", "rial":"랭", "riol":"룅", "riul":"륑",
+    "roal":"뢍", "roial":"뢩", "ruel":"뤙", "ruiel":"뤵",
+    "ryiel":"롕", "ryial":"럥",
+
+    "nyl":"능", "nil":"닝", "nel":"넝", "nal":"낭", "nol":"농", "nul":"눙",
+    "nyil":"닁", "nyel":"녕", "nyal":"냥", "nyol":"뇽", "nyul":"늉",
+    "niel":"넹", "nial":"냉", "niol":"뇡", "niul":"뉭",
+    "noal":"놩", "noial":"뇅", "nuel":"눵", "nuiel":"뉑",
+    "nyiel":"녱", "nyial":"넁",
+
+    "hyl":"흥", "hil":"힝", "hel":"헝", "hal":"항", "hol":"홍", "hul":"훙",
+    "hyil":"힁", "hyel":"형", "hyal":"향", "hyol":"횽", "hyul":"흉",
+    "hiel":"헹", "hial":"행", "hiol":"횡", "hiul":"휭",
+    "hoal":"황", "hoial":"횅", "huel":"훵", "huiel":"휑",
+    "hyiel":"혱", "hyial":"헁",
+
+    "myl":"믕", "mil":"밍", "mel":"멍", "mal":"망", "mol":"몽", "mul":"뭉",
+    "myil":"믱", "myel":"명", "myal":"먕", "myol":"묭", "myul":"뮹",
+    "miel":"멩", "mial":"맹", "miol":"묑", "miul":"뮝",
+    "moal":"뫙", "moial":"뫵", "muel":"뭥", "muiel":"뮁",
+    "myiel":"몡", "myial":"먱",
+
+    "lyl":"응", "lil":"잉", "lel":"엉", "lal":"앙", "lol":"옹", "lul":"웅",
+    "lyil":"읭", "lyel":"영", "lyal":"양", "lyol":"용", "lyul":"융",
+    "liel":"엥", "lial":"앵", "liol":"욍", "liul":"윙",
+    "loal":"왕", "loial":"왱", "luel":"웡", "luiel":"웽",
+    "lyiel":"옝", "lyial":"얭",
+
+    "fyl":"읎", "fil":"잆", "fel":"없", "fal":"앖", "fol":"옶", "ful":"웂",
+    "fyil":"읪", "fyel":"엾", "fyal":"얎", "fyol":"욦", "fyul":"윲",
+    "fiel":"엢", "fial":"앲", "fiol":"욊", "fiul":"윖",
+    "foal":"왒", "foial":"왮", "fuel":"웞", "fuiel":"웺",
+    "fyiel":"옚", "fyial":"얪",
+
+    "vyl":"븡", "vil":"빙", "vel":"벙", "val":"방", "vol":"봉", "vul":"붕",
+    "vyil":"븽", "vyel":"병", "vyal":"뱡", "vyol":"뵹", "vyul":"븅",
+    "viel":"벵", "vial":"뱅", "viol":"뵝", "viul":"뷩",
+    "voal":"봥", "voial":"뵁", "vuel":"붱", "vuiel":"뷍",
+    "vyiel":"볭", "vyial":"뱽",
+
+    "byl":"쁭", "bil":"삥", "bel":"뻥", "bal":"빵", "bol":"뽕", "bul":"뿡",
+    "byil":"삉", "byel":"뼝", "byal":"뺭", "byol":"뿅", "byul":"쁑",
+    "biel":"뼁", "bial":"뺑", "biol":"뾩", "biul":"쀵",
+    "boal":"뽱", "boial":"뾍", "buel":"뿽", "buiel":"쀙",
+    "byiel":"뼹", "byial":"뻉",
+
+    "pyl":"픙", "pil":"핑", "pel":"펑", "pal":"팡", "pol":"퐁", "pul":"풍",
+    "pyil":"픵", "pyel":"평", "pyal":"퍙", "pyol":"푱", "pyul":"퓽",
+    "piel":"펭", "pial":"팽", "piol":"푕", "piul":"퓡",
+    "poal":"퐝", "poial":"퐹", "puel":"풩", "puiel":"퓅",
+    "pyiel":"폥", "pyial":"퍵",
+
+    "gyl":"긍", "gil":"깅", "gel":"겅", "gal":"강", "gol":"공", "gul":"궁",
+    "gyil":"긩", "gyel":"경", "gyal":"걍", "gyol":"굥", "gyul":"귱",
+    "giel":"겡", "gial":"갱", "giol":"굉", "giul":"귕",
+    "goal":"광", "goial":"괭", "guel":"궝", "guiel":"궹",
+    "gyiel":"곙", "gyial":"걩",
+
+    "qyl":"끙", "qil":"낑", "qel":"껑", "qal":"깡", "qol":"꽁", "qul":"꿍",
+    "qyil":"끵", "qyel":"꼉", "qyal":"꺙", "qyol":"꾱", "qyul":"뀽",
+    "qiel":"껭", "qial":"깽", "qiol":"꾕", "qiul":"뀡",
+    "qoal":"꽝", "qoial":"꽹", "quel":"꿩", "quiel":"뀅",
+    "qyiel":"꼥", "qyial":"꺵",
+
+    "kyl":"킁", "kil":"킹", "kel":"컹", "kal":"캉", "kol":"콩", "kul":"쿵",
+    "kyil":"킝", "kyel":"켱", "kyal":"컁", "kyol":"쿙", "kyul":"큥",
+    "kiel":"켕", "kial":"캥", "kiol":"쾽", "kiul":"큉",
+    "koal":"쾅", "koial":"쾡", "kuel":"퀑", "kuiel":"퀭",
+    "kyiel":"콍", "kyial":"컝",
+
+    "zyl":"증", "zil":"징", "zel":"정", "zal":"장", "zol":"종", "zul":"중",
+    "zyil":"즹", "zyel":"졍", "zyal":"쟝", "zyol":"죵", "zyul":"즁",
+    "ziel":"젱", "zial":"쟁", "ziol":"죙", "ziul":"쥥",
+    "zoal":"좡", "zoial":"좽", "zuel":"줭", "zuiel":"쥉",
+    "zyiel":"졩", "zyial":"쟹",
+
+    "jyl":"쯩", "jil":"찡", "jel":"쩡", "jal":"짱", "jol":"쫑", "jul":"쭝",
+    "jyil":"찅", "jyel":"쪙", "jyal":"쨩", "jyol":"쭁", "jyul":"쯍",
+    "jiel":"쩽", "jial":"쨍", "jiol":"쬥", "jiul":"쮱",
+    "joal":"쫭", "joial":"쬉", "juel":"쭹", "juiel":"쮕",
+    "jyiel":"쪵", "jyial":"쩅",
+
+    "cyl":"층", "cil":"칭", "cel":"청", "cal":"창", "col":"총", "cul":"충",
+    "cyil":"칑", "cyel":"쳥", "cyal":"챵", "cyol":"춍", "cyul":"츙",
+    "ciel":"쳉", "cial":"챙", "ciol":"쵱", "ciul":"췽",
+    "coal":"촹", "coial":"쵕", "cuel":"췅", "cuiel":"췡",
+    "cyiel":"촁", "cyial":"첑",
+
+    "syl":"승", "sil":"싱", "sel":"성", "sal":"상", "sol":"송", "sul":"숭",
+    "syil":"싕", "syel":"셩", "syal":"샹", "syol":"숑", "syul":"슝",
+    "siel":"셍", "sial":"생", "siol":"쇵", "siul":"슁",
+    "soal":"솽", "soial":"쇙", "suel":"쉉", "suiel":"쉥",
+    "syiel":"솅", "syial":"섕",
+
+    "xyl":"씅", "xil":"씽", "xel":"썽", "xal":"쌍", "xol":"쏭", "xul":"쑹",
+    "xyil":"씡", "xyel":"쎵", "xyal":"썅", "xyol":"쑝", "xyul":"쓩",
+    "xiel":"쎙", "xial":"쌩", "xiol":"쑁", "xiul":"쓍",
+    "xoal":"쐉", "xoial":"쐥", "xuel":"쒕", "xuiel":"쒱",
+    "xyiel":"쏑", "xyial":"썡"
+
+}
+//
+</script>
+
+<script type="text/javascript">
+    <![CDATA[
+
+// begin chia demo program
+// define SVG 
+var Svg={};
+Svg.nx = 'http://www.w3.org/2000/svg';
+Svg.xlink = 'http://www.w3.org/1999/xlink';
+myWiki = 'https://github.com/caixnet/Chia/wiki';
+var svg = document.getElementById('drawing');
+//
+Svg.supported = (function() {
+  return !! document.createElementNS &&
+         !! document.createElementNS(Svg.nx,'svg').createSVGRect
+})()
+if (!Svg.supported) {
+	console.log("cannot support this browser, please use chrom to try it!");
+	document.alert("cannot support this browser, please use chrom to try it!");
+}
+// chia font image xy
+var chiafont = {
+    "eo" : [10,10], // left top
+    "ao" : [30,10], // right top
+    "au" : [30,50], // right button
+    "eu" : [10,50] // left button
+}
+// chia font frame pints
+var point = {
+    '1': chiafont.eo,
+    '2': chiafont.ao,
+    '3': chiafont.au,
+    '4': chiafont.eu
+}
+// define chia code
+var chiacode = {
+    "index" : 0,
+    "a" : "1431", "b" : "124134", "c" : "1234", "d" : "1421", "e" : "12342", 
+    "f" : "14324", "g" : "123", "h" : "14231", "i" : "13", "j" : "134", 
+    "k" : "124", "l" : "143", "m" : "142132", "n" : "1423", "o" : "14321", 
+    "p" : "12314", "q" : "14213", "r" : "143123", "s" : "12431", "t" : "1231", 
+    "u" : "1432", "v" : "142", "w" : "1342", "x" : "1324", "y" : "132", "z" : "1243", 
+    "0" : "234124", "1" : "24", "2" : "2134", "3" : "2143", "4" : "243", "5" : "2432",
+    "6" : "23413", "7" : "214", "8" : "2413", "9" : "21423",
+    motion : function(pointArray, x = 0, y = 0){
+        var xy = [];
+        xy[0] = pointArray[0] + x;
+        xy[1] = pointArray[1] + y;
+        return xy; 
+    },
+    get : function(chia, x = 0, y = 0){ 
+        var xys = [];
+        for (i in this[chia]) {
+            xys[i] =  this.motion(point[this[chia][i]],x,y);
+        }
+        return xys;
+    },
+    gets : function(word, x = 0, y = 0) {
+        var xyz = [];
+        for (i in word){
+            xyz[i] = this.get(word[i], x*i, y);
+        }
+        return xyz;
+    }
+} 
+
+// define demo of view window
+var rect = function(){
+	var rect = document.createElementNS(Svg.nx , 'rect');
+	rect.setAttribute('id','chiaDemo');
+	rect.setAttribute('width','320');
+	rect.setAttribute('height','70');
+	rect.setAttribute('fill','#ffffcc');
+	rect.setAttribute('stroke','#F00');
+	rect.setAttribute('stroke-width','2');
+	rect.setAttribute('rx','7');
+	rect.setAttribute('href',myWiki);
+	return rect;
+}
+//
+var link = function(){
+	var link = document.createElementNS(Svg.nx , 'a');
+	link.setAttributeNS( Svg.xlink, "xlink:href", myWiki );
+	link.setAttribute('xlink:show','new');
+	link.appendChild(rect());
+	svg.appendChild(link);
+	return link;
+}
+link();
+// define copyright text line.
+var copyright = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute('x', '5');
+	text.setAttribute('y', '65');
+	text.setAttribute('fill', '#000');
+	text.setAttribute("font-size","10");
+	text.textContent = word ;
+	svg.appendChild(text);
+	return text;
+}
+copyright("Chia Language & Korean #2017 by Daway, caixnet@outlook.com");
+//
+var drawChia = function(pathArray,id=0){
+	var path = document.createElementNS(Svg.nx, "path");
+	path.setAttribute("id","chiaID"+id);
+    path.setAttribute("d","M"+ pathArray);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "#0033cc");
+    path.setAttribute("stroke-width", "4");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+	svg.appendChild(path);
+	return path;
+}
+
+//pen(my);
+var chia=function(word="0"){
+   var svgchia = [];
+   var chars = chiacode.gets(word, 30); 
+   for (i in chars )
+   {
+	  svgchia[i]=drawChia(chars[i].join(" "),i);  
+   }
+
+   return svgchia;
+   
+}
+//
+var drawKorean = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute("id","koreanID");
+	text.setAttribute('x', '250');
+	text.setAttribute('y', '50');
+	text.setAttribute('fill', '#339900');
+	text.setAttribute("font-size","50");
+	text.textContent = word ;
+	//document.createTextNode(text)
+	svg.appendChild(text);
+	return text;
+}
+//  running state
+var state = {
+	locked:false,
+	closed:false,
+	lock:function(){ this.locked = true;},
+	unlock:function(){ this.locked = false; this.closed=false;},
+	close:function(){ this.closed = true;},
+}
+//
+var removeElements = function(svgList,svgHan){
+	var element_ko = document.getElementById('koreanID');
+	// remove Korean node
+	try{
+		svg.removeChild(element_ko);
+	} catch (err){
+		//console.log("remveding korean error :"+err.message);
+	}
+    // remove Chia node
+	for( i = 0; i <= 5; i++){
+		var element_ch = document.getElementById('chiaID'+i);
+		try{
+			svg.removeChild(element_ch);
+		}
+		catch (err){
+		//	console.log("remveding chia error :"+err.message);
+		}
+	}
+    // release resource
+	state.unlock();
+}
+// define demo characters 
+var chiaList = Object.keys(chia2korean);
+var koreanList = Object.values(chia2korean);
+var items = chiaList.length;
+var count = 0;
+//
+var demo=function(){
+	
+	var chiaElement = document.getElementById('chiaID');
+	var koreanElement = document.getElementById('koreanID');
+	//console.log("Chia:"+chiaElement+",korean:"+koreanElement);
+
+	if (count >= items){	
+		//clearInterval(id);
+		count = 0;
+	}else {
+		if (state.locked == false && state.closed == false){
+			console.log("locked..");
+			ch = chia(chiaList[count]);
+			kr = drawKorean(koreanList[count]);
+			state.lock();
+		} else if ( state.closed == false && state.locked == true ){
+			console.log("remove.."+"ch:"+chiaList[count]+",kr:"+koreanList[count]);
+			count++;
+			state.close();
+			setTimeout(function(){  removeElements(ch,kr);}, 1000);
+		} else{
+			//console.log("locking... chia:"+chiaList[count]+",korean:"+koreanList[count])
+		}
+
+	}
+	
+}
+// Chia Demo main function
+var main=function(){
+
+	// loop
+	var id = setInterval(demo, 100);
+}
+main();
+// end chia demo program
+
+    ]]>
+</script>
+
+
+</svg>
