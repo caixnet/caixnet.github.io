@@ -1,4 +1,4 @@
 # https://caixnet.github.io
 
-![demo1](./demo01.svg)
+![Chia & Korean language demo](./chia2ko1demo.svg)
 
