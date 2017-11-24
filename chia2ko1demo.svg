@@ -1435,12 +1435,11 @@ var demo=function(){
 		count = 0;
 	}else {
 		if (state.locked == false && state.closed == false){
-			console.log("locked..");
 			ch = chia(chiaList[count]);
 			kr = drawKorean(koreanList[count]);
 			state.lock();
 		} else if ( state.closed == false && state.locked == true ){
-			console.log("remove.."+"ch:"+chiaList[count]+",kr:"+koreanList[count]);
+			//console.log("remove.."+"ch:"+chiaList[count]+",kr:"+koreanList[count]);
 			count++;
 			state.close();
 			setTimeout(function(){  removeElements(ch,kr);}, 1000);
