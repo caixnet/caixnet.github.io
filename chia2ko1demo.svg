@@ -3,6 +3,19 @@
 <!--  <script type="text/javascript" xlink:href="chia2kr.js"></script> -->
 <script type="text/javascript">
 //
+/*
+* chia  - A simple digital language.
+* 
+@version 0.1.0 beta
+* https://caixnet.github.io/
+*
+@copyright Daway.Cai,guangxian (caixnet@outlook.com)
+* 
+@license Apache
+*
+* BUILT: 2017/11/23  GMT+8 (BeiJing, China)
+*/
+
 var chia2korean = {
     "1":"1", "2":"2", "3":"3", "4":"4", "5":"5",
     "6":"6", "7":"7", "8":"8", "9":"9", "0":"0",
@@ -1315,7 +1328,7 @@ var rect = function(){
 	rect.setAttribute('href',myWiki);
 	return rect;
 }
-//
+// define link on SVG image
 var link = function(){
 	var link = document.createElementNS(Svg.nx , 'a');
 	link.setAttributeNS( Svg.xlink, "xlink:href", myWiki );
@@ -1337,7 +1350,7 @@ var copyright = function(word){
 	return text;
 }
 copyright("Chia Language & Korean #2017 by Daway, caixnet@outlook.com");
-//
+// define drawing char font
 var drawChia = function(pathArray,id=0){
 	var path = document.createElementNS(Svg.nx, "path");
 	path.setAttribute("id","chiaID"+id);
@@ -1350,8 +1363,7 @@ var drawChia = function(pathArray,id=0){
 	svg.appendChild(path);
 	return path;
 }
-
-//pen(my);
+// define chia display
 var chia=function(word="0"){
    var svgchia = [];
    var chars = chiacode.gets(word, 30); 
@@ -1363,7 +1375,7 @@ var chia=function(word="0"){
    return svgchia;
    
 }
-//
+// define korean display
 var drawKorean = function(word){
 	var text = document.createElementNS(Svg.nx, 'text');
 	text.setAttribute("id","koreanID");
@@ -1384,7 +1396,7 @@ var state = {
 	unlock:function(){ this.locked = false; this.closed=false;},
 	close:function(){ this.closed = true;},
 }
-//
+// remove resource
 var removeElements = function(svgList,svgHan){
 	var element_ko = document.getElementById('koreanID');
 	// remove Korean node
@@ -1411,15 +1423,15 @@ var chiaList = Object.keys(chia2korean);
 var koreanList = Object.values(chia2korean);
 var items = chiaList.length;
 var count = 0;
-//
+var loopID = 0;
+// deifne demo display
 var demo=function(){
 	
 	var chiaElement = document.getElementById('chiaID');
 	var koreanElement = document.getElementById('koreanID');
-	//console.log("Chia:"+chiaElement+",korean:"+koreanElement);
 
 	if (count >= items){	
-		//clearInterval(id);
+		//clearInterval(loopID);
 		count = 0;
 	}else {
 		if (state.locked == false && state.closed == false){
@@ -1443,7 +1455,7 @@ var demo=function(){
 var main=function(){
 
 	// loop
-	var id = setInterval(demo, 100);
+	loopID = setInterval(demo, 100);
 }
 main();
 // end chia demo program
