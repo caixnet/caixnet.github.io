@@ -1,0 +1,183 @@
+@font-face {                 
+    font-family: 'Chia';                 
+    src: url(fonts/Chia.woff) format("woff"),
+    url(fonts/Chia.ttf) format("truetype"),
+    url(fonts/Chia.otf) format("opentype");;                 
+    font-weight: 300;                 
+    font-style: normal;                 
+    }  
+    
+html.chia {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body.chia {
+  color: #444;
+  font-family: Chia, Georgia, Palatino, Times, 'Times New Roman', serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 1em;
+  margin: auto;
+  max-width: 42em;
+  background: #fefefe;
+}
+h1.chia {
+  font-family: Chia;
+  font-size: 2.5em;
+}
+
+h2.chia {
+  font-family: Chia;
+  font-size: 2em;
+}
+
+h3.chia {
+  font-family: Chia;
+  font-size: 1.5em;
+}
+
+h4.chia {
+  font-family: Chia;
+  font-size: 1.2em;
+}
+
+h5.chia {
+  font-family: Chia;
+  font-size: 1em;
+}
+
+h6.chia {
+  font-family: Chia;
+  font-size: 0.9em;
+}
+div.chia{
+ font-family: Chia; 
+ font-size: 12px;
+  line-height: 1.5em;
+  padding: 1em;
+  margin: auto;
+  max-width: 42em;
+}
+
+pre.chia,
+code.chia,
+kbd.chia,
+samp.chia {
+  color: #000;
+  font-family: Chia;
+  _font-family: Chia;
+  font-size: 0.98em;
+}
+
+pre.chia {
+  font-family: Chia;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b.chia,
+strong.chia {
+ font-family: Chia;
+  font-weight: bold;
+}
+
+
+ins.chia {
+  font-family: Chia;
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark.chia {
+  background: #ff0;
+  color: #000;
+  font-family: Chia;
+  font-style: italic;
+  font-weight: bold;
+}
+
+sub.chia,
+sup.chia {
+  font-family: Chia;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup.chia {
+  font-family: Chia;
+  top: -0.5em;
+}
+
+sub.chia {
+  font-family: Chia;
+  bottom: -0.25em;
+}
+
+ul.chia,
+ol.chia {
+  font-family: Chia;
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+li.chia p:last-child {
+  font-family: Chia;
+  margin: 0;
+}
+
+dd.chia {
+  margin: 0 0 0 2em;
+}
+
+
+table.chia {
+  font-family: Chia;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td.chia {
+  font-family: Chia;
+  vertical-align: top;
+}
+
+  body.chia {
+    font-family: Chia;
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  hr.chia {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+
+  @page :left {
+    margin: 15mm 20mm 15mm 10mm;
+  }
+
+  @page :right {
+    margin: 15mm 10mm 15mm 20mm;
+  }
+
+  p.chia,
+  h2.chia,
+  h3.chia {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2.chia,
+  h3.chia {
+    page-break-after: avoid;
+  }
+}
+
