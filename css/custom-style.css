@@ -1,27 +1,47 @@
+
 /* Chia Font */
 @font-face {                 
-    font-family: 'Chia';                 
-    src: url(../fonts/Chia.woff) format("woff"),
-    url(../fonts/Chia.ttf) format("truetype"),
-    url(../fonts/Chia.otf) format("opentype"),
-    url(../fonts/Chia.svg#Chia) format("svg");              
-    font-style: normal;                 
-    }  
+  font-family: 'Chia';                 
+  src: url(../fonts/Chia.woff) format("woff"),
+  url(../fonts/Chia.ttf) format("truetype"),
+  url(../fonts/Chia.otf) format("opentype"),
+  url(../fonts/Chia.svg#Chia) format("svg");              
+  font-style: normal;                 
+  }  
 
 .chia {
-  font-family: Chia;
+font-family: Chia;
 }
 
 /* Braille Font */
 @font-face {                 
-    font-family: 'Braille';                 
-    src: url(../fonts/Braille.woff) format("woff"),
-    url(../fonts/Braille.ttf) format("truetype"),
-    url(../fonts/Braille.otf) format("opentype"),
-    url(../fonts/Braille.svg#Braille) format("svg");
-    font-style: normal;                 
-    }  
+  font-family: 'Braille';                 
+  src: url(../fonts/Braille.woff) format("woff"),
+  url(../fonts/Braille.ttf) format("truetype"),
+  url(../fonts/Braille.otf) format("opentype"),
+  url(../fonts/Braille.svg#Braille) format("svg");
+  font-style: normal;                 
+  }  
 
 .braille {
-  font-family: Braille;
+font-family: Braille, sans-serif;
+}
+/* Korean Font */
+
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+       url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+       url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+  font-style: normal;
+}
+
+.kr {
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+#koreanID {
+font-family: 'Noto Sans KR', sans-serif;
 }

@@ -1,27 +1,27 @@
 /* Chia Font */
 @font-face {                 
-    font-family: 'Chia';                 
-    src: url(../fonts/Chia.woff) format("woff"),
-    url(../fonts/Chia.ttf) format("truetype"),
-    url(../fonts/Chia.otf) format("opentype"),
-    url(../fonts/Chia.svg#Chia) format("svg");              
-    font-style: normal;                 
-    }  
+  font-family: 'Chia';                 
+  src: url(https://caixnet.github.io/fonts/Chia.woff) format("woff"),
+  url(https://caixnet.github.io/fonts/Chia.ttf) format("truetype"),
+  url(https://caixnet.github.io/fonts/Chia.otf) format("opentype"),
+  url(https://caixnet.github.io/fonts/Chia.svg#Chia) format("svg");              
+  font-style: normal;                 
+  }  
 
 .chia {
-  font-family: Chia;
+font-family: Chia;
 }
 
 /* Braille Font */
 @font-face {                 
-    font-family: 'Braille';                 
-    src: url(../fonts/Braille.woff) format("woff"),
-    url(../fonts/Braille.ttf) format("truetype"),
-    url(../fonts/Braille.otf) format("opentype"),
-    url(../fonts/Braille.svg#Braille) format("svg");
-    font-style: normal;                 
-    }  
+  font-family: 'Braille';                 
+  src: url(https://caixnet.github.io/fonts/Braille.woff) format("woff"),
+  url(https://caixnet.github.io/fonts/Braille.ttf) format("truetype"),
+  url(https://caixnet.github.io/fonts/Braille.otf) format("opentype"),
+  url(https://caixnet.github.io/fonts/Braille.svg#Braille) format("svg");
+  font-style: normal;                 
+  }  
 
 .braille {
-  font-family: Braille;
+font-family: Braille;
 }

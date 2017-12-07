@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="70">
 <!--  <script type="text/javascript" xlink:href="chia2kr.js"></script> -->
+<!-- <?xml-stylesheet  href="../css/custom-style.css" type="text/css" ?> -->
+<defs>
+  <style type="text/css">
+   <![CDATA[
+    @charset "utf-8";
+    @font-face {
+        font-family: 'Noto Sans KR';
+          src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+         url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+         url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+    font-style: normal;
+    }
+	#koreanID {font-family: 'Noto Sans KR','BatangChe';}
+   ]]>
+ </style>
+</defs>
+
 <script type="text/javascript">
 //
 /*
@@ -15,6 +32,8 @@
 *
 * BUILT: 2017/11/23  GMT+8 (BeiJing, China)
 */
+
+
 
 var chia2korean = { 
     "y":"ㅡ", "i":"ㅣ", "e":"ㅓ", "a":"ㅏ", "o":"ㅗ", "u":"ㅜ",     
@@ -1366,6 +1385,7 @@ var drawKorean = function(word){
 	text.setAttribute("id","koreanID");
 	text.setAttribute('x', '250');
 	text.setAttribute('y', '50');
+	//text.setAttribute('font-family', 'Noto Sans KR', 'BatangChe');
 	text.setAttribute('fill', '#339900');
 	text.setAttribute("font-size","50");
 	text.textContent = word ;
