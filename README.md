@@ -1,4 +1,9 @@
 # https://caixnet.github.io
 
-<link href="htmls/chia.css" rel="stylesheet"></link>
-<h3 class="chia">Chia</h3>
+```html
+<link href="https://caixnet.github.io/css/chia.css" rel="stylesheet"></link>
+<body>
+<h3 class="chia"> Input text in ... </h3>
+</body>
+```
+[chia Edit Demo](https://caixnet.github.io/chiaImeDemo.html)
