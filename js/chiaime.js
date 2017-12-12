@@ -44,12 +44,25 @@ var chia = {
     setEndIdColor: function (aColor = "#FFFFCC") {
         return $(this.chiaImeBoxID).css("background-color", aColor);
     },
+    setDeleteIdColor: function (aColor = "red") {
+        return $(this.chiaImeBoxID).css("background-color", aColor);
+    },
     clearKeys: function () { return this.keys = ""; },
+    deleteKey: function () {
+        this.docs = $(this.textID).val();
+        $(this.textID).val(this.docs.substring(0, this.docs.length - 1));
+        this.setEndIdColor();
+        this.clearKeys();
+    },
+    enterKey: function () {
+        this.docs = $(this.textID).val();
+        $(this.textID).val(this.docs + "\n");
+        this.clearKeys();
+    },
     writeToText: function () {
         this.docs = $(this.textID).val();
-        console.log(this.docs);
         this.docs += this.getChar(this.keys);
-        $(this.textID).text(this.docs);
+        $(this.textID).val(this.docs);
         this.setEndIdColor();
         this.clearKeys();
     },
@@ -195,7 +208,7 @@ function onMouseOver() {
             if (chia.mouseOn) {
                 chia.keys += chia.getID(this);
             } else {
-                // console.log("index" + chia.getID(this));
+            //
             }
         });
     }
@@ -210,18 +223,40 @@ function onMouseOut() {
 }
 // mouse out on chia keybord keys
 function onMouseDblClick() {
+
+    //
     for (i = 1; i <= 4; i++) {
-        $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
-            chia.setDeActiveIdColor(this);
-            if (chia.keyState()) {
-                chia.keys = chia.shiftKeyMark + chia.getID(this);
-                chia.setDblStartIdColor();
-            } else {
-                chia.setEndIdColor();
-                chia.clearKeys();
-            }
-        });
+        switch (i) {
+            case 1:
+                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
+                    chia.keys = chia.shiftKeyMark + chia.getID(this);
+                    chia.setDeActiveIdColor(this);
+                    if (chia.keyState()) {
+                        chia.setDblStartIdColor();
+                    } else {
+                        chia.setEndIdColor();
+                        chia.clearKeys();
+                    }
+                });
+                break;
+            case 2:
+                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
+                    chia.deleteKey();
+                });
+                break;
+            case 3:
+                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
+                    chia.enterKey();
+                });
+                break;
+            default:
+            //ctrl
+        }
+        //11
+
+        ///1
     }
+    //
 }
 // mouse on click ChiaKeyboard iterms 
 function onMouseClick() {
@@ -260,7 +295,7 @@ $(document).ready(function () {
 
 //chia code
 chia.codes = {
-/* chia Code reserve code */
+    /* chia Code reserve code */
     "1341": "a", "1431": "a",
     "124134": "b", "143124": "b", "134124": "b", "134214": "b", "142134": "b",
     "1234": "c", "4321": "c",
@@ -348,63 +383,63 @@ chia.codes = {
     "411324": "X",
     "41132": "Y",
     "411243": "Z",
-/* Customerize define
-    "41": "SHIFT",
-    "3214": "CTRL", "4123": "CTRL",
-    "314": "ALT", "413": "ALT",
-    "234": "ENTER", "432": "ENTER",
-    "14": "FN",
-    "1441": "CAPSLOCK",
-    "1412": "TAB",
-    "1424": "F1",
-    "142134": "F2",
-    "142143": "F3",
-    "14243": "F4",
-    "142432": "F5", "142342": "F5",
-    "1421432": "F6", "1421341": "F6",
-    "14214": "F7",
-    "142413": "F8",
-    "1423413": "F9", "1423143": "F9",
-    "14214324": "F10", "14241234": "F10", "14243214": "F10", "14234124": "F10", "14214234": "F10",
-    "14142": "F11",
-    "1421324": "F12", "1423124": "F12",
-    "14213243": "F13", "14243213": "F13", "14234213": "F13",
-    "423": "ELETE", "324": "ELETE",
-    "34": "LEFT",
-    "43": "RIGHT",
-    "32": "UP",
-    "23": "OWN",
-    "21": "BACKSPACE",
-    "12": " ",
-    "213243": "ESC", "243213": "ESC", "234213": "ESC",
-    "4132": "`",
-    "414132": "~",
-    "4213": "=",
-    "414213": "+",
-    "4142": "_",
-    "34124": "[", "34214": "[", "42143": "[", "41243": "[",
-    "32134": "]", "31234": "]", "43213": "]", "43123": "]",
-    "4134124": "{", "4134214": "{", "4142143": "{", "4141243": "{",
-    "4132134": "}", "4131234": "}", "4143213": "}", "4143123": "}",
-    "312": "\\", "213": "\\", "31": "\\",
-    "42": "/",
-    "41312": "|", "41213": "|",
-    "13423": ",", "13243": "", "34231": ",", "32431": ",",
-    "24134": ".", "24134": ".", "41342": ".", "43142": ".",
-    "32142": "?", "32412": "?", "21423": "?", "24123": ".",
-    "312342": ";", "342132": ";", "321342": ";", "324312": ";", "312432": ";", "234213": ";", "213243": ";", "243123": ";",
-    "413423": "'", "423413": "'", "431423": "'", "432413": "'", "431423": "'", "234213": "'", "213243": "'", "243123": "'",
-    "4124": "!",
-    "412134": "@",
-    "412143": "#",
-    "41243": "$",
-    "412432": "%", "412342": "%",
-    "4121432": "^", "21341": "^",
-    "41214": "&",
-    "412413": "*",
-    "4123413": "(", "4123143": "(",
-    "41214324": ")", "41241234": ")", "41243214": ")", "41234124": ")", "41214234": ")"
-*/
+    /* Customerize define
+        "41": "SHIFT",
+        "3214": "CTRL", "4123": "CTRL",
+        "314": "ALT", "413": "ALT",
+        "234": "ENTER", "432": "ENTER",
+        "14": "FN",
+        "1441": "CAPSLOCK",
+        "1412": "TAB",
+        "1424": "F1",
+        "142134": "F2",
+        "142143": "F3",
+        "14243": "F4",
+        "142432": "F5", "142342": "F5",
+        "1421432": "F6", "1421341": "F6",
+        "14214": "F7",
+        "142413": "F8",
+        "1423413": "F9", "1423143": "F9",
+        "14214324": "F10", "14241234": "F10", "14243214": "F10", "14234124": "F10", "14214234": "F10",
+        "14142": "F11",
+        "1421324": "F12", "1423124": "F12",
+        "14213243": "F13", "14243213": "F13", "14234213": "F13",
+        "423": "ELETE", "324": "ELETE",
+        "34": "LEFT",
+        "43": "RIGHT",
+        "32": "UP",
+        "23": "OWN",
+        "21": "BACKSPACE",
+        "12": " ",
+        "213243": "ESC", "243213": "ESC", "234213": "ESC",
+        "4132": "`",
+        "414132": "~",
+        "4213": "=",
+        "414213": "+",
+        "4142": "_",
+        "34124": "[", "34214": "[", "42143": "[", "41243": "[",
+        "32134": "]", "31234": "]", "43213": "]", "43123": "]",
+        "4134124": "{", "4134214": "{", "4142143": "{", "4141243": "{",
+        "4132134": "}", "4131234": "}", "4143213": "}", "4143123": "}",
+        "312": "\\", "213": "\\", "31": "\\",
+        "42": "/",
+        "41312": "|", "41213": "|",
+        "13423": ",", "13243": "", "34231": ",", "32431": ",",
+        "24134": ".", "24134": ".", "41342": ".", "43142": ".",
+        "32142": "?", "32412": "?", "21423": "?", "24123": ".",
+        "312342": ";", "342132": ";", "321342": ";", "324312": ";", "312432": ";", "234213": ";", "213243": ";", "243123": ";",
+        "413423": "'", "423413": "'", "431423": "'", "432413": "'", "431423": "'", "234213": "'", "213243": "'", "243123": "'",
+        "4124": "!",
+        "412134": "@",
+        "412143": "#",
+        "41243": "$",
+        "412432": "%", "412342": "%",
+        "4121432": "^", "21341": "^",
+        "41214": "&",
+        "412413": "*",
+        "4123413": "(", "4123143": "(",
+        "41214324": ")", "41241234": ")", "41243214": ")", "41234124": ")", "41214234": ")"
+    */
 };
 
 
