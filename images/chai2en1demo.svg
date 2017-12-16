@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="70">
+<!--  <script type="text/javascript" xlink:href="chai2kr.js"></script> -->
+<script type="text/javascript">
+//
+/*
+* chai  - A simple digital language.
+* 
+@version 0.1.0 beta
+* https://caixnet.github.io/
+*
+@copyright Daway.Cai,guangxian (caixnet@outlook.com)
+* 
+@license Apache
+*
+* BUILT: 2017/11/23  GMT+8 (BeiJing, China)
+*/
+
+var chai2korean = {
+    "1":"1", "2":"2", "3":"3", "4":"4", "5":"5",
+    "6":"6", "7":"7", "8":"8", "9":"9", "0":"0",
+
+	"A":"A", "B":"B", "C":"C", "D":"D", "E":"E",
+	"F":"F", "G":"G", "H":"H", "I":"I", "J":"J",
+	"K":"K", "L":"L", "M":"M", "N":"N", "O":"O",
+	"P":"P", "Q":"Q", "R":"R", "S":"S", "T":"T",
+	"U":"U", "V":"V", "W":"W", "X":"X", "Y":"Y", "Z":"Z"
+}
+//
+</script>
+
+<script type="text/javascript">
+    <![CDATA[
+
+// begin chai demo program
+// define SVG 
+var Svg={};
+Svg.nx = 'http://www.w3.org/2000/svg';
+Svg.xlink = 'http://www.w3.org/1999/xlink';
+myWiki = 'https://github.com/caixnet/Chai/wiki';
+var svg = document.getElementById('drawing');
+
+// chai font image xy
+var chaifont = {
+    "eo" : [10,10], // left top
+    "ao" : [30,10], // right top
+    "au" : [30,50], // right button
+    "eu" : [10,50] // left button
+}
+// chai font frame pints
+var point = {
+    '1': chaifont.eo,
+    '2': chaifont.ao,
+    '3': chaifont.au,
+    '4': chaifont.eu
+}
+// define chai code
+var chaicode = {
+    "index" : 0,
+    "a" : "1431", "b" : "124134", "c" : "1234", "d" : "1421", "e" : "12342", 
+    "f" : "14324", "g" : "123", "h" : "14231", "i" : "13", "j" : "134", 
+    "k" : "124", "l" : "143", "m" : "142132", "n" : "1423", "o" : "14321", 
+    "p" : "12314", "q" : "14213", "r" : "143123", "s" : "12431", "t" : "1231", 
+    "u" : "1432", "v" : "142", "w" : "1342", "x" : "1324", "y" : "132", "z" : "1243", 
+    "0" : "234124", "1" : "24", "2" : "2134", "3" : "2143", "4" : "243", "5" : "2432",
+    "6" : "23413", "7" : "214", "8" : "2413", "9" : "21423",
+	"A" : "1431", "B" : "124134", "C" : "1234", "D" : "1421", "E" : "12342", 
+    "F" : "14324", "G" : "123", "H" : "14231", "I" : "13", "J" : "134", 
+    "K" : "124", "L" : "143", "M" : "142132", "N" : "1423", "O" : "14321", 
+    "P" : "12314", "Q" : "14213", "R" : "143123", "S" : "12431", "T" : "1231", 
+    "U" : "1432", "V" : "142", "W" : "1342", "X" : "1324", "Y" : "132", "Z" : "1243", 
+    motion : function(pointArray, x = 0, y = 0){
+        var xy = [];
+        xy[0] = pointArray[0] + x;
+        xy[1] = pointArray[1] + y;
+        return xy; 
+    },
+    get : function(chai, x = 0, y = 0){ 
+        var xys = [];
+        for (i in this[chai]) {
+            xys[i] =  this.motion(point[this[chai][i]],x,y);
+        }
+        return xys;
+    },
+    gets : function(word, x = 0, y = 0) {
+        var xyz = [];
+        for (i in word){
+            xyz[i] = this.get(word[i], x*i, y);
+        }
+        return xyz;
+    }
+} 
+
+// define demo of view window
+var rect = function(){
+	var rect = document.createElementNS(Svg.nx , 'rect');
+	rect.setAttribute('id','chaiDemo');
+	rect.setAttribute('width','320');
+	rect.setAttribute('height','70');
+	rect.setAttribute('fill','#ccffff');
+	rect.setAttribute('stroke','#ccffff');
+	rect.setAttribute('stroke-width','2');
+	rect.setAttribute('rx','7');
+//	rect.setAttribute('href',myWiki);
+//	rect.setAttribute('target',"_black");
+	svg.appendChild(rect);
+	return rect;
+}
+rect();
+// define link on SVG image
+var link = function(){
+	var link = document.createElementNS(Svg.nx , 'a');
+	link.setAttributeNS( Svg.xlink, "xlink:href", myWiki );
+	link.setAttribute('xlink:show','new');
+	link.appendChild(rect());
+	svg.appendChild(link);
+	return link;
+}
+//link();
+// define copyright text line.
+var copyright = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute('x', '5');
+	text.setAttribute('y', '65');
+	text.setAttribute('fill', '#000');
+	text.setAttribute("font-size","10");
+	text.textContent = word ;
+	svg.appendChild(text);
+	return text;
+}
+copyright("Chai Language & English #2013 by Daway, caixnet@outlook.com");
+// define drawing char font
+var drawChai = function(pathArray,id=0){
+	var path = document.createElementNS(Svg.nx, "path");
+	path.setAttribute("id","chaiID"+id);
+    path.setAttribute("d","M"+ pathArray);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "#0033cc");
+    path.setAttribute("stroke-width", "4");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+	svg.appendChild(path);
+	return path;
+}
+// define chai display
+var chai=function(word="0"){
+   var svgchai = [];
+   var chars = chaicode.gets(word, 30); 
+   for (i in chars )
+   {
+	  svgchai[i]=drawChai(chars[i].join(" "),i);  
+   }
+
+   return svgchai;
+   
+}
+// define korean display
+var drawKorean = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute("id","koreanID");
+	text.setAttribute('x', '250');
+	text.setAttribute('y', '50');
+	text.setAttribute('fill', '#339900');
+	text.setAttribute("font-size","50");
+	text.textContent = word ;
+	//document.createTextNode(text)
+	svg.appendChild(text);
+	return text;
+}
+//  running state
+var state = {
+	locked:false,
+	closed:false,
+	lock:function(){ this.locked = true;},
+	unlock:function(){ this.locked = false; this.closed=false;},
+	close:function(){ this.closed = true;},
+}
+// remove resource
+var removeElements = function(svgList,svgHan){
+	var element_ko = document.getElementById('koreanID');
+	// remove Korean node
+	try{
+		svg.removeChild(element_ko);
+	} catch (err){
+		//console.log("remveding korean error :"+err.message);
+	}
+    // remove Chai node
+	for( i = 0; i <= 5; i++){
+		var element_ch = document.getElementById('chaiID'+i);
+		try{
+			svg.removeChild(element_ch);
+		}
+		catch (err){
+		//	console.log("remveding chai error :"+err.message);
+		}
+	}
+    // release resource
+	state.unlock();
+}
+// define demo characters 
+var chaiList = Object.keys(chai2korean);
+var koreanList = Object.values(chai2korean);
+var items = chaiList.length;
+var count = 0;
+var loopID = 0;
+// deifne demo display
+var demo=function(){
+	
+	var chaiElement = document.getElementById('chaiID');
+	var koreanElement = document.getElementById('koreanID');
+
+	if (count >= items){	
+		//clearInterval(loopID);
+		count = 0;
+	}else {
+		if (state.locked == false && state.closed == false){
+			ch = chai(chaiList[count]);
+			kr = drawKorean(koreanList[count]);
+			state.lock();
+		} else if ( state.closed == false && state.locked == true ){
+			//console.log("remove.."+"ch:"+chaiList[count]+",kr:"+koreanList[count]);
+			count++;
+			state.close();
+			setTimeout(function(){  removeElements(ch,kr);}, 1000);
+		} else{
+			//console.log("locking... chai:"+chaiList[count]+",korean:"+koreanList[count])
+		}
+
+	}
+	
+}
+// Chai Demo main function
+var main=function(){
+
+	// loop
+	loopID = setInterval(demo, 100);
+}
+main();
+// end chai demo program
+
+    ]]>
+</script>
+
+
+</svg>

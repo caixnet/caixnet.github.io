@@ -1,15 +1,15 @@
 /**
- * 4 points 1 string ( Chia IME keyboard )
+ * 4 points 1 string ( Chai IME keyboard )
  * @author Daway.Cai (Cai,GuangXian)
  * @email caixnet@outlook.com
- * chia forone is reserved.
+ * chai forone is reserved.
  * Application number: 2014800745031
  * International Application : PCT/CN2014/092045, 
  * International Publication : WO2016/082081
  * Apache license
  */
 
-var chia = {
+var chai = {
     mouseOn: false,
     keyState: function () {
         return this.mouseOn = !(this.mouseOn);
@@ -17,15 +17,15 @@ var chia = {
     keys: "",
     docs: "",
     htmlEmbedTaget: "body",
-    textID: "#chiatext",
-    chiaImeBoxID: "#chiaKeyboardBox",
-    chiaImeCheckPointID: "#chiaKeyButton",
+    textID: "#chaitext",
+    chaiImeBoxID: "#chaiKeyboardBox",
+    chaiImeCheckPointID: "#chaiKeyButton",
     shiftKeyMark: "d",
-    hasChar: function (chiacode) {
-        return typeof (chia.codes[chiacode]) != "undefined";
+    hasChar: function (chaicode) {
+        return typeof (chai.codes[chaicode]) != "undefined";
     },
-    getChar: function (chiacode) {
-        return this.hasChar(chiacode) ? chia.codes[chiacode] : "";
+    getChar: function (chaicode) {
+        return this.hasChar(chaicode) ? chai.codes[chaicode] : "";
     },
     getID: function (jqObject) {
         return $(jqObject).attr("id").charAt($(jqObject).attr("id").length - 1)
@@ -37,16 +37,16 @@ var chia = {
         return $(jqObject).css("background-color", aColor);
     },
     setDblStartIdColor: function (aColor = "#FFCCFF") {
-        return $(this.chiaImeBoxID).css("background-color", aColor);
+        return $(this.chaiImeBoxID).css("background-color", aColor);
     },
     setStartIdColor: function (aColor = "#99CCFF") {
-        return $(this.chiaImeBoxID).css("background-color", aColor);
+        return $(this.chaiImeBoxID).css("background-color", aColor);
     },
     setEndIdColor: function (aColor = "#FFFFCC") {
-        return $(this.chiaImeBoxID).css("background-color", aColor);
+        return $(this.chaiImeBoxID).css("background-color", aColor);
     },
     setDeleteIdColor: function (aColor = "red") {
-        return $(this.chiaImeBoxID).css("background-color", aColor);
+        return $(this.chaiImeBoxID).css("background-color", aColor);
     },
     clearKeys: function () { return this.keys = ""; },
     setCusor: function (iCursor) { this.cursor = iCursor; },
@@ -56,18 +56,17 @@ var chia = {
     },
     deleteKey: function () {
         //
-        //var start = $("#chiatext").get(0).selectionStart;
-        //var end = $("#chiatext").get(0).selectionEnd;
+        //var start = $("#chaitext").get(0).selectionStart;
+        //var end = $("#chaitext").get(0).selectionEnd;
         //console.log(start, end);
         //
         this.docs = $(this.textID).val();
         this.setCusor(this.getCusorPos());
-        if(this.cursor == this.docs.length){
+        if(this.cursor == 0){
+            this.setCusor(0);
+        }else{
             this.docs = this.docs.substring(0, this.cursor-1) + this.docs.substring(this.cursor, this.docs.length);
             this.setCusor(this.cursor-1);
-        }else{
-            this.docs = this.docs.substring(0, this.cursor-2) + this.docs.substring(this.cursor-1, this.docs.length);
-            this.setCusor(this.cursor-2);
         }
         $(this.textID).val(this.docs);
         $(this.textID).focus();
@@ -82,8 +81,8 @@ var chia = {
             this.docs = this.docs.substring(0, this.cursor) + "\n" ;
             this.setCusor(this.cursor+1);
         }else{
-            this.docs = this.docs.substring(0, this.cursor-1) + "\n" + this.docs.substring(this.cursor-1, this.docs.length);
-            this.setCusor(this.cursor);
+            this.docs = this.docs.substring(0, this.cursor) + "\n" + this.docs.substring(this.cursor, this.docs.length);
+            this.setCusor(this.cursor+1);
         }
         $(this.textID).val(this.docs);
         $(this.textID).get(0).setSelectionRange(this.cursor, this.cursor);
@@ -93,29 +92,38 @@ var chia = {
     writeToText: function () {
         this.docs = $(this.textID).val();
         this.setCusor(this.getCusorPos());
-        this.docs = this.docs.substring(0, this.cursor) + this.getChar(this.keys) + this.docs.substring(this.cursor, this.docs.length);
-        this.setCusor(this.cursor + this.getChar(this.keys).length);
-        $(this.textID).val(this.docs);
+        switch(this.getChar(this.keys)){
+            case "CHAI_CURSOR_RIGHT":
+                this.setCusor(this.cursor+1); 
+            break;
+            case "CHAI_CURSOR_LEFT":
+                this.setCusor(this.cursor-1);
+            break;
+            default:
+                this.docs = this.docs.substring(0, this.cursor) + this.getChar(this.keys) + this.docs.substring(this.cursor, this.docs.length);
+                this.setCusor(this.cursor + this.getChar(this.keys).length);    
+                $(this.textID).val(this.docs);
+        }       
         $(this.textID).focus();
         $(this.textID).get(0).setSelectionRange(this.cursor, this.cursor);
         this.setEndIdColor();
         this.clearKeys();
     },
     setKeyboardBox: function () {
-        var chiakbdbox = "<div id='chiaKeyboardBox'>";
-        chiakbdbox += "<div id='chiakeyboardrow1' class='row'>";
-        chiakbdbox += "<div id='chiaKeyButton1'></div>";
-        chiakbdbox += "<div id='chiaKeyButton2'></div>";
-        chiakbdbox += "</div>";
-        chiakbdbox += "<div id='chiakeyboardrow2' class='row'>";
-        chiakbdbox += "<div id='chiaKeyButton4'></div>";
-        chiakbdbox += "<div id='chiaKeyButton3'></div>";
-        chiakbdbox += "</div>";
-        chiakbdbox += "</div>";
-        return chiakbdbox;
+        var chaikbdbox = "<div id='chaiKeyboardBox'>";
+        chaikbdbox += "<div id='chaikeyboardrow1' class='row'>";
+        chaikbdbox += "<div id='chaiKeyButton1'></div>";
+        chaikbdbox += "<div id='chaiKeyButton2'></div>";
+        chaikbdbox += "</div>";
+        chaikbdbox += "<div id='chaikeyboardrow2' class='row'>";
+        chaikbdbox += "<div id='chaiKeyButton4'></div>";
+        chaikbdbox += "<div id='chaiKeyButton3'></div>";
+        chaikbdbox += "</div>";
+        chaikbdbox += "</div>";
+        return chaikbdbox;
     },
     setKeyboardBoxCSS: function () {
-        $(this.chiaImeBoxID).css({
+        $(this.chaiImeBoxID).css({
             "z-index": "99999",
             "position": "fixed",
             "bottom": "1%",
@@ -129,7 +137,7 @@ var chia = {
             "height": "112pt"
         });
         //
-        $(this.chiaImeCheckPointID + "1").css({
+        $(this.chaiImeCheckPointID + "1").css({
             "z-index": "99999",
             "width": "44pt",
             "height": "44pt",
@@ -143,7 +151,7 @@ var chia = {
             "cursor": "pointer"
         });
         //
-        $(this.chiaImeCheckPointID + "2").css({
+        $(this.chaiImeCheckPointID + "2").css({
             "z-index": "99999",
             "width": "44pt",
             "height": "44pt",
@@ -157,7 +165,7 @@ var chia = {
             "cursor": "pointer"
         });
         //
-        $(this.chiaImeCheckPointID + "4").css({
+        $(this.chaiImeCheckPointID + "4").css({
             "z-index": "99999",
             "width": "44pt",
             "height": "44pt",
@@ -170,7 +178,7 @@ var chia = {
             "border": "0pt solid",
             "cursor": "pointer"
         });
-        $(this.chiaImeCheckPointID + "3").css({
+        $(this.chaiImeCheckPointID + "3").css({
             "z-index": "99999",
             "width": "44pt",
             "height": "44pt",
@@ -185,16 +193,16 @@ var chia = {
         });
     },
     setMenuBox: function () {
-        var chiaMnuBox = "<div class=>"
-        chiaMnuBox += "<ul id='chiaMenu'>";
-        chiaMnuBox += "<li><span id='chiaSetup'></span></li>";
-        chiaMnuBox += "<li><span id='chiaChangeLangues'></span></li>";
-        chiaMnuBox += "<li><span id='chiaCustomerDefineKey'></span></li>";
-        chiaMnuBox += "</div>";
-        return chiaMnuBox;
+        var chaiMnuBox = "<div class=>"
+        chaiMnuBox += "<ul id='chaiMenu'>";
+        chaiMnuBox += "<li><span id='chaiSetup'></span></li>";
+        chaiMnuBox += "<li><span id='chaiChangeLangues'></span></li>";
+        chaiMnuBox += "<li><span id='chaiCustomerDefineKey'></span></li>";
+        chaiMnuBox += "</div>";
+        return chaiMnuBox;
     },
     setMenuBoxCSS: function () {
-        $("#chiaMenu").css({
+        $("#chaiMenu").css({
             "z-index": "99999",
             "display": "block",
             "position": "fixed",
@@ -204,7 +212,7 @@ var chia = {
             "opacity": "0.8",
             "cursor": "pointer"
         });
-        $("#chiaMenu").each(function () {
+        $("#chaiMenu").each(function () {
             $(this).css({
                 "z-index": "99999",
                 "display": "block",
@@ -217,7 +225,7 @@ var chia = {
                 "cursor": "pointer"
             });
         });
-        $("#chiaMenu").first(function () {
+        $("#chaiMenu").first(function () {
             $(this).css({
                 "z-index": "99999",
                 "display": "block",
@@ -228,60 +236,60 @@ var chia = {
         });
     }
 }
-// append chia keyboard on main webpage.
+// append chai keyboard on main webpage.
 $(function () {
-    $(chia.htmlEmbedTaget).append(chia.setKeyboardBox());
-    chia.setKeyboardBoxCSS();
-    $(chia.htmlEmbedTaget).append(chia.setMenuBox());
-    chia.setMenuBoxCSS();
+    $(chai.htmlEmbedTaget).append(chai.setKeyboardBox());
+    chai.setKeyboardBoxCSS();
+    $(chai.htmlEmbedTaget).append(chai.setMenuBox());
+    chai.setMenuBoxCSS();
 });
-// mouse over on chia keybaord keys
+// mouse over on chai keybaord keys
 function onMouseOver() {
     for (i = 1; i <= 4; i++) {
-        $(chia.chiaImeCheckPointID + i).mouseover(function () {
-            chia.setActiveIdColor(this);
-            if (chia.mouseOn) {
-                chia.keys += chia.getID(this);
+        $(chai.chaiImeCheckPointID + i).mouseover(function () {
+            chai.setActiveIdColor(this);
+            if (chai.mouseOn) {
+                chai.keys += chai.getID(this);
             } else {
                 //
             }
         });
     }
 }
-// mouse out on chia keybord keys
+// mouse out on chai keybord keys
 function onMouseOut() {
     for (i = 1; i <= 4; i++) {
-        $(chia.chiaImeCheckPointID + i).mouseout(function () {
-            chia.setDeActiveIdColor(this);
+        $(chai.chaiImeCheckPointID + i).mouseout(function () {
+            chai.setDeActiveIdColor(this);
         });
     }
 }
-// mouse out on chia keybord keys
+// mouse out on chai keybord keys
 function onMouseDblClick() {
 
     //
     for (i = 1; i <= 4; i++) {
         switch (i) {
             case 1:
-                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
-                    chia.keys = chia.shiftKeyMark + chia.getID(this);
-                    chia.setDeActiveIdColor(this);
-                    if (chia.keyState()) {
-                        chia.setDblStartIdColor();
+                $(chai.chaiImeCheckPointID + i).on("dblclick", function () {
+                    chai.keys = chai.shiftKeyMark + chai.getID(this);
+                    chai.setDeActiveIdColor(this);
+                    if (chai.keyState()) {
+                        chai.setDblStartIdColor();
                     } else {
-                        chia.setEndIdColor();
-                        chia.clearKeys();
+                        chai.setEndIdColor();
+                        chai.clearKeys();
                     }
                 });
                 break;
             case 2:
-                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
-                    chia.deleteKey();
+                $(chai.chaiImeCheckPointID + i).on("dblclick", function () {
+                    chai.deleteKey();
                 });
                 break;
             case 3:
-                $(chia.chiaImeCheckPointID + i).on("dblclick", function () {
-                    chia.enterKey();
+                $(chai.chaiImeCheckPointID + i).on("dblclick", function () {
+                    chai.enterKey();
                 });
                 break;
             default:
@@ -293,15 +301,15 @@ function onMouseDblClick() {
     }
     //
 }
-// mouse on click ChiaKeyboard iterms 
+// mouse on click ChaiKeyboard iterms 
 function onMouseClick() {
     for (i = 1; i <= 4; i++) {
-        $(chia.chiaImeCheckPointID + i).on("click", function () {
-            if (chia.keyState()) {
-                chia.keys += chia.getID(this);
-                chia.setStartIdColor();
+        $(chai.chaiImeCheckPointID + i).on("click", function () {
+            if (chai.keyState()) {
+                chai.keys += chai.getID(this);
+                chai.setStartIdColor();
             } else {
-                chia.writeToText();
+                chai.writeToText();
             }
         });
     }
@@ -311,7 +319,7 @@ function hideKeyboard() {
     document.activeElement.blur();
     $("input").blur();
     $("textarea").blur();
-    $("#chiatext").blur();
+    $("#chaitext").blur();
 };
 // binding mouseEvent
 function onMouseEvent() {
@@ -327,7 +335,7 @@ function hideLoadLabel() {
 }
 /*Begin Test Swipe*/
 /*END Swipe*/
-// main ready document to check chia keyboard.
+// main ready document to check chai keyboard.
 $(document).ready(function () {
     hideKeyboard();
     onMouseEvent();
@@ -335,43 +343,54 @@ $(document).ready(function () {
 });
 ////
 
-//chia code
-chia.codes = {
-    /* chia Code reserve code */
-    "1341": "a", "1431": "a",
-    "124134": "b", "143124": "b", "134124": "b", "134214": "b", "142134": "b", "124314":"b", "424": "b",
+//chai code
+chai.codes = {
+    /* chai Code reserve code */
+    "1341": "a", "1431": "a", "13414": " and ", "14313": " and ",
+    "124134": "b", "143124": "b", "134124": "b", "134214": "b", "142134": "b", "124314":"b", 
+    "424": "b", "4242": " break\n",
     "1234": "c",
+    "12343":"class ", "123432":" continue ",
     "1241": "d", "1421": "d",
-    "12342": "e", "12432": "e",
-    "14324": "f", "14234": "f",
-    "123": "g",
+    "12414": "def ():", "14212": "def ():","124142": "del ", "142124": "del ",
+    "12342": "e", "12432": "e", 
+    "123424": "else:", "124323": "else:", "1234243": "except :", "1243234": "except :",
+    "14324": "f", "14234": "f", 
+    "143242": "if :", "142343": "if :","1432424": "elif :", "1423434": "elif :",
+    "1432423": "for in :", "1423432": "for in :","14324234": "finally ", "14234324": "finally ",
+    "123": "g","1232": "global ",
     "14231": "h", "13241": "h",
     "13": "i",
     "134": "j",
     "124": "k",
-    "143": "l", "341": "(", "432": ")",
-    "142132": "m", "132142": "m", "124132": "m","123142": "m","142312":"m","132412":"m", "313": "m",
-    "1423": "n",
-    "12341": "o", "14321": "o",
+    "143": "l", "1434": "lambda ",
+    "142132": "m", "132142": "m", "124132": "m","123142": "m","142312":"m","132412":"m", 
+    "313": "m","3131": "import ",
+    "1423": "n","14232": "not","142324": "in",
+    "12341": "o", "14321": "o", "1234131": " or ", "1432131": " or ",
     "12314": "p", "13214": "p",
+    "123141": "print()", "132141": "print()",
+    "1231413": "pass\n","1231412": "pass\n", "1321412": "pass\n","1321413": "pass\n",
     "14213": "q", "12413": "q",
-    "123413": "r", "132143": "r", "134123": "r", "143123": "r", "143213": "r", "123143":"r","131": "r",
+    "123413": "r", "132143": "r", "134123": "r", "143123": "r", "143213": "r", "123143":"r",
+    "131": "r", "1313": "raise","13131": "return ",
     "12431": "s", "13421": "s",
-    "1231": "t", "1321": "t",
+    "124313": "is", "134212": "is","1243134": "self", "1342124": "self",
+    "1231": "t", "1321": "t", "12313": "try :", "13212": "try :",
     "1432": "u",
     "142": "v",
-    "1342": "w",
+    "1342": "w", "13424": "while :", "134243": " with ",
     "1324": "x",
-    "132": "y",
+    "132": "y", "1323": "yield ",
     "1243": "z",
     "24": "1",
     "2134": "2",
-    "2143": "3", "3412": "[",
+    "2143": "3", 
     "243": "4",
     "2432": "5", "2342": "5",
     "21431": "6", "21341": "6",
     "23413": "6", "23143": "6",
-    "214": "7",
+    "214": "7",  "213": "7",
     "2413": "8",
     "21423": "9", "24123": "9",
     "214324": "0", "241234": "0", "243214": "0", "234124": "0", "214234": "0", "21432": "0", "23412": "0",
@@ -381,7 +400,7 @@ chia.codes = {
     "d1241": "D", "d1421": "D",
     "d12342": "E", "d12432": "E",
     "d14324": "F", "d14234": "F",
-    "d123": "G", "d321": "}",
+    "d123": "G", 
     "d14231": "H", "d13241": "H",
     "d13": "I",
     "d134": "J",
@@ -401,31 +420,41 @@ chia.codes = {
     "d1324": "X",
     "d132": "Y",
     "d1243": "Z",
-    "34": "_",
-    "43": "=", "4213": "=",
-    "32": "!",
-    "23": "|",
-    "3413": "@", "3143": "@",
-    "34123": "#", "32143": "#",
-    "4312": "$", "3421": "$", "3423": "%", "3243": "%",
-    "314": "^", "413": "^",
-    "34213": "&", "31243": "&", "3124": "&",
-    "3142": "*", "4132": "~", "2314": "`", "312": "`", "324": "`",
-    "242": "+","2121": "+","4231": "+",
-    "14": "'", "41": '"', 
-    "414": ",", "323": ".",
-    "141": ";", "232": ":",
-    "434": "<", "431": ">",
-    "343": "<", "342": "<",
-    "212": "{", "34124": "{", "34214": "{", "42143": "{", "41243": "{",
-    "121": "}", "31234": "}", "32134": "}", "43213": "}", "43123": "}",
-    "321": "?",
-    "4321": "]",
-    "213": "7",
-    "42": "/", "31": "\\",
-    "21": "-",
+
+    "43": "CHAI_CURSOR_RIGHT",
+    "121": "CHAI_CURSOR_LEFT", 
+    "434": "<",
+    "21": "-","212": "+",
+    "34": "_","343": "=","3434": "__","34343": "==",
+    "242": "+","2121": "+",
+    "4231": "","4213": "",
     "12": " ",
     "423": "    ",
+    "23": "|","42": "/", "31": "\\",
+    "32": "!","32343": "!=",
+    "3413": "@", "3143": "@",
+    "34123": "#", "32143": "#",
+    "4312": "$", "3421": "$", 
+    "3423": "%", "3243": "%",
+    "314": "^", "413": "^",
+    "34213": "&", "31243": "&", "3124": "&",
+    "3142": "*", "31424": "**", 
+    "4132": "~", 
+    "2314": "`", "312": "`", "324": "`",
+    "14": "'", "41": '"', 
+    "414": ";", "323": ":",
+    "141": ",", "232": ".",
+    "341": "(", "432": ")",
+    "3414": "()", "4323": "()",
+    "3412": "[", "4321": "]",
+    "34121": "[]", "43212": "[]", 
+    "431": ">","342": "<",
+    "4313": "<>","3424": "<>",
+    "34124": "{", "34214": "{", "42143": "{", "41243": "{",
+    "31234": "}", "32134": "}", "43213": "}", "43123": "}",
+    "341242": "{}", "342141": "{}", "421434": "{}", "412434": "{}",
+    "312343": "{}", "321343": "{}", "432131": "{}", "431232": "{}",
+    "321": "?","3212": "? :",
     "41324":"Hello, World!"
     // define customerize keys
     /*"d231": "]","d241": "[",

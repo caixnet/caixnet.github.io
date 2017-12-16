@@ -1,15 +1,15 @@
-/* Chia Font */
+/* Chai Font */
 @font-face {                 
-  font-family: 'Chia';                 
-  src: url(https://caixnet.github.io/fonts/Chia.woff) format("woff"),
-  url(https://caixnet.github.io/fonts/Chia.ttf) format("truetype"),
-  url(https://caixnet.github.io/fonts/Chia.otf) format("opentype"),
-  url(https://caixnet.github.io/fonts/Chia.svg#Chia) format("svg");              
+  font-family: 'Chai';                 
+  src: url(https://caixnet.github.io/fonts/Chai.woff) format("woff"),
+  url(https://caixnet.github.io/fonts/Chai.ttf) format("truetype"),
+  url(https://caixnet.github.io/fonts/Chai.otf) format("opentype"),
+  url(https://caixnet.github.io/fonts/Chai.svg#Chai) format("svg");              
   font-style: normal;                 
   }  
 
-.chia {
-font-family: Chia;
+.chai {
+font-family: Chai;
 }
 
 /* Braille Font */

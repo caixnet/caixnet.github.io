@@ -1,16 +1,16 @@
 
-/* Chia Font */
+/* Chai Font */
 @font-face {                 
-  font-family: 'Chia';                 
-  src: url(../fonts/Chia.woff) format("woff"),
-  url(../fonts/Chia.ttf) format("truetype"),
-  url(../fonts/Chia.otf) format("opentype"),
-  url(../fonts/Chia.svg#Chia) format("svg");              
+  font-family: 'Chai';                 
+  src: url(../fonts/Chai.woff) format("woff"),
+  url(../fonts/Chai.ttf) format("truetype"),
+  url(../fonts/Chai.otf) format("opentype"),
+  url(../fonts/Chai.svg#Chai) format("svg");              
   font-style: normal;                 
   }  
 
-.chia {
-font-family: Chia;
+.chai {
+font-family: Chai;
 }
 
 /* Braille Font */
