@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="70">
-<!--  <script type="text/javascript" xlink:href="chai2kr.js"></script> -->
+<!--  <script type="text/javascript" xlink:href="chai2jp.js"></script> -->
+<!-- <?xml-stylesheet  href="../css/custom-style.css" type="text/css" ?> -->
+<defs>
+  <style type="text/css">
+   <![CDATA[
+    @font-face {
+	font-family: 'KeiFont-w';
+	src: url('../fonts/KeiFont.woff') format('woff'),
+	url('../fonts/KeiFont.ttf') format('truetype');
+	}
+	#japaneseID {font-family: 'KeiFont-w';}
+   ]]>
+ </style>
+</defs>
+
 <script type="text/javascript">
 //
 /*
@@ -16,15 +30,62 @@
 * BUILT: 2017/11/23  GMT+8 (BeiJing, China)
 */
 
-var chia2english = {
-    "1":"1", "2":"2", "3":"3", "4":"4", "5":"5",
-    "6":"6", "7":"7", "8":"8", "9":"9", "0":"0",
 
-	"A":"A", "B":"B", "C":"C", "D":"D", "E":"E",
-	"F":"F", "G":"G", "H":"H", "I":"I", "J":"J",
-	"K":"K", "L":"L", "M":"M", "N":"N", "O":"O",
-	"P":"P", "Q":"Q", "R":"R", "S":"S", "T":"T",
-	"U":"U", "V":"V", "W":"W", "X":"X", "Y":"Y", "Z":"Z"
+var chia2japanese  = { 
+"a":"あ", "i":"い", "u":"う", "ie":"え", "o":"お",
+"ka":"か", "ki":"き", "ku":"く", "kie":"け", "ko":"こ",
+"sa":"さ", "si":"し", "su":"す", "sie":"せ", "so":"そ",
+"ta":"た", "ji":"ち","jy":"つ", "tie":"て", "to":"と",
+"na":"な", "ni":"に", "nu":"ぬ", "nie":"ね", "no":"の",
+"ha":"は", "hi":"ひ", "hu":"ふ", "hie":"へ", "ho":"ほ",
+"ma":"ま", "mi":"み", "mu":"む", "mie":"め", "mo":"も",
+"ra":"ら", "ri":"り", "ru":"る", "rie":"れ", "ro":"ろ",
+"ya":"や", "yu":"ゆ", "yo":"よ",   
+"oa":"わ", "lo":"を", "l":"ん",
+"ga":"が", "gi":"ぎ", "gu":"ぐ", "gie":"げ", "go":"ご",
+"za":"ざ", "zi":"じ", "zu":"ず", "zie":"ぜ", "zo":"ぞ",
+"da":"だ", "jhi":"ぢ", "jhy":"づ", "die":"で", "do":"ど",
+"va":"ば", "vi":"び", "vu":"ぶ", "vie":"べ", "vo":"ぼ",
+"pa":"ぱ", "pi":"ぴ", "pu":"ぷ", "pie":"ぺ", "po":"ぽ",
+"kya":"きゃ", "kyu":"きゅ", "kyo":"きょ",
+"gya":"ぎゃ", "gyu":"ぎゅ", "gyo":"ぎょ",
+"sya":"しゃ", "syu":"しゅ", "syo":"しょ",
+"zya":"じゃ", "zyu":"じゅ", "zyo":"じょ",
+"cya":"ちゃ", "cyu":"ちゅ", "cyo":"ちょ",
+"jya":"ぢゃ", "jyu":"ぢゅ", "jyo":"ぢょ",
+"nya":"にゃ", "nyu":"にゅ", "nyo":"にょ",
+"hya":"ひゃ", "hyu":"ひゅ", "hyo":"ひょ",
+"vya":"びゃ", "vyu":"びゅ", "vyo":"びょ",
+"pya":"ぴゃ", "pyu":"ぴゅ", "pyo":"ぴょ",
+"mya":"みゃ", "myu":"みゅ", "myo":"みょ",
+"rya":"りゃ", "ryu":"りゅ", "ryo":"りょ",
+"A":"ア", "I":"イ", "U":"ウ", "IE":"エ", "O":"オ",
+"Ka":"カ", "Ki":"キ", "Ku":"ク", "Kie":"ケ", "Ko":"コ",
+"Sa":"サ", "Si":"シ", "Su":"ス", "Sie":"セ", "So":"ソ",
+"Ta":"タ", "Ji":"チ","Jy":"ツ", "Tie":"テ", "To":"ト",
+"Na":"ナ", "Ni":"ニ", "Nu":"ヌ", "Nie":"ネ", "No":"ノ",
+"Ha":"ハ", "Hi":"ヒ", "Hu":"フ", "Hie":"ヘ", "Ho":"ホ",
+"Ma":"マ", "Mi":"ミ", "Mu":"ム", "Mie":"メ", "Mo":"モ",
+"Ya":"ヤ", "Yu":"ユ", "Yo":"ヨ",
+"Ra":"ラ", "Ri":"リ", "Ru":"ル", "Rie":"レ", "Ro":"ロ",
+"Oa":"ワ", "Lo":"ヲ", "L":"ン",
+"Ga":"ガ", "Gi":")ギ", "Gu":"グ", "Gie":"ゲ", "Go":"ゴ",
+"Za":"ザ", "Zi":"ジ", "Zu":"ズ", "Zie":"ゼ", "Zo":"ゾ",
+"Da":"ダ", "Jhi":"ヂ", "Jhy":"ヅ", "Die":"デ", "Do":"ド",
+"Va":"バ", "Vi":"ビ", "Vu":"ブ", "Vie":"ベ", "Vo":"ボ",
+"Pa":"パ", "Pi":"ピ", "Pu":"プ", "Pie":"ペ", "Po":"ポ",
+"Kya":"キャ", "Kyu":"キュ", "Kyo":"キョ",
+"Gya":"ギャ", "Gyu":"ギュ", "Gyo":"ギョ",
+"Sya":"シャ", "Syu":"シュ", "Syo":"ショ",
+"Zya":"ジャ", "Zyu":"ジュ", "Zyo":"ジョ",
+"Cya":"チャ", "Cyu":"チュ", "Cyo":"チョ",
+"Jya":"ヂャ", "Jyu":"ヂュ", "Jyo":"ヂョ",
+"Nya":"ニャ", "Nyu":"ニュ", "Nyo":"ニョ",
+"Hya":"ヒャ", "Hyu":"ヒュ", "Hyo":"ヒョ",
+"Vya":"ビャ", "Vyu":"ビュ", "Vyo":"ビョ",
+"Pya":"ピャ", "Pyu":"ピュ", "Pyo":"ピョ",
+"Mya":"ミャ", "Myu":"ミュ", "Myo":"ミョ",
+"Rya":"リャ", "Ryu":"リュ", "Ryo":"リョ"
 }
 //
 </script>
@@ -97,8 +158,8 @@ var rect = function(){
 	rect.setAttribute('id','chaiDemo');
 	rect.setAttribute('width','320');
 	rect.setAttribute('height','70');
-	rect.setAttribute('fill','#ccffff');
-	rect.setAttribute('stroke','#ccffff');
+	rect.setAttribute('fill','#ffccff');
+	rect.setAttribute('stroke','#ffffcc');
 	rect.setAttribute('stroke-width','2');
 	rect.setAttribute('rx','7');
 //	rect.setAttribute('href',myWiki);
@@ -128,7 +189,7 @@ var copyright = function(word){
 	svg.appendChild(text);
 	return text;
 }
-copyright("Chai Language & English #2013 by Daway, caixnet@outlook.com");
+copyright("Chai Language & Japanese #2017 by Daway, caixnet@outlook.com");
 // define drawing char font
 var drawChai = function(pathArray,id=0){
 	var path = document.createElementNS(Svg.nx, "path");
@@ -154,11 +215,11 @@ var chai=function(word="0"){
    return svgchai;
    
 }
-// define englishList display
+// define japanese display
 var drawKorean = function(word){
 	var text = document.createElementNS(Svg.nx, 'text');
-	text.setAttribute("id","englishID");
-	text.setAttribute('x', '250');
+	text.setAttribute("id","japaneseID");
+	text.setAttribute('x', '200');
 	text.setAttribute('y', '50');
 	text.setAttribute('fill', '#339900');
 	text.setAttribute("font-size","50");
@@ -177,12 +238,12 @@ var state = {
 }
 // remove resource
 var removeElements = function(svgList,svgHan){
-	var element_en = document.getElementById('englishID');
+	var element_jp = document.getElementById('japaneseID');
 	// remove Korean node
 	try{
-		svg.removeChild(element_en);
+		svg.removeChild(element_jp);
 	} catch (err){
-		//console.log("remveding englishList error :"+err.message);
+		//console.log("remveding japanese error :"+err.message);
 	}
     // remove Chai node
 	for( i = 0; i <= 5; i++){
@@ -198,8 +259,8 @@ var removeElements = function(svgList,svgHan){
 	state.unlock();
 }
 // define demo characters 
-var chaiList = Object.keys(chia2english);
-var englishList = Object.values(chia2english);
+var chaiList = Object.keys(chia2japanese );
+var japaneseList = Object.values(chia2japanese );
 var items = chaiList.length;
 var count = 0;
 var loopID = 0;
@@ -207,7 +268,7 @@ var loopID = 0;
 var demo=function(){
 	
 	var chaiElement = document.getElementById('chaiID');
-	var englishElement = document.getElementById('englishID');
+	var japaneseElement = document.getElementById('jpaneseID');
 
 	if (count >= items){	
 		//clearInterval(loopID);
@@ -215,15 +276,15 @@ var demo=function(){
 	}else {
 		if (state.locked == false && state.closed == false){
 			ch = chai(chaiList[count]);
-			kr = drawKorean(englishList[count]);
+			jp = drawKorean(japaneseList[count]);
 			state.lock();
 		} else if ( state.closed == false && state.locked == true ){
-			//console.log("remove.."+"ch:"+chaiList[count]+",kr:"+englishList[count]);
+			//console.log("remove.."+"ch:"+chaiList[count]+",jp:"+japaneseList[count]);
 			count++;
 			state.close();
-			setTimeout(function(){  removeElements(ch,kr);}, 1000);
+			setTimeout(function(){  removeElements(ch,jp);}, 1000);
 		} else{
-			//console.log("locking... chai:"+chaiList[count]+",english:"+englishList[count])
+			//console.log("locking... chai:"+chaiList[count]+",japanese:"+japaneseList[count])
 		}
 
 	}

@@ -28,8 +28,6 @@ font-family: Braille, sans-serif;
 }
 /* Korean Font */
 
-@charset "utf-8";
-
 @font-face {
   font-family: 'Noto Sans KR';
   src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
@@ -44,4 +42,18 @@ font-family: 'Noto Sans KR', sans-serif;
 
 #koreanID {
 font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+  font-family: 'KeiFont-w';
+  src: url('../fonts/KeiFont.eot');
+  src: url('../fonts/KeiFont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/KeiFont.woff2') format('woff2'),
+  url('../fonts/KeiFont.woff') format('woff'),
+  url('../fonts/KeiFont.ttf') format('truetype');
+  font-weight: 800;
+}
+
+.jp {
+  font-family: 'KeiFont-w', sans-serif;
 }
