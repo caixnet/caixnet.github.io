@@ -1253,7 +1253,7 @@ var forone = {
                 forone.triaCHS.newHTML = forone.triaCHS.textHTML() || ' ';
                 forone.triaCHS.newCSS = forone.triaCHS.textCSS() || ' ';
                 forone.triaCHS.newJS = forone.triaCHS.textJS() || ' ';
-                var chaicss = '\n<link rel="css/chaiforone.css"\n>',
+                var chaicss = '\n<link rel="stylesheet" href="css/chaiforone.css"\n>',
                     bootstrap4css = '\n<link rel="stylesheet" href="css/bootstrap.min.css">\n',
                     jquery321 = '\n<script src="js/jquery-3.2.1.slim.min.js"></script>\n',
                     popper1129 = '\n<script src="js/popper-1.12.9.min.js"></script>\n',
