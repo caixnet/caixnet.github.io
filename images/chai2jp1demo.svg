@@ -11,6 +11,8 @@
 	url('../fonts/KeiFont.ttf') format('truetype');
 	}
 	#japaneseID {font-family: 'KeiFont-w';}
+
+	'MS PGothic', Osaka, Arial, sans-serif;
    ]]>
  </style>
 </defs>

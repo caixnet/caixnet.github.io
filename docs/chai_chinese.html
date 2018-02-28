@@ -1,0 +1,1914 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- chaiforone CSS -->
+<link rel="stylesheet" href="css/chaiforone.css">
+<!-- font-awesome CSS -->
+<link rel="stylesheet" href="css/chnfonts.css">
+
+<!-- begin chai -->
+
+<!--
+作者：蔡光贤(Daway.Cai)
+邮件：caixnet@outlook.com
+链接：https://caixnet.github.io
+来源：github
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+<style>
+        .chia {width:1.4em;color:white;background: green; background: linear-gradient(135deg, transparent 6px, green 0);}
+        .cai{width:1.5em;background: radial-gradient(circle at center center, transparent 15px, #58a 0);background-repeat: no-repeat;background-size: 100% 100%;}
+        </style>
+          <title> Chai ForOne ene</title>
+         </head>
+         <body>
+
+        <div class="container cn">
+        <br />
+        <h2></h2>
+        <h3><span><img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet"></a></span>义符、义言、义语 - 基于田字键盘的符号、言语和语言</h3>
+        <p>本文是阐述了基于田字键盘上的义符号和义符号输入其他语言的方法，以及义符号和易经上的易卦象之间的关系、义符号的发音字母义言来标记多国语言方法和义符和义言来派生字和词的义语方法。</p>
+        <h4>大道易简：蔡氏田字键盘是一种四点一画的手势键盘。</h4> 
+        <ul>
+        <li><b>蔡氏田字键盘的特征：</b> 一个触摸板（外形可圆可方），划分成四个固定区域，其中每个区域有一个可识别的键位区。<br/>
+        <li><b>输入方法: </b>蔡氏田字键盘的输入方法是通过田字键盘的四个键和四个键之间的滑动关系，生成不同编码来输入多种语言和符号及控制键。<br/></li>
+        <li><b>输入范围：</b>输入区域很小，基本上适用于不同大小的输入设备上，包括实体键盘和虚拟键盘。<br/></li>    
+        <li><b>使用范围：</b>移动设备，鼠标键盘，游戏杆，电视遥控器，汽车，智能手表，穿戴式设备，银行等服务行业的查询设备等，特殊领域上适用。<br/></li>   
+        <li><b>使用人群：</b>普通人和视弱人。<br/></li>    
+        <li><b>学习难易度：</b> 30分钟左右就能学习和掌握输入。</li>
+        <li><b>使用平台：</b> 触摸屏或触控板的WEB浏览器，IOS，Android系统，RASPBERRY PI, ARDUINO等设备上。</li>
+        <li><b>键盘结构：</b>键盘结构简单，只有一个触控板和需要识别的四个固定键位区域。
+            <table border=1 >
+                    <tr>
+                        <td align="center">
+                            <table border=1 class="table-primary" style="font-size:1.5em;">
+                                <tr> <td>&nbsp;&nbsp;&nbsp;</td> <td>&nbsp;&nbsp;&nbsp;</td></tr>
+                                <tr><td>&nbsp;&nbsp;&nbsp;</td> <td>&nbsp;&nbsp;&nbsp;</td></tr> 
+                            </table>
+                
+                        </td>
+                        <td>&nbsp;  &nbsp;</td>
+                        <td align="center">
+                            <table border=1 class="table-success" style="font-size:1.5em;">
+                                <tr><td>O</td><td>O</td></tr>
+                                <tr><td>O</td><td>O</td></tr> 
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td>一个田字式触控板底座</td><td></td><td>底座上四个可识别固定键区</td></tr>
+                    <tr align="center"><td colspan=3>打开一扇窗户，走进象数世界</td></tr>
+                
+                </table>
+         <br/>   
+        </li>
+        <li><b>PCT专利：</b>PCT/CN2014/092045 , WIPO:WO2016082081, Patent:2014800745031<br/> </li>
+        <li>
+        <p>   
+        <b>传统QWERT键盘之间区别：</b><br/>
+        
+            <b>与传统键盘之间区别：</b> QWERT键盘为例子，传统键盘十敲打为基本形式输入。<br/>
+            <b>传统键盘分类:</b> 按键盘数量分为，78/84键的笔记本键盘和Z102/104/107键台式机键盘。<br/>
+            <b>传统键盘特征:</b> 按键盘排列的不同位置，定义不同功能的键来输入特定符号编码。<br/>
+            <b>传统键盘本质:</b>QWERT键盘本质上是一种位置语言键盘，一种技术沉淀成一种语言，其生命周期比技术更长远。<br/>
+            在QWERT位置‘语言’键盘的基础上，不同的语言输入需要重新定义各位置键的符号命名,产生不同键位的变形键盘。<br/>
+            <b>传统键盘输入法：</b>特别是象形字为母语的中日韩国家和地区中，产生了上千种的不同的输入法编码方案。
+        </p>
+        </li>
+        <li>
+        <p>
+            <b>九宫格键盘：</b> 跟QWERT键盘的原理相似，敲打为基本形式输入。<br/>
+            <b>键盘分类：</b>分为移动设备的实体键和触摸屏上的虚拟键盘，在输入区域比较有限的设备上使用。<br/>
+            按键是12个主题键，其他功能键来切换补助切换不同的输入类型。一键定义多个符号编码。<br/>
+            <b>使用难易度：</b>相对QWERT键盘输入速度慢，需要按键和选取的两部操作。<br/>
+            </p>
+        </li>
+        <li>
+            <p>
+                <b>特殊键盘：</b>电视遥控器、游戏机摇杆、汽车等遥控设备上输入文字查询，需要有限的左右上下控制键来屏幕上的虚拟键盘中选择，输入体验很差。
+            </p> 
+        </li>
+        <li>
+        <p>
+            <b>与触摸手写板之间区别：</b>手写板是通过，用户输入的轨迹，需要消耗计算机处理资源，通过统计方法比对生成编码输入符号。<br/>
+            不同用户的输入习惯的不同，识别率比传统键盘低。手写板没有传统键盘的固定区域键位的概念。<br/>
+        </p>
+        
+        </li>
+        <li>
+            <p>
+                <b>QWERT手势输入法区别：</b> QWERT手势输入法是基于QWERT的键位基础上，用户通过滑动各个键位的移动轨迹来统计比对和判断，<br>
+            用户想要输入的单词从词库中赛选输入。手势输入的识别率相对差<br/>
+            </p>
+                
+        </li>
+        <li>
+            <p>
+                <b>其他输入：</b>语音识别输入，意念控制输入等新技术，不同使用者和使用环境的局限，现阶段无法代替传统键盘，虽然使用NLP等人工智能技术，有待技术更新。
+            </p>
+        
+        </li>
+        
+        </ul>
+        信息互联的也从互联网、物联网、语义网的方向技术发展和成熟。 
+        <h5>三生万物：蔡氏田字键盘三进制原理和输入方法</h5>
+        信息交互中信息的输入、处理、输出的三个环节是必不可少的, 其中人机交互的输入是一个重要环节。<br/>
+        <p><b>蔡氏田字键盘固定键盘位置的定义：①左上，②右上，③左下，④右下依次4个固定可识别键位。</b></p>
+        <div>
+            <table border=1 style="font-size:1.2em;">
+            
+                    <tr align="center"><td class="table-danger">①</td><td class="table-success">②</td></tr>
+                    <tr align="center"><td class="table-primary">③</td><td class="table-warning">④</td></tr>
+                    <tr align="center"><td colspan=2>田字键盘识别键区位置</td></tr>
+                    <tr align="center"><td colspan=2>①左上，②右上，③左下，④右下</td></tr>
+            </table>
+        </div>
+        
+        <br/>
+        <p>
+            <b>蔡氏田字键盘输入法输入规则：</b></p>
+        <ul>
+            <li>从①左上角键盘起始位开始滑动生成符号编码是文字符号。</li>
+            <li>从②右上角键盘起始位开始滑动生成符号编码是数字符号。</li>
+            <li>从③左下角键盘起始位开始滑动生成符号编码是控制符号。</li>
+            <li>从④右下角键盘起始位开始滑动生成符号编码是标点符号。</li>
+            <li>①左上角键点击一下切换成大写模式(CapsLock mode)。</li>
+            <li>②右上角键点击一下输入空格。</li>
+            <li>③左下角键点击一下切换成控制和配置模式(Command mode)。</li>
+            <li>切换成控制和配置模式(Command mode)下组合其他起始键产生符号编码生成不同控制。</li>
+            <li>④右下角键点击一下输入回车。</li>
+            <li>蔡氏义字符号定义的基本编码以外，用户可自定义输入符号编码。</li>
+            <li>从④右下角键盘起始位开始的控制编码，可切换不同语言的输入。</li>
+        </ul>
+        
+        <p><b>三进制编码原理：</b>左旋，右转，进退</p>
+        <table border=1 style="font-size:1.2em;">
+                
+                <tr align="center"><td class="table-danger">①</td><td class="table-success">→②⥁</td></tr>
+                <tr align="center"><td class="table-primary">↓③⥀</td><td class="table-warning">↘④↖</td></tr>
+                <tr align="center"><td colspan=2>三进制编码O，I，T</td></tr>
+                <tr align="center"><td colspan=2>左旋⥀，右转⥁，对角↘↖</td></tr>
+                <tr align="center"><td colspan=2>Z=[I,O,T]</td></tr>
+        </table>
+        <br/>
+        <p><b>三进制编码定义：</b></p>
+        <ul>
+            <li>定义三进制编码：I，O，T （I=+,O=0,T=-1)。</li>
+            <li>蔡氏田字键盘的四点键盘特征，使每个节点(键盘)，只有三种运动选择。</li>
+            <li>⥁顺时针方向经过下一个节点，定义为三进制编码：I。</li>
+            <li>⥀逆时针方向经过下一个节点，定义为三进制编码：T。</li>
+            <li>⤨对角线方向经过下一个节点，定义为三进制编码：O。</li>
+            <li>在田字键盘上依次经过①②③④键位一画而成，如像英文Z字母的轨迹，产生IOT(+0-)的三进制编码。</li>
+        </ul>
+        
+        <p>蔡氏田字键盘的四个键位经过一画轨迹而产生的符号命名为：三才义(Chai)字符号文字简称《义字》。</p>
+        <b>象数符号编码：二进制符号和三进制符号的区别</b>
+        <ul>
+            <li>二进制象数符号是一维线性符号。</li>
+            <li>三进制象数符号是二维平面符号。</li>
+            <li>二进制一维符号：盲文，易经卦象。</li>
+            <li>三进制一维符号：太玄经的首象。</li>
+            <li>三进制二维符号：三才义字符号(Chai)。</li>
+            <li>三进制象数符号比二进制象数符号，只是多了一个编码，<br/>
+                但是维度上的升级, 使两种符号可识别率和书写方面质的不同。</li>
+            <li>三进制象数符号-义字有几何特征：对称性，旋转性，演变性。</li>
+        </ul>
+        
+        <br/>
+        <p><b>象数符号-易象：东方文化特色的符号</b></p>
+        <!-- http://www.quanxue.cn/QT_MingXiang/Index.html -->
+        易象是易经(书名)的标志性的符号，也是东方文化的一种符号。易象比易经更早产生，上古时期传说人物伏羲氏通过观察和类比的方法创制的。<br/>
+        注：(系辞下传：古者包羲氏之王天下也，仰则观象于天， 俯则观法于地，观鸟兽之文，与地之宜，近取诸身，远取诸物，于是始作八卦，以通神明之德，以类万物之情)。<br/>
+        易经有三个版本：《连三易》，《归藏易》和《周易》。三易的不同之处是《连三易》以艮卦开始，《归藏易》以坤卦开始，《周易》以乾卦开始，前两本失传。<br/>
+        易经有两个学派：象数学派和义理学派。<br/>
+        易经阐述三种方法论：简易，变易，不易。<br/>
+        易经成为焦点成为群经之首是孔子(本名孔丘，约前551年－约前479年)的功劳，之后历代很多学者研读易经和留下了不少笔记。<br/>
+        以下摘录于系辞：<br/>
+        一阴一阳之谓道。<br/>
+        易有太极，是生两仪，两仪生四象，四象生八卦。<br/>
+        天一，地二；天三，地四；天五，地六；天七，地八；天九，地十。(帛书中无此后内容)天数二十有五，地数三十，大衍之数。<br/>
+        八卦成列，象在其中矣；因而重之，爻在其中矣；剛柔相推，變在其中矣；繫辭焉而命之，動在其中矣。<br/>
+        易者，象也，象也者，像也。<br/>
+        乾以易知，坤以简能。易则易知，简则易从。<br/>
+        形而上者谓之道；形而下者谓之器；化而裁之谓之变；推而行之谓之通。 
+        易-颐-象曰：山下有雷，颐。君子以慎言语，节饮食。
+        <br/><br/>
+        
+        什么是易经，易经就像一面心镜，不同人对自己认知世界的边界不一样，有不同的版本解释。<br/>
+        尽信书，则不如无书(《孟子》:尽心章句下)，所以没有必要，盲目听从别人的说释；<br/>
+        孔子问礼于老子，老子曰：“子所言者，其人与骨皆已朽矣，独其言在耳。”。<br/>
+        一种解释对他的世界来说是对的，每个人所处的认知世界不一样，所以借鉴就可以了，因为每个人都不一样的存在，各走自己的路莫施强加。<br/>
+        易经的经文因时代的遥远，当时的人文环境和现代生活环境有差异，有些主题和内容脱离了现代人的生活范畴。<br/>
+        现代人学易的方法：取象舍义，返朴归真，不拘泥于，纹理言辞，穷尽其理，上下变通，易象不神，人赋奇神，忘象得义。<br/>
+        易经的核心是类推方法，跟现代的逻辑推理有很大的差异，一个是归类，另一个是推演；一个是编码，另一个是关系，发现关系使其编码具有意义。<br/>
+        <br/>
+        本文义符号内容是作者蔡光贤原创，著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。<br/>
+        义符号是通过数学方法，按照一定的规律，生成符号编码和关系特征，描述事物的符号。
+        义符号的取《义》字的解释：文中去一，爻上变点，此义非易，意义言语，X定四点，点画取象。<br/>
+        蔡氏三义：义符、义言、义语。
+        <p><b>(Chai)义符特征：</b></p>
+        <ul>
+            <li>蔡氏田字键盘(四象)产生两种类型符号：一画而成的符号和非一画符号。</li>
+            <li>(Chai)义符有25种一共64个不同形态的符号和76种变化。</li>
+            <li>(Chai)义符的4个节点之中，每一个节点为起始点一笔画成象有30个变化。</li>
+            <li>一画而生成的符号有17种一共53个。</li>
+            <li>一画而生成的符号53个可以分类为13种。</li>
+            <li>非一画而生成的符号一共11个。</li> 
+            <li>义符号本身固有几何特性，适合描述事物的状态。</li>
+            <li>义符号关键点固定在田字4个边角上的几何特性，所以符号不会变形和变异，识别率高。</li>
+            <li>义符号的64个符号对应易经的64卦象，从另一种视角认知易学。</li>
+            <li>义符号的64个符号对应布莱尔盲文的64字符编码，另一种盲文的迭代更新。</li>
+            <li>从义符号派生的义文字是它的子集，包含象形，会意，指事，形声，转注，假借等造字方法。</li>
+            <li>虽然蔡氏田字键盘仅仅4个键，6笔画的编码容量就有729个，相比QWERT的102全键盘更多编码容量。</li>
+        </ul>
+        <br/>
+        
+        <h4>三义-义符：</h4>
+        <b>蔡氏义文象数符号：25种类</b>
+        <table border=1 style="font-size:1.2em;">
+                <tr>						
+                    <td>编号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                        <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+                        <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>种类</td>
+                    </tr>
+            <tr class="chai table-primary">						
+                <td>符号</td><td>⢀</td><td>⢉</td><td>⢒</td><td>⢛</td><td>⢤</td><td>⢭</td><td>⢶</td><td>O</td>
+                <td>F</td><td>P</td><td>M</td><td>X</td><td>J</td><td>K</td><td>Q</td><td>A</td>
+                <td>N</td><td>Z</td><td>H</td><td>R</td><td>⢰</td><td>⢆</td><td>I</td><td>G</td><td>C</td><td>合计</td>
+            </tr>
+            <tr>
+                <td>变化</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+                <td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td>
+                <td>2</td><td>2</td><td>2</td><td>2</td><td>4</td><td>2</td><td>2</td><td>4</td><td>4</td><td>64</td>
+            </tr>
+            <tr>
+                    <td>意义</td><td>道</td><td>元</td><td>坎</td><td>对</td><td>叠</td><td>离</td><td>风</td><td>奥</td><td>入</td><td>出</td>
+                    <td>母</td><td>系</td><td>聚</td><td>看</td><td>向</td><td>金</td><td>并</td><td>承</td>
+                    <td>空</td><td>日</td><td>置</td><td>联</td><td>人</td><td>高</td><td>变</td><td></td>
+                </tr>
+            
+        </table>
+        <br/>
+        
+        <b>蔡氏义文象数符号-国际象棋上的可使用表</b>
+          <table border=1 style="font-size:1.5em;">
+                <tr class="chai table-success">						
+                        <td>象棋</td>
+                        <td>&#9812;</td><td>&#9813;</td>
+                        <td>&#9814;</td>
+                        <td>&#9815;</td>
+                        <td>&#9816;</td>
+                        <td>&#9817;</td><td>&#9817;</td><td>&#9817;</td>
+                        <td>&#9817;</td><td>&#9817;</td><td>&#9817;</td><td>&#9817;</td><td>&#9817;</td><td rowspan=2>合计</td>
+                    </tr> 
+              <tr class="chai table-success" align="center">						
+                  <td>义符</td>
+                  <td><div class="cai">R</div></td><td><div class="cai">O</div></td><td><div class="cai">H</div></td><td><div class="cai">F</div></td><td><div class="cai">Q</div></td>
+                  <td><div class="cai">I</div></td><td><div class="cai">N</div></td><td><div class="cai">Z</div></td><td><div class="cai">G</div></td><td><div class="cai">C</div></td><td><div class="cai">X</div></td><td><div class="cai">⢆</div></td><td><div class="cai">⢰</div></td>
+              </tr>
+              <tr class="table-success" align="center">						
+                    <td>数量</td>
+                    <td>1</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td>
+                    <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>16</td>
+                    </tr>   
+            <tr class="chai table-primary">						
+                    <td>象棋</td>
+                    <td>&#9818;</td><td>&#9819;</td>
+                    <td>&#9820;</td>
+                    <td>&#9821;</td>
+                    <td>&#9822;</td>
+                    <td>&#9823;</td><td>&#9823;</td><td>&#9823;</td>
+                    <td>&#9823;</td><td>&#9823;</td><td>&#9823;</td><td>&#9823;</td><td>&#9823;</td><td rowspan=2>合计</td>
+                </tr> 
+                
+                <tr class="chai table-primary" align="center">						
+                        <td>义符</td>
+                        <td><div class="cai">⢒</div></td><td><div class="cai">⢀</div></td><td><div class="cai">M</div></td><td><div class="cai">P</div></td><td><div class="cai">A</div></td>
+                        <td><div class="cai">I</div></td><td><div class="cai">N</div></td><td><div class="cai">Z</div></td><td><div class="cai">G</div></td><td><div class="cai">C</div></td><td><div class="cai">X</div></td><td><div class="cai">⢆</div></td><td><div class="cai">⢰</div></td>
+                    </tr>
+                <tr class="table-primary" align="center">						
+                        <td>数量</td>
+                        <td>1</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td>
+                        <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>16</td>
+                        </tr>
+          </table>
+        <br/>
+        <b>emoji:</b>
+        <table border=1 style="font-size:1.2em;">
+            <tr align="center" >
+                <td>emoji</td><td>😭</td><td>🚛</td><td>🚝</td><td>🚲</td><td>🚕</td>
+                <td>🙏</td><td>🚶</td><td>😆</td><td>😐</td><td>😣</td><td>🚀</td><td>🚫</td>
+                <td>😎</td><td>🚁 </td><td>🙋</td><td>🚩</td><td>🚤</td><td>fish</td><td>fish</td>
+                <td>🚹</td><td>🚺</td><td>🚻</td><td>🚽</td><td>😵</td><td>😲</td><td>😨</td> <td>⛰</td>
+            </tr>
+            <tr align="center" class="chai">
+                <td>Chai</td><td>7oG</td><td>ca</td><td>coa</td><td>oTo</td><td>b⣂a</td>
+                <td>⣇l</td><td>i</td><td>Ku⢟</td><td>lo⣇</td><td>⣇ul</td><td>q⣞</td><td>r</td>
+                <td>o_o</td><td>⢊</td><td>Lo</td><td>p</td><td>bod</td><td>xa</td><td>xoa</td>
+                <td>I</td><td>Y</td><td>⢞I</td><td>6</td><td>eof</td><td>Ro0</td><td>0oR</td><td>A</td>
+            </tr>
+        </table>
+        <br/>
+        <b>蔡氏义字象数符号：一画成型17种类</b>
+        <table border=1 style="font-size:1.2em;">
+                <tr>						
+                    <td>编号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                        <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>种类</td>               
+                    </tr>
+            <tr class="chai table-success">						
+                <td>符号</td><td>O</td>
+                <td>F</td><td>P</td><td>M</td><td>X</td><td>J</td><td>K</td><td>Q</td><td>A</td>
+                <td>N</td><td>Z</td><td>H</td><td>R</td><td>⢆</td><td>I</td><td>G</td><td>C</td><td>合计</td>
+            </tr>
+            <tr>
+                <td>变化</td><td>1</td>
+                <td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td>
+                <td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>4</td><td>4</td><td>53</td>
+            </tr>
+            <tr>
+                <td>意义</td>
+                <td>上</td><td>入</td><td>出</td><td>母</td><td>系</td><td>聚</td><td>看</td><td>向</td>
+                <td>金</td><td>并</td><td>承</td><td>空</td><td>日</td><td>联</td><td>人</td><td>高</td><td>变</td><td></td>
+            </tr>  
+        </table>
+        <br/>
+        <b>蔡氏义字象数符号-东亚象棋上的可使用表</b>
+        <table border=1 style="font-size:1.5em;">
+         
+            <tr class="chai table-success" align="center">
+                    <td>象棋</td><td>帅</td>
+                    <td>车</td><td>象</td><td>马</td><td>炮</td><td>士</td><td>卒</td><td rowspan=2>合计</td>
+                </tr>
+            <tr class="chai table-success" align="center">						
+            <td>符号</td>
+            <td><div class="cai">R</div></td><td><div class="cai">H</div></td><td><div class="cai">F</div></td><td><div class="cai">Q</div></td><td><div class="cai">Z</div></td><td><div class="cai">C</div></td><td><div class="cai">G</div></td>
+            
+            </tr>
+            <tr class="table-success" align="center">						
+                    <td>数量</td>
+                    <td>1</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>5</td><td>16</td>
+                    </tr>
+        <tr class="chai table-primary" align="center">	
+                <td>象棋</td><td>将</td>
+                <td>车</td><td>相</td><td>马</td><td>炮</td><td>仕</td><td>兵</td><td rowspan=2>合计</td>
+            </tr>
+        <tr class="chai table-primary" align="center">	
+            <td>符号</td>
+            <td><div class="cai">O</div></td><td><div class="cai">M</div></td><td><div class="cai">P</div></td><td><div class="cai">A</div></td><td><div class="cai">N</div></td><td><div class="cai">X</div></td><td><div class="cai">J</div></td>
+        </tr>
+        <tr class="table-primary" align="center">						
+                <td>数量</td>
+                <td>1</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>5</td><td>16</td>
+                </tr>
+         
+        </table>
+        
+        <br />
+        <b>蔡氏义字象数符号：同一起始点一笔画成象30个变化</b>
+        <table border=1 style="font-size:1.2em;">
+            <tr>						
+                <td>编号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                    <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+                </tr>
+            <tr class="chai table-info">						
+                <td>符号</td><td>⢆</td><td>P</td><td>H</td><td>M</td><td>D</td><td>Q</td><td>X</td><td>V</td><td>F</td>
+                <td>A</td><td>Y</td><td>U</td><td>N</td><td>L</td><td>R</td><td>G</td><td>Z</td><td>C</td><td>J</td><td>T</td>
+                <td>È</td><td>K</td><td>W</td><td>I</td><td>O</td><td>B</td><td>S</td><td>E</td><td>À</td><td>⢱</td>
+            </tr>
+            <tr>
+                    <td>意义</td><td>阴</td><td>出</td><td>宽</td><td>交</td><td>始</td><td>位</td><td>网</td><td>分</td><td>入</td><td>右</td>
+                    <td>外</td><td>下</td><td>近</td><td>流</td><td>日</td><td>止</td><td>子</td><td>三</td>
+                    <td>聚</td><td>终</td><td>量</td><td>视</td><td>度</td><td>里</td><td>上</td><td>叠</td><td>高</td><td>左</td><td>矢</td><td>阳</td>
+                </tr>
+                
+        </table>
+        <br/>
+        <h5><b>象数的三才模型-(编码)：道生一，一生二，二生三，三生万物。</b></h5>
+        <br/>
+        <b>象数符号世界的对立源素: </b> 阴性(时间,能量,信息)，阳性(空间,质量,对象)。
+        <table border=1 style="font-size:1.2em;">
+            <tr align="center"><td class="chai">ZY</td><td>阴性</td><td class="chai">NI</td><td>阳性</td></tr>
+            <tr align="center" class="table-primary"><td class="chai">S</td><td>时间</td><td class="chai">H</td><td>空间</td></tr>
+            <tr align="center" class="table-success"><td class="chai">R</td><td>能量</td><td class="chai">0</td><td>质量</td></tr>
+            <tr align="center" class="table-info"><td class="chai">I</td><td>信息</td><td class="chai">O</td><td>对象</td></tr>
+        </table>
+        <br/>
+        <h5><b>事物演化三层模型-(关系)：万物负阴而抱阳，冲气以为和。</b></h5><br/>
+        <b>象数符号世界的相互转化:</b>
+        <table border=1 style="font-size:1.2em;">
+            <tr align="center"><td>道</td><td class="chai">WOU</td><td>存在</td><td>三才</td></tr>
+            <tr align="center" class="table-primary"><td>一</td><td class="chai">S*H</td><td>时间*空间</td><td>天</td></tr>
+            <tr align="center" class="table-success"><td>二</td><td class="chai">R*0</td><td>能量*质量</td><td>地</td></tr>
+            <tr align="center" class="table-info"><td>三</td><td class="chai">I*O</td><td>信息*对象</td><td>人</td></tr>
+        </table>
+        <br/>
+        
+        <h5><b>蔡氏三义：义符、义言、义语</b></h5>
+        <table border=1 style="font-size:1.2em;">
+            <tr  class="table-primary"><td>信</td><td>三义</td><td>才</td></tr>
+            <tr  class="table-primary"><td>一</td><td>义符</td><td>形</td></tr>
+            <tr class="table-success"><td>二</td><td>义言</td><td>音</td></tr>
+            <tr class="table-info"><td>三</td><td>义语</td><td>意</td></tr>
+        </table>
+        <br/>
+        义符（形）是以田字键盘上所能生成的象数符号为基础对象的编码系统和变化关系。<br/>
+        义言（音）是以义符基础上的发音系统，包括字母和数字的标记和记录和其他自然语言的发音描述，跟国际音标IPA相同功能，是一种简易版本。(IPA：International Phonetic Alphabet)<br/>
+        义语（意）是义符和义言的基础上按照一定规则产生的字和词，以及相关语法的生成表述信息对象的语义的句子的一种独立语言，包括计算机语言和人造语言，目标是研究如何使用简易而自洽的方法描述虚拟世界和现实世界。<br/>
+        <br/>
+        <h5><b>象数符号世界分化元素: 名可名非恒名</b> </h5><br/>
+        义符的命名上没有使用传统的八卦名称,乾、震、坎、艮、坤、巽、离、兑，而是重新命名了义符名称。<br/>
+        实际上八卦的名称也是抽象的名字，以便于区别具体事物，如天、雷、水、山、地、风、火、泽。<br/>
+        义符的命名按照一定规则方法来生成的，以义言命名的字符为基础，旋转和义符的方位参数结合生成的命名。<br/>
+        <b>象数符号世界交汇元素：一维符号-易象, &nbsp; 二维符号-义符	</b>						
+        <table border=1 style="font-size:1.2em;">
+           
+                <tr align="center" class="chai table-primary">
+                        <td>易象</td><td>☷</td><td>☶</td>
+                            <td>☵</td><td>☴</td>
+                            <td>☳</td><td>☲</td>
+                            <td>☱</td><td>☰</td>
+                    </tr> 
+        
+            <tr align="center" class="chai table-success">
+                    <td>义符</td><td>⢀</td><td>⢤</td>
+                    <td>⢒</td><td>⢶</td>
+                    <td>⢉</td><td>⢭</td>
+                    <td>⢛</td><td>⢿</td>
+            </tr>
+            <tr align="center" class="chai table-info">
+                    <td>Chai</td><td>Wo</td><td>To</td>
+                        <td>Bo</td><td>Qo</td>
+                        <td>Po</td><td>No</td>
+                        <td>Ko</td><td>lO</td>
+                </tr>
+            <tr align="center" class="chai table-info">
+                    <td>汉语</td><td>道</td><td>陶</td>
+                        <td>饱</td><td>诰</td>
+                        <td>跑</td><td>恼</td>
+                        <td>拷</td><td>奥</td>
+                </tr>
+            <tr align="center" class="chai table-info">
+                        <td>にほんご</td><td>ど</td><td>と</td>
+                        <td>ぼ </td><td>ご</td>
+                        <td>ぽ</td><td>の</td>
+                        <td>こ</td><td>お</td>
+            </tr>
+            <tr align="center" class="chai table-info">
+                    <td>한글</td><td>또</td><td>토</td>
+                    <td>뽀</td><td>꼬</td>
+                    <td>포</td><td>노</td>
+                    <td>코</td><td>오</td>
+            </tr>
+            <tr align="center" class="table-info">
+                    <td>English</td><td>dou</td><td>tou</td>
+                    <td>bou</td><td>gou</td>
+                    <td>pou</td><td>nou</td>
+                    <td>kou</td><td>ou</td>
+            </tr>
+            <tr>
+                <td rowspan=3 align="center">模型</td><td class="table-active">信息</td><td>对象</td>
+                <td class="table-active">信息</td><td>对象</td>
+                <td class="table-active">信息</td><td>对象</td>
+                <td class="table-active">信息</td><td>对象</td>
+            </tr>
+            <tr>
+                <td class="table-active" colspan=2 align="center">能量</td>
+                <td colspan=2 align="center">质量</td>
+                <td class="table-active" colspan=2 align="center">能量</td>
+                <td colspan=2 align="center">质量</td>
+            </tr>
+            <tr>
+                <td class="table-active" colspan=4 align="center">时间</td>
+                <td colspan=4 align="center">空间</td>
+            </tr>
+        </table>
+        
+        <br/>
+        <b>日月五行：</b>
+        <table  border=1 style="font-size:1.2em;">
+            <tr align="center" class="chai table-info" ><td>Chai</td> <td>Y</td><td>E</td><td>U</td><td>I</td><td>A</td><td>O</td><td>R</td></tr>
+             <tr align="center"><td>日月五行</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td><td>日</td></tr>
+             <tr align="center" class="table-success"><td>星期</td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td><td>星期六</td><td>星期日</td></tr>
+             <tr align="center" class="table-active"><td>曜日</td><td>月曜日</td><td>火曜日</td><td>水曜日</td><td>木曜日</td><td>金曜日</td><td>土曜日</td><td>日曜日</td></tr>
+             <tr align="center" class="table-light"><td>요일</td><td>월요일</td><td>화요일</td><td>수요일</td><td>목요일</td><td>금요일</td><td>토요일</td><td>일요일</td></tr>
+             <tr align="center" class="table-primary"><td>Week</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</td></tr>
+            <tr align="center"><td>内外方向</td><td>外</td><td>左</td><td>下</td><td>内</td><td>右</td><td>上</td><td>中</td></tr>
+            <tr align="center" class="table-primary"><td>Direction</td><td>out</td><td>left</td><td>down</td><td>in</td><td>right</td><td>up</td><td>among</td></tr>
+              
+        </table>
+        
+        
+        <br/>
+        <h4>三义-义言：</h4>
+        <h5><b>象数符号世界分化元素:化生万物</b></h5>
+        <br/>
+        易象是易经的符号又名卦，一横和折断的横来组成基本符号，叠六组成形一个卦。<br/>
+        易经里一共64个卦象，经文里的排列顺序不是按照二进制的编码升序来安排的。<br/>
+        
+        <b>义符和易象比较表</b>
+        <table >
+            <tr><td>
+                <table name="chai li" class="chai"  border="1" >
+                    <tr><td colspan=9 style="font-size:1.2em;">蔡氏义画符号</td></tr>
+                    <tr class="table-active" style="font-size:1.7em;"><td>&#9775; </td><td> &#9783; </td><td> &#9779;  </td><td>&#9781;</td>
+                        <td>&#9777; </td> <td> &#9782;  </td><td>&#9778;</td>  <td>&#9780;</td><td>&#9776; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9783;</td><td class="table-info"> &#10432; </td><td> &#10433;  </td><td>&#10434;</td><td>&#10435; </td>
+                            <td> &#10436;  </td><td>&#10437;</td>  <td>&#10438;</td><td>&#10439; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9779;</td><td> &#10440; </td><td class="table-info"> &#10441;  </td><td>&#10442;</td><td>&#10443; </td> 
+                        <td> &#10444;  </td><td>&#10445;</td>  <td>&#10446;</td><td>&#10447; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9781;</td><td> &#10448; </td><td> &#10449;  </td><td class="table-info">&#10450;</td><td>&#10451; </td> 
+                        <td> &#10452;  </td><td>&#10453;</td>  <td>&#10454;</td><td>&#10455; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9777;</td><td> &#10456; </td><td> &#10457;  </td><td>&#10458;</td><td class="table-info">&#10459; </td>
+                            <td> &#10460;  </td><td>&#10461;</td>  <td>&#10462;</td><td>&#10463; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9782;</td><td> &#10464; </td><td> &#10465;  </td><td>&#10466;</td><td>&#10467; </td> 
+                        <td class="table-info"> &#10468;  </td><td>&#10469;</td>  <td>&#10470;</td><td>&#10471; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9778;</td><td> &#10472; </td><td> &#10473;  </td><td>&#10474;</td><td>&#10475; </td> 
+                        <td> &#10476;  </td><td class="table-info">&#10477;</td>  <td>&#10478;</td><td>&#10479; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9780;</td><td> &#10480; </td><td> &#10481;  </td><td>&#10482;</td><td>&#10483; </td> 
+                        <td> &#10484;  </td><td>&#10485;</td>  <td class="table-info">&#10486;</td><td>&#10487; </td></tr>
+                    <tr style="font-size:1.7em;"><td class="table-active">&#9776;</td><td> &#10488; </td><td> &#10489;  </td><td>&#10490;</td><td>&#10491; </td> 
+                        <td> &#10492;  </td><td>&#10493;</td>  <td>&#10494;</td><td class="table-info">&#10495; </td></tr>
+                </table>
+            </td>
+            <td>&nbsp;  &nbsp;</td>
+                    <td>
+                    <table name="chai li" class="chai"  border="1">
+                        <tr><td colspan=9 style="font-size:1.2em;">易象六十四卦</td></tr>
+                        <tr class="table-active" style="font-size:1.7em;"><td>&#9775;</td><td> &#9783; </td><td> &#9779;  </td><td>&#9781;</td><td>&#9777; </td> 
+                            <td> &#9782;  </td><td>&#9778;</td>  <td>&#9780;</td><td>&#9776; </td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9783;</td><td class="table-info"> &#19905; </td><td> &#19927; </td><td> &#19910;  </td><td>&#19922;</td>
+                            <td>&#19918; </td> <td> &#19939;  </td><td>&#19949;</td>  <td>&#19914;</td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9779;</td><td> &#19919; </td><td class="table-info">&#19954; </td><td> &#19943; </td><td> &#19957;  </td>
+                            <td>&#19965;</td><td>&#19958; </td> <td> &#19935;  </td><td>&#19937;</td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9781;</td><td> &#19911; </td><td>&#19906; </td><td class="table-info"> &#19932; </td><td> &#19963; </td>
+                            <td> &#19942;  </td><td>&#19966;</td><td>&#19951; </td> <td> &#19908;</td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9777;</td><td> &#19948;</td>  <td>&#19920;</td><td>&#19950; </td><td class="table-info">&#19961; </td>
+                            <td> &#19934; </td><td> &#19952;  </td><td>&#19931;</td><td>&#19946; </td> </tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9782;</td><td> &#19926;  </td><td>&#19930;</td>  <td>&#19907;</td><td>&#19944; </td>
+                            <td class="table-info">&#19955; </td><td > &#19925; </td><td> &#19921;  </td><td>&#19929;</td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9778;</td><td> &#19938; </td> <td> &#19924;  </td><td>&#19967;</td>  <td>&#19941;</td>
+                            <td>&#19959; </td><td class="table-info">&#19933; </td><td > &#19953; </td><td> &#19917;  </td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9780;</td><td>&#19923;</td><td>&#19945; </td> <td> &#19962;  </td><td>&#19964;</td>  
+                            <td>&#19956;</td><td>&#19940; </td><td class="table-info">&#19960; </td><td> &#19912; </td></tr>
+                        <tr style="font-size:1.7em;"><td class="table-active">&#9776;</td><td> &#19915;  </td><td>&#19928;</td><td>&#19909; </td> <td> &#19913;  </td>
+                            <td>&#19936;</td>  <td>&#19916;</td><td>&#19947; </td><td class="table-info"> &#19904; </td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+            
+        <br/>
+        <p>三进制编码才义字符和二进制编码布莱尔盲文字符对照：</p>
+        盲文又名点字或凸字，是专为盲人设计、靠触觉感知的文字。<br/>
+        盲文是由法国盲人路易·布莱尔于1824年创制的，故国际上通称为“布莱尔(Braille)”<br/>
+        盲文: 每个字符由两个排，每排三个凸点位，一共六个点位组成。<br/>
+        各国使用的盲文编码有差异，万国码中使用两排四行形式。<br/>
+        <b>义符和盲文比较表</b>
+        <table>
+            <tr><td>
+                <table name="chai yi" class="chai" border="1">
+                    <tr><td colspan=9 style="font-size:1.2em;">蔡氏义画符号</td></tr>
+                    <tr class="table-active" style="font-size:1.5em;"><td >&#9775;</td><td> &#9783; </td><td> &#9779;  </td><td>&#9781;</td><td>&#9777; </td> <td> &#9782;  </td><td>&#9778;</td>  <td>&#9780;</td><td>&#9776; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9783;</td><td class="table-info"> &#10368; </td><td> &#10369;  </td><td>&#10370;</td><td>&#10371; </td> <td> &#10372;  </td><td>&#10373;</td>  <td>&#10374;</td><td>&#10375; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9779;</td><td> &#10376; </td><td class="table-info"> &#10377;  </td><td>&#10378;</td><td>&#10379; </td> <td> &#10380;  </td><td>&#10381;</td>  <td>&#10382;</td><td>&#10383; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9781;</td><td> &#10384; </td><td> &#10385;  </td><td class="table-info">&#10386;</td><td>&#10387; </td> <td> &#10388;  </td><td>&#10389;</td>  <td>&#10390;</td><td>&#10391; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9777;</td><td> &#10392; </td><td> &#10393;  </td><td>&#10394;</td><td class="table-info">&#10395; </td> <td> &#10396;  </td><td>&#10397;</td>  <td>&#10398;</td><td>&#10399; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9782;</td><td> &#10400; </td><td> &#10401;  </td><td>&#10402;</td><td>&#10403; </td> <td class="table-info"> &#10404;  </td><td>&#10405;</td>  <td>&#10406;</td><td>&#10407; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9778;</td><td> &#10408; </td><td> &#10409;  </td><td>&#10410;</td><td>&#10411; </td> <td> &#10412;  </td><td class="table-info">&#10413;</td>  <td>&#10414;</td><td>&#10415; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9780;</td><td> &#10416; </td><td> &#10417;  </td><td>&#10418;</td><td>&#10419; </td> <td> &#10420;  </td><td>&#10421;</td>  <td class="table-info">&#10422;</td><td>&#10423; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9776;</td><td> &#10424; </td><td> &#10425;  </td><td>&#10426;</td><td>&#10427; </td> <td> &#10428;  </td><td>&#10429;</td>  <td>&#10430;</td ><td class="table-info">&#10431; </td></tr>
+                    </table>
+            </td>
+            <td>&nbsp;  &nbsp;</td>
+            <td>
+                <table name="chai li" class="chai"  border="1">
+                    <tr><td colspan=9 style="font-size:1.2em;">布莱尔盲文符号</td></tr>
+                    <tr class="table-active" style="font-size:1.5em;"><td>&#9775;</td><td> &#9783; </td><td> &#9779;  </td><td>&#9781;</td><td>&#9777; </td> <td> &#9782;  </td><td>&#9778;</td>  <td>&#9780;</td><td>&#9776; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9783;</td><td class="table-info"> &#10240; </td><td> &#10241; </td><td> &#10242;  </td><td>&#10243;</td><td>&#10244; </td> <td> &#10245;  </td><td>&#10246;</td>  <td>&#10247;</td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9779;</td><td> &#10248; </td><td class="table-info">&#10249; </td><td> &#10250; </td><td> &#10251;  </td><td>&#10252;</td><td>&#10253; </td> <td> &#10254;  </td><td>&#10255;</td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9781;</td><td> &#10256; </td><td>&#10257; </td><td class="table-info"> &#10258; </td><td> &#10259; </td><td> &#10260;  </td><td>&#10261;</td><td>&#10262; </td> <td> &#10263;</td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9777;</td><td> &#10264;</td>  <td>&#10265;</td><td>&#10266; </td><td class="table-info">&#10267; </td><td> &#10268; </td><td> &#10269;  </td><td>&#10270;</td><td>&#10271; </td> </tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9782;</td><td> &#10272;  </td><td>&#10273;</td>  <td>&#10274;</td><td>&#10275; </td><td class="table-info">&#10276; </td><td> &#10277; </td><td> &#10278;  </td><td>&#10279;</td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9778;</td><td> &#10280; </td> <td> &#10281;  </td><td>&#10282;</td>  <td>&#10283;</td><td>&#10284; </td><td class="table-info">&#10285; </td><td> &#10286; </td><td> &#10287;  </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9780;</td><td>&#10288;</td><td>&#10289; </td> <td> &#10290;  </td><td>&#10291;</td>  <td>&#10292;</td><td>&#10293; </td><td class="table-info">&#10294; </td><td> &#10295; </td></tr>
+                    <tr style="font-size:1.5em;"><td class="table-active">&#9776;</td><td> &#10296;  </td><td>&#10297;</td><td>&#10298; </td> <td> &#10299;  </td><td>&#10300;</td>  <td>&#10301;</td><td>&#10302; </td><td class="table-info"> &#10303; </td></tr>
+                    </table>
+            </td>
+            </tr>
+        </table>
+        
+        <br/>
+            <b>才义名分类方位：</b>
+        <table style="font-size:1.5em;" >
+            <tr>
+                <td>
+                    <table class="chai table-light" border=1 >						
+                        <tr><td>⢀</td><td>⢉</td><td>⢒</td></tr>
+                        <tr><td>⢛</td><td>☷</td><td>⢤</td></tr>
+                        <tr><td>⢭</td><td>⢶</td><td>⢿</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="chai table-active" border=1>						
+                        <tr><td>⢈</td><td>⢁</td><td>⢊</td></tr>
+                        <tr><td>⢋</td><td>☳</td><td>⢌</td></tr>
+                        <tr><td>⢍</td><td>⢎</td><td>⢏</td></tr>
+                    </table>
+        
+                </td>
+                <td> 							
+                    <table class="chai table-success" border=1>						
+                        <tr><td>⢐</td><td>⢑</td><td>⢂</td></tr>
+                        <tr><td>⢓</td><td>☵</td><td>⢔</td></tr>
+                        <tr><td>⢕</td><td>⢖</td><td>⢗</td></tr> 
+                    </table>
+                </td>
+        
+                <td>
+                    <table class="chai table-info" border=1>	
+                        <tr><td>⢘</td><td>⢙</td><td>⢚</td></tr>
+                        <tr><td>⢃</td><td>☱</td><td>⢜</td></tr>
+                        <tr><td>⢝</td><td>⢞</td><td>⢟</td></tr>					
+        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="chai table-warning" border=1>						
+                        <tr><td>⢠</td><td>⢡</td><td>⢢</td></tr>
+                        <tr><td>⢣</td><td>☶</td><td>⢄</td></tr>
+                        <tr><td>⢥</td><td>⢦</td><td>⢧</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td>
+                    <table class="chai table-danger" border=1>						
+                        <tr><td>⢨</td><td>⢩</td><td>⢪</td></tr>
+                        <tr><td>⢫</td><td>☲</td><td>⢬</td></tr>
+                        <tr><td>⢅</td><td>⢮</td><td>⢯</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td> 								
+                    <table class="chai table-secondary" border=1>						
+                        <tr><td>⢰</td><td>⢱</td><td>⢲</td></tr>
+                        <tr><td>⢳</td><td>☴</td><td>⢴</td></tr>
+                        <tr><td>⢵</td><td>⢆</td><td>⢷</td></tr>
+                    </table>
+                </td>
+                <td> 								
+                    <table class="chai table-primary" border=1>						
+                        <tr><td>⢸</td><td>⢹</td><td>⢺</td></tr>
+                        <tr><td>⢻</td><td>☰</td><td>⢼</td></tr>
+                        <tr><td>⢽</td><td>⢾</td><td>⢇</td></tr>
+                    </table>
+        
+                </td>
+            </tr>
+        </table>
+        
+        <br/>
+        <b>才义名分类方位：</b>
+            
+        <table style="font-size:1.5em;">
+            <tr>
+                <td>
+                    <table class="chai table-light" border=1 >						
+                        <tr><td>WO</td><td>PO</td><td>BO</td></tr>
+                        <tr align="center"><td>KO</td><td>☷</td><td>TO</td></tr>
+                        <tr><td>NO</td><td>QO</td><td>LO</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="chai table-active" border=1>						
+                        <tr><td>FY</td><td>PU</td><td>IE</td></tr>
+                        <tr align="center"><td>LE</td><td>☳</td><td>PE</td></tr>
+                        <tr><td>FE</td><td>PY</td><td>FU</td></tr>
+                    </table>
+        
+                </td>
+                <td> 							
+                    <table class="chai table-success" border=1>						
+                        <tr><td>MY</td><td>WU</td><td>BU</td></tr>
+                        <tr align="center"><td>XU</td><td>☵</td><td>XY</td></tr>
+                        <tr><td>BY</td><td>WY</td><td>MU</td></tr> 
+                    </table>
+                </td>
+        
+                <td>
+                    <table class="chai table-info" border=1>	
+                        <tr><td>JY</td><td>LY</td><td>VY</td></tr>
+                        <tr align="center"><td>KY</td><td>☱</td><td>KU</td></tr>
+                        <tr><td>VU</td><td>YU</td><td>JU</td></tr>					
+        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="chai table-warning" border=1>						
+                        <tr><td>QY</td><td>DY</td><td>LÒ</td></tr>
+                        <tr align="center"><td>LA</td><td>☶</td><td>TY</td></tr>
+                        <tr><td>LÙ</td><td>DU</td><td>IA</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td>
+                    <table class="chai table-danger" border=1>						
+                        <tr><td>NY</td><td>HY</td><td>ZA</td></tr>
+                        <tr align="center"><td>RA</td><td>☲</td><td>RY</td></tr>
+                        <tr><td>NE</td><td>SY</td><td>ZY</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td> 								
+                    <table class="chai table-secondary" border=1>						
+                        <tr><td>QI</td><td>QÀ</td><td>QA</td></tr>
+                        <tr align="center"><td>LI</td><td>☴</td><td>I</td></tr>
+                        <tr><td>QE</td><td>QÈ</td><td>QU</td></tr>
+                    </table>
+                </td>
+                <td> 								
+                    <table class="chai table-primary" border=1>						
+                        <tr><td>GE</td><td>CE</td><td>GY</td></tr>
+                        <tr align="center"><td>CU</td><td>☰</td><td>CY</td></tr>
+                        <tr><td>LY</td><td>LU</td><td>GA</td></tr>
+                    </table>
+        
+                </td>
+            </tr>
+        </table>
+        
+                <br/>
+        <b>才义字符方位:</b>
+            
+        <table style="font-size:1.5em;">
+            <tr>
+                <td>
+                    <table class="chai table-light" border=1>						
+                        <tr><td>⢀</td><td>⢁</td><td>⢂</td></tr>
+                        <tr><td>⢃</td><td>☷</td><td>⢄</td></tr>
+                        <tr><td>⢅</td><td>⢆</td><td>⢇</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="chai table-active" border=1>						
+                        <tr><td>⢈</td><td>⢉</td><td>⢊</td></tr>
+                        <tr><td>⢋</td><td>☳</td><td>⢌</td></tr>
+                        <tr><td>⢍</td><td>⢎</td><td>⢏</td></tr>
+                    </table>
+        
+                </td>
+                <td> 							
+                    <table class="chai table-success" border=1>						
+                        <tr><td>⢐</td><td>⢑</td><td>⢒</td></tr>
+                        <tr><td>⢓</td><td>☵</td><td>⢔</td></tr>
+                        <tr><td>⢕</td><td>⢖</td><td>⢗</td></tr> 
+                    </table>
+                </td>
+        
+                <td>
+                    <table class="chai table-info" border=1>	
+                        <tr><td>⢘</td><td>⢙</td><td>⢚</td></tr>
+                        <tr><td>⢛</td><td>☱</td><td>⢜</td></tr>
+                        <tr><td>⢝</td><td>⢞</td><td>⢟</td></tr>					
+        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="chai table-warning" border=1>						
+                        <tr><td>⢠</td><td>⢡</td><td>⢢</td></tr>
+                        <tr><td>⢣</td><td>☶</td><td>⢤</td></tr>
+                        <tr><td>⢥</td><td>⢦</td><td>⢧</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td>
+                    <table class="chai table-danger" border=1>						
+                        <tr><td>⢨</td><td>⢩</td><td>⢪</td></tr>
+                        <tr><td>⢫</td><td>☲</td><td>⢬</td></tr>
+                        <tr><td>⢭</td><td>⢮</td><td>⢯</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td> 								
+                    <table class="chai table-secondary" border=1>						
+                        <tr><td>⢰</td><td>⢱</td><td>⢲</td></tr>
+                        <tr><td>⢳</td><td>☴</td><td>⢴</td></tr>
+                        <tr><td>⢵</td><td>⢶</td><td>⢷</td></tr>
+                    </table>
+                </td>
+                <td> 								
+                    <table class="chai table-primary" border=1>						
+                        <tr><td>⢸</td><td>⢹</td><td>⢺</td></tr>
+                        <tr><td>⢻</td><td>☰</td><td>⢼</td></tr>
+                        <tr><td>⢽</td><td>⢾</td><td>⢿</td></tr>
+                    </table>
+        
+                </td>
+            </tr>
+        </table>
+        
+        
+        <br/>
+        <b>才义名分类方位：</b>
+        
+        <table style="font-size:1.5em;">
+            <tr>
+                <td>
+                    <table class="chai table-light" border=1 >						
+                        <tr><td>WO</td><td>PU</td><td>BU</td></tr>
+                        <tr align="center"><td>KY</td><td>☷</td><td>TY</td></tr>
+                        <tr><td>NE</td><td>QÈ</td><td>GA</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="chai table-active" border=1>						
+                        <tr><td>FY</td><td>PO</td><td>IE</td></tr>
+                        <tr align="center"><td>LE</td><td>☳</td><td>PE</td></tr>
+                        <tr><td>FE</td><td>PY</td><td>FU</td></tr>
+                    </table>
+        
+                </td>
+                <td> 							
+                    <table class="chai table-success" border=1>						
+                        <tr><td>MY</td><td>WU</td><td>BO</td></tr>
+                        <tr align="center"><td>XU</td><td>☵</td><td>XY</td></tr>
+                        <tr><td>BY</td><td>WY</td><td>MU</td></tr> 
+                    </table>
+                </td>
+        
+                <td>
+                    <table class="chai table-info" border=1>	
+                        <tr><td>JY</td><td>LY</td><td>VY</td></tr>
+                        <tr align="center"><td>KO</td><td>☱</td><td>KU</td></tr>
+                        <tr><td>VU</td><td>YU</td><td>JU</td></tr>					
+        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="chai table-warning" border=1>						
+                        <tr><td>QY</td><td>DY</td><td>LÒ</td></tr>
+                        <tr align="center"><td>LA</td><td>☶</td><td>TO</td></tr>
+                        <tr><td>LÙ</td><td>DU</td><td>IA</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td>
+                    <table class="chai table-danger" border=1>						
+                        <tr><td>NY</td><td>HY</td><td>ZA</td></tr>
+                        <tr align="center"><td>RA</td><td>☲</td><td>RY</td></tr>
+                        <tr><td>NO</td><td>SY</td><td>ZY</td></tr>
+                    </table>
+                                                    
+                </td>
+                <td> 								
+                    <table class="chai table-secondary" border=1>						
+                        <tr><td>QI</td><td>QÀ</td><td>QA</td></tr>
+                        <tr align="center"><td>LI</td><td>☴</td><td>I</td></tr>
+                        <tr><td>QE</td><td>QO</td><td>QU</td></tr>
+                    </table>
+                </td>
+                <td> 								
+                    <table class="chai table-primary" border=1>						
+                        <tr><td>GE</td><td>CE</td><td>GY</td></tr>
+                        <tr align="center"><td>CU</td><td>☰</td><td>CY</td></tr>
+                        <tr><td>LY</td><td>LU</td><td>LO</td></tr>
+                    </table>
+        
+                </td>
+            </tr>
+        </table>
+        
+        
+        <br/>
+        <h5>上善若水：<span class="chai">⢒</span>+53蔡氏义画符号分类应用</b></h5>
+        
+        <b>蔡氏义画盲文阅读卡片制作方法：</b>
+        <ul>
+            <li>材质：多米诺骨牌或纸牌。</li>
+            <li>处理：<span class="chai chia" >&nbsp; Chia&nbsp;</span>多米诺骨牌或纸牌的一个边角切除，目的是缺角的唯一性来方便帮助确定字符方向和正反面。</li>
+            <li>雕刻：义画符号刻写在多米诺骨牌或涂写在纸牌上，目的是要有可识别的凹凸触摸感。</li>
+        </ul>
+        <b>蔡氏义画盲文练习扑克牌：特征是缺一角的牌面。</li></b><br/>
+        <table border=2 style="font-size:1.5em;">
+            <tr align="center"><td></td><td>-</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                <td>7</td><td>8</td><td>9</td><td>0</td><td>J</td><td>Q</td><td>K</td><td>&#128196;</td></tr>
+            <tr align="center" class="chai table-primary"><td class="chai table-danger">&#9824;</td><td rowspan=2 ><div class="chia">⢒</div></td><td ><div class="chia">1</div></td><td><div class="chia">2</div></td><td><div class="chia">3</div></td><td><div class="chia">4</div></td><td><div class="chia">T</div></td><td><div class="chia">6</div></td>
+                <td><div class="chia">7</div></td><td><div class="chia">8</div></td><td><div class="chia">⢊</div></td><td><div class="chia">0</div></td><td><div class="chia">⢟</div></td><td><div class="chia">⢢</div></td><td><div class="chia">⢂</div></td><td>&#9824;</td></tr>
+            <tr align="center" class="chai table-danger"><td>&#9826;</td><td ><div class="chia">I</div></td><td><div class="chia">N</div></td><td><div class="chia">U</div></td><td><div class="chia">Y</div></td><td><div class="chia">D</div></td><td><div class="chia">E</div></td>
+                <td><div class="chia">L</div></td><td><div class="chia">W</div></td><td><div class="chia">F</div></td><td><div class="chia">R</div></td><td><div class="chia">V</div></td><td><div class="chia">Q</div></td><td><div class="chia">M</div></td><td >&#9826;</td></tr>
+            <tr align="center" class="chai table-success"> <td >&#9827;</td><td rowspan=2 ><div class="chia">O</div></td><td><div class="chia">⢱</div></td><td><div class="chia">⢪</div></td><td><div class="chia">C</div></td><td><div class="chia">K</div></td><td><div class="chia">A</div></td><td><div class="chia">P</div></td><td><div class="chia">⢇</div></td>
+                <td><div class="chia">X</div></td><td><div class="chia">⢍</div></td><td><div class="chia">S</div></td><td><div class="chia">J</div></td><td><div class="chia">⢥</div></td><td><div class="chia">B</div></td><td >&#9827;</td></tr>
+            <tr align="center" class="chai table-warning"><td>&#9828;</td><td><div class="chia">⢆</div></td><td><div class="chia">Z</div></td><td><div class="chia">⢹</div></td><td><div class="chia">⢞</div></td><td><div class="chia">5</div></td><td><div class="chia">⢌</div></td><td><div class="chia">G</div></td>
+                <td><div class="chia">⢑</div></td><td><div class="chia">9</div></td><td><div class="chia">H</div></td><td><div class="chia">⢝</div></td><td><div class="chia">⢧</div></td><td><div class="chia">⢗</div></td><td >&#9828;</td></tr>
+        </table>
+        <br/>
+        <b>蔡氏义画盲文数字和字母表: 练习卡片<span class="chai chia">&nbsp; Chia &nbsp;</span></b>
+        <table border=1 style="font-size:1.5em;">
+                <tr class="table-primary" align="center">
+                        <td>Number</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                </tr>
+                <tr class="chai table-success" align="center">
+                        <td>Chia</td><td><div class="chia">0</div></td><td><div class="chia">1</div></td><td><div class="chia">2</div></td><td><div class="chia">3</div></td><td><div class="chia">4</div></td><td><div class="chia">5</div></td><td><div class="chia">6</div></td><td><div class="chia">7</div></td><td><div class="chia">8</div></td><td><div class="chia">9</div></td>
+                </tr>
+                <tr class="table-primary" align="center"> 
+                        <td >Chracter</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td>
+                        <td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td><td></td><td>È </td><td>À</td> 
+                </tr>
+                <tr class="chai table-primary" align="center" >
+                      
+                        <td >Chia</td><td><div class="chia">A</div></td><td><div class="chia">B</div></td><td><div class="chia">C</div></td><td><div class="chia">D</div></td><td><div class="chia">E</div></td><td><div class="chia">F</div></td><td><div class="chia">G</div></td><td><div class="chia">H</div></td><td><div class="chia">I</div></td><td><div class="chia">J</div></td><td><div class="chia">K</div></td><td><div class="chia">L</div></td><td><div class="chia">M</div></td><td><div class="chia">N</div></td><td><div class="chia">O</div></td>
+                        <td><div class="chia">P</div></td><td><div class="chia">Q</div></td><td><div class="chia">R</div></td><td><div class="chia">S</div></td><td><div class="chia">T</div></td><td><div class="chia">U</div></td><td><div class="chia">V</div></td><td><div class="chia">W</div></td><td><div class="chia">X</div></td><td><div class="chia">Y</div></td><td><div class="chia">Z</div></td><td></td><td><div class="chia">È </div></td><td><div class="chia">À</div></td>
+                </tr>      
+            </table>
+        
+        <br/>
+        <b>蔡氏义字数字符号：</b><br/>
+        义语数字：<span class="chai">01234567890</span> 与传统盲文、国际通用数字和印度，阿拉伯数字之间的比较；<br/>
+        用义语数字和中、日、韩发音标记。
+        <table border=1 style="font-size:1.5em;">
+            <tr class="chai table-success">
+                <td>Chai</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+            </tr>
+            <tr class="chai table-warning">
+                <td style="font-family:courier">Braille</td><td>⠚</td><td>⠁</td><td>⠃</td><td>⠉</td><td>⠲</td><td>⠑</td><td>⠋</td><td>⠛</td><td>⠓</td><td>⠊</td>
+            </tr>
+            <tr chai class="table-primary">
+                <td>number</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+            </tr>
+            <tr chai class="table-primary">
+                <td>हिंदी</td><td>०</td><td>१</td><td>२</td><td>३</td><td>४</td><td>५</td><td>६</td><td>७</td><td>८</td><td>९</td>
+            </tr>
+            <tr chai class="table-primary">
+                <td>العربية</td><td>٠</td><td>١</td><td>٢</td><td>٣</td><td>٤</td><td>٥</td><td>٦</td><td>٧</td><td>٨</td><td>٩</td>
+            </tr>
+            
+            <tr class="chai table-info">
+                <td>Chai</td><td >ro</td><td>li</td><td>na</td><td>cu</td><td>ku</td><td>du</td><td>pu</td><td>ge</td><td>xu</td><td>fu</td>
+            </tr>
+            <tr class="table-danger">
+                    <td >汉语</td><td>老</td><td>义</td><td>呐</td><td>出</td><td>苦</td><td>独</td><td>普</td><td>歌</td><td>束</td><td>福</td>
+                    </tr>
+            <tr class="table-active">
+                    <td >にほんご</td><td>ろ</td><td>い</td><td>な</td><td>つ</td><td>く</td><td>づ</td><td>ぷ</td><td>げ</td><td>す</td><td>ぶ</td>
+                    </tr>
+            <tr class="table-light">
+                <td >한글</td><td>로</td><td>이</td><td>나</td><td>추</td><td>쿠</td><td>두</td><td>푸</td><td>거</td><td>쑤</td><td>부</td>
+            </tr>
+        </table>
+        <br/>
+        <b>蔡氏义语字母符号：</b><br/>
+        <b>义语辅音发音：</b>按照辅音的声音相似归类，以音阶中的7个基本音级分类辅音顺序，<br/>
+        do[<span class="chai">d,w,t</span>],re[<span class="chai">r,n</span>],mi[<span class="chai">m,l,h</span>],
+        fa[<span class="chai">v,b,p,f</span>],sol[<span class="chai">s,x</span>],la[<span class="chai">g,q,k</span>],
+        si(<span class="chai">z,j,c</span>) <br/>
+        <b>义语元音发音：</b>分三类，其中一组是结合音（0组）跟其他两组元音结合成独立元音，<br/>
+        8组[<span class="chai">o,u</span>],9组[<span class="chai">e,a</span>],0组[<span class="chai">y,i</span>];
+        80组[<span class="chai">yo,yu</span>],90组[<span class="chai">ye,ya</span>],09组[<span class="chai">ie,ia</span>]<br/>
+        列出义语字母梵音相互对应的相似发音的多国语言比较，盲文、英文、汉字、注音、日文、韩文、阿拉伯语、梵文、俄语；在蔡氏田字键盘上，输入多国语言时参考。
+        <table border="1" style="font-size:1.5em;">
+              <tr align="center">
+                        <td>字母</td><td colspan=7 class="table-primary">辅音</td><td></td><td colspan=3 class="table-success" >元音</td></tr>
+              <tr align="center">
+                <td>音序</td><td class="table-primary">1</td><td class="table-primary">2</td><td class="table-primary">3</td>
+                <td class="table-primary">4</td>
+                <td class="table-primary">5</td><td class="table-primary">6</td><td class="table-primary">7</td>
+                <td></td><td class="table-success">8</td><td  class="table-success">9</td><td  class="table-success">0</td></tr>
+              <tr class="chai table-info" align="center"><td rowspan=4>Chai</td><td>d</td><td>r</td><td>m</td><td>v</td><td>s</td><td>g</td><td>z</td> <td></td> <td>o</td><td>e</td><td>y</td></tr>
+              <tr class="chai table-info" align="center"><td>w</td><td>n</td><td>l</td><td>b</td><td>x</td><td>q</td><td>j</td> <td></td><td>u</td><td>a</td><td>i</td></tr>
+              <tr class="chai table-info" align="center"><td>t</td><td></td><td>h</td><td>p</td><td></td><td>k</td><td>c</td> <td></td><td>yo</td><td>ye</td><td>ie</td></tr>
+              <tr class="chai table-info" align="center"><td></td><td></td><td></td><td>f</td><td></td><td></td><td></td> <td></td><td>yu</td><td>ya</td><td>ia</td></tr>
+        
+              <tr class="chai table-warning" align="center"><td rowspan=4 style="font-family:courier">Braille</td><td >⠲</td><td>⠗</td><td>⠍</td><td>⠧</td><td>⠎</td><td>⠛</td><td>⠵</td> <td></td><td>⠕</td><td>⠑</td><td>⠽</td></tr>
+              <tr class="chai table-warning" align="center"><td>⠺</td><td>⠝</td><td>⠇</td><td>⠃</td><td>⠭</td><td>⠟</td><td>⠚</td> <td></td> <td>⠥</td><td>⠁</td><td>⠊</td></tr>
+              <tr class="chai table-warning" align="center"><td>⠞</td><td></td><td>⠓</td><td>⠏</td><td></td><td>⠅</td><td>⠉</td> <td></td><td>yo</td><td>ye</td><td>ie</td></tr>
+              <tr class="chai table-warning" align="center"><td></td><td></td><td></td><td>⠋</td><td></td><td></td><td></td> <td></td><td>yu</td><td>ya</td><td>ia</td></tr>
+              
+              <tr class="table-primary" align="center"><td rowspan=4>English</td><td >d</td><td>r</td><td>m</td><td>v</td><td>s</td><td>g</td><td>z</td> <td></td><td>o</td><td>e</td><td>y</td></tr>
+              <tr class="table-primary" align="center"><td>w</td><td>n</td><td>l</td><td>b</td><td>x</td><td>q</td><td>j</td> <td></td><td>u</td><td>a</td><td>i</td></tr>
+              <tr class="table-primary" align="center"><td>t</td><td></td><td>h</td><td>p</td><td></td><td>k</td><td>c</td> <td></td><td>yo</td><td>ye</td><td>ie</td></td></tr>
+              <tr class="table-primary" align="center"><td></td><td></td><td></td><td>f</td><td></td><td></td><td></td> <td></td><td>yu</td><td>ya</td><td>ia</td></tr>
+        
+              <tr class="table-danger" align="center"><td rowspan=4>汉字</td><td>的</td><td>日</td><td>母</td><td>补</td><td>丝</td><td>歌</td><td>之</td> <td></td><td>奥</td><td>鹅</td><td>一</td></tr>
+              <tr class="table-danger" align="center"><td>大</td><td>呢</td><td>宏</td><td>不</td><td>束</td><td>尬</td><td>扎</td> <td></td><td>吴</td><td>啊</td><td>义</td></tr>
+              <tr class="table-danger" align="center"><td>特</td><td></td><td>合</td><td>坡</td><td></td><td>克</td><td>车</td> <td></td><td>要</td><td></td><td>野</td></td></tr>
+              <tr class="table-danger" align="center"><td></td><td></td><td></td><td>佛</td><td></td><td></td><td></td> <td></td><td>有</td><td>呀</td><td>言</td></tr>
+        
+              <tr class="table-secondary" align="center"><td rowspan=4>注音</td><td >ㄉ</td><td>ㄖ</td><td>ㄇ</td><td>ㄅ</td><td>ㄕ</td><td>ㄍ</td><td>ㄓ</td> <td></td><td>ㄠ</td><td>ㄜ</td><td>ㄧ</td></tr>
+              <tr class="table-secondary" align="center"><td>ㄉ'</td><td>ㄋ</td><td>ㄥ</td><td>ㄅ'</td><td>ㄙ</td><td>ㄍ'</td><td>ㄗ</td> <td></td><td>ㄨ</td><td>ㄚ</td><td>丨</td></tr>
+              <tr class="table-secondary" align="center"><td>ㄊ</td><td></td><td>ㄏ</td><td>ㄆ</td><td></td><td>ㄎ</td><td>ㄘ</td> <td></td><td>丨ㄛ</td><td></td><td>丨ㄝ</td></tr>
+              <tr class="table-secondary" align="center"><td></td><td></td><td></td><td>ㄈ</td><td></td><td></td><td></td> <td></td><td>丨ㄡ</td><td>丨ㄚ</td><td>丨ㄢ</td></tr>
+        
+              <tr class="table-active" align="center"><td rowspan=4>にほんご</td><td>だ</td><td>り</td><td>み</td><td>ば</td><td>さ</td><td>が</td><td>ざ</td> <td></td><td>お</td><td></td><td></td></tr>
+              <tr class="table-active" align="center"><td>ぢ</td><td>に</td><td>ん</td><td>び</td><td>し</td><td>ぎ</td><td>ヂ</td> <td></td><td>う</td><td>あ</td><td>い</td></tr>
+              <tr class="table-active" align="center"><td>て</td><td></td><td>ひ</td><td>ぴ</td><td></td><td>き</td><td>ち</td> <td></td><td>よ</td><td></td><td>え</td></tr>
+              <tr class="table-active" align="center"><td></td><td></td><td></td><td>フ</td><td></td><td></td><td></td> <td></td><td>ゆ</td><td>や</td><td></td></tr>
+        
+              <tr class="table-light" align="center"><td rowspan=4>한글</td><td>ㄷ</td><td>ㄹ</td><td>ㅁ</td><td>ㅂ</td><td>ㅅ</td><td>ㄱ</td><td>ㅈ</td> <td></td><td>ㅗ</td><td>ㅓ</td><td>ㅡ</td></tr>
+              <tr class="table-light" align="center"><td>ㄸ</td><td>ㄴ</td><td>ㅇ</td><td>ㅃ</td><td>ㅆ</td><td>ㄲ</td><td>ㅉ</td> <td></td><td>ㅜ</td><td>ㅏ</td><td>ㅣ</td></tr>
+              <tr class="table-light" align="center"><td>ㅌ</td><td></td><td>ㅎ</td><td>ㅍ</td><td></td><td>ㅋ</td><td>ㅊ</td> <td></td><td>ㅛ</td><td>ㅕ</td><td>ㅔ</td></tr>
+              <tr class="table-light" align="center"><td></td><td></td><td></td><td>ㅥ</td><td></td><td></td><td></td> <td></td><td>ㅠ</td><td>ㅑ</td><td>ㅐ</td></tr>
+        
+              <tr class="table-success" align="center"><td rowspan=4>العَرَبِيَّة‎</td><td>د</td><td>ر</td><td>م</td><td>ذ</td><td>س</td><td>غ</td><td>ظ</td> <td></td><td>ع</td><td>ا</td><td>ي</td></tr>
+              <tr class="table-success" align="center"><td>ذ</td><td>ن</td><td>ع</td><td>ب</td><td>ش</td><td>ق</td><td>ج</td> <td></td><td>ــــُــ</td><td>ـــَــ</td><td>ـــِـــ</td></tr>
+              <tr class="table-success" align="center"><td>ت</td><td></td><td>ح</td><td>ض</td><td></td><td>ك</td><td>ث</td> <td></td><td>يو</td><td></td><td>اي</td></tr>
+              <tr class="table-success" align="center"><td></td><td></td><td></td><td>ف</td><td></td><td></td><td></td> <td></td><td></td><td>يا</td><td></td></tr>
+         
+              <tr class="table-warning" align="center"><td rowspan=4>हिंदी</td><td>द</td><td>र </td><td>म</td><td>व</td><td>स </td><td>ग </td><td>झ </td> <td></td><td>ऊ</td><td> </td><td>य</td></tr>
+              <tr class="table-warning" align="center"><td>ध </td><td>न</td><td>ल</td><td>ब </td><td>शख़</td><td>घ</td><td>ज</td> <td></td><td>उ </td><td>अ</td><td>इ</td></tr>
+              <tr class="table-warning" align="center"><td>त</td><td></td><td>ह</td><td>प</td><td></td><td>क</td><td>छ्</td> <td></td><td></td><td></td><td>ए</td></tr>
+              <tr class="table-warning" align="center"><td></td><td></td><td></td><td>फ</td><td></td><td></td><td></td> <td></td><td></td><td></td><td></td></tr>
+        
+              <tr class="table-danger" align="center"><td rowspan=4>русский</td><td> д</td><td>р</td><td>м</td><td>в</td><td>щ</td><td> г</td><td>з </td> <td></td><td>о </td><td>з</td><td>ы</td></tr>
+              <tr class="table-danger" align="center"><td>тˈ</td><td>н </td><td>л</td><td>б</td><td>с</td><td>г'</td><td>ж</td> <td></td><td>у </td><td>а</td><td>	и</td></tr>
+              <tr class="table-danger" align="center"><td>т</td><td></td><td>х</td><td>п</td><td></td><td>к</td><td>ч </td> <td></td><td>ë</td><td>е</td><td>z </td></tr>
+              <tr class="table-danger" align="center"><td></td><td></td><td></td><td>Ф</td><td></td><td></td><td></td> <td></td><td>ю</td><td>я </td><td>э </td></tr>
+        
+          </table>
+        
+        <br/>
+        
+        <h5><b>Chai 符号的发音:</b></h5>
+         <P>音-字-词</P>(韩语音标标注)
+         <b>辅音(20): <span class="chai">g=ㄱ,q=ㄲ,k=ㅋ;d=ㄷ,w=ㄸ,t=ㅌ;v=ㅂ,b=ㅃ,p=ㅍ,f=&#12645;;</span></b><br/>
+             <b><span class="chai"> z=ㅈ,j=ㅉ,c=ㅊ;n=ㄴ,r=ㄹ,m=ㅁ;l=ㅇ,h=ㅎ;s=ㅅ,x=ㅆ;</span></b><br/>
+             <table border=1 style="font-size:1.5em;">
+                 <tr align="center" class="chai"><td>Chai</td>
+                    <td class="chai table-danger">d</td><td class="chai table-danger">w</td><td class="chai table-danger">t</td>
+                    <td></td>
+                    <td class="chai table-warning">r</td><td class="chai table-warning">n</td>
+                    <td></td>
+                    <td class="chai table-active">m</td><td class="chai table-active">l</td><td class="chai table-active">h</td>
+                    <td></td>
+                    <td class="chai table-success">v</td><td class="chai table-success">b</td><td class="chai table-success">p</td><td class="chai table-success">f</td>
+                    <td></td>
+                    <td class="chai table-primary">s</td><td class="chai table-primary">x</td>
+                    <td></td>
+                    <td class="chai table-secondary" >g</td><td class="chai table-secondary">q</td><td class="chai table-secondary">k</td>
+                    <td></td>
+                    <td class="chai table-info">z</td><td class="chai table-info">j</td><td class="chai table-info">c</td>
+                    
+                </tr>
+                 <tr align="center"><td>한음</td>
+                    <td class=" table-danger">ㄷ</td><td class=" table-danger">ㄸ</td><td class=" table-danger">ㅌ</td>
+                    <td></td>
+                    <td class=" table-warning">ㄹ</td><td class=" table-warning">ㄴ</td>
+                    <td></td>
+                    <td class=" table-active">ㅁ</td><td class=" table-active">ㅇ</td><td class=" table-active">ㅎ</td>
+                    <td></td>
+                    <td class=" table-success">ㅂ</td><td class=" table-success">ㅃ</td><td class=" table-success">ㅍ</td><td class=" table-success">&#12645;</td>
+                    <td></td>
+                    <td class=" table-primary">ㅅ</td><td class=" table-primary">ㅆ</td>
+                    <td></td>
+                    <td class=" table-secondary">ㄱ</td><td class=" table-secondary">ㄲ</td><td class=" table-secondary">ㅋ</td>
+                    <td></td>
+                    <td class=" table-info">ㅈ</td><td class=" table-info">ㅉ</td><td class=" table-info">ㅊ</td>
+                    
+                </tr>
+                <tr align="center" ><td>ENU</td>
+                    <td class=" table-danger">D</td><td class=" table-danger">W</td><td class=" table-danger">T</td>
+                    <td></td>
+                    <td class=" table-warning">R</td><td class=" table-warning">N</td>
+                    <td></td>
+                    <td class=" table-active">M</td><td class=" table-active">L</td><td class=" table-active">H</td>
+                    <td></td>
+                    <td class=" table-success">V</td><td class=" table-success">B</td><td class=" table-success">P</td><td class=" table-success">F</td>
+                    <td></td>
+                    <td class=" table-primary">S</td><td class=" table-primary">X</td>
+                    <td></td>
+                    <td class=" table-secondary" >G</td><td class=" table-secondary">Q</td><td class=" table-secondary">K</td>
+                    <td></td>
+                    <td class=" table-info">Z</td><td class=" table-info">J</td><td class=" table-info">C</td>
+                    
+                </tr>
+             </table>
+        
+        <br/>
+        <br />
+        <b>元音的手掌排序：<span class="chai">y:手掌,i:拇指,e:食指,o:中指,u:无名指,a:小指</span></b>
+        <table border=1 class="chai" style="font-size:1.5em;">
+               <tr><td rowspan=2 class="table-active">i</td><td class="table-danger">e</td><td class="table-primary">o</td><td class="table-success">u</td><td class="table-info">a</td></tr>
+               <tr><td colspan=4 align="center" class="table-warning">y</td></tr>
+        </table>
+        <br/>
+             <b>元音(6):<span class="chai"> e=ㅓ,a=ㅏ,o=ㅗ,u=ㅜ,y=ㅡ,i=ㅣ;</span></b>
+             <table border=1 style="font-size:1.5em;">
+                 <tr align="center" class="chai table-success"><td>Chai</td><td>e</td><td>a</td><td>o</td><td>u</td><td>y</td><td>i</td></tr>
+                 <tr align="center" class=" table-active"><td>한음</td><td>ㅓ</td><td>ㅏ</td><td>ㅗ</td><td>ㅜ</td><td>ㅡ</td><td>ㅣ</td></tr>
+                 <tr align="center" class=" table-primary"><td>ENU</td><td>e</td><td>a</td><td>o</td><td>u</td><td>y</td><td>i</td></tr>
+             </table>
+            <br/>
+             <b>元音组合(5):<span class="chai">y+ : ye=ㅕ,ya=ㅑ,yo=ㅛ,yu=ㅠ,yi=ㅢ=(ㅡ+ㅣ);</span></b>
+             <table  border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>ye</td><td>ya</td><td>yo</td><td>yu</td><td>yi</td></tr>
+                    <tr align="center" class=" table-active"><td>한음</td><td>ㅕ</td><td>ㅑ</td><td>ㅛ</td><td>ㅠ</td><td>ㅢ</td></tr>
+                    <tr align="center" class="table-primary"><td>ENU</td><td>ye</td><td>ya</td><td>yo</td><td>yu</td><td>yi</td></tr>
+                   
+                </table>
+                <br/>
+             <b>元音组合(8):<span class="chai">i+ : è=ie=ㅔ=(ㅓ+ㅣ),à=ia=ㅐ=(ㅏ+ㅣ),ò=io=ㅚ=(ㅗ+ㅣ),ù=iu=ㅟ=(ㅜ+ㅣ),</span></b>
+             <b><span class="chai">yè=iye=ㅖ=(ㅕ+ㅣ),yà=iya=ㅒ=(ㅑ+ㅣ),ài=iai=(ㅐ+ㅣ),èi=iei=(ㅔ+ㅣ)</span></b> 
+             <table  border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>è</td><td>à</td><td>ò</td><td>ù</td><td>yè</td><td>yà</td><td>ài</td><td>èi</td><td>òi</td><td>ùi</td></tr>
+                     <tr align="center" class="table-active"><td>한음</td><td>ㅔ</td><td>ㅐ</td><td>ㅚ</td><td>ㅟ</td><td>ㅖ</td><td>ㅒ</td><td>ㅐㅣ</td><td>ㅔㅣ</td><td>ㅚㅣ</td><td>ㅟㅣ</td></tr>
+                     <tr align="center" class=" table-primary"><td>ENU</td><td>ie</td><td>ia</td><td>io</td><td>iu</td><td>yie</td><td>yia</td><td>iai</td><td>iei</td><td>ioi</td></td><td>iui</td></tr>
+               </table>
+                <br/>
+             <b>元音组合(4):<span class="chai">o+ : oa=ㅘ=(ㅗ+ㅏ),oà=oia=ㅙ=(ㅗ+ㅐ),oe=(ㅗ+ㅓ),ou=(ㅗ+ㅜ)</span></b>
+             <table border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>oa</td><td>oà</td><td>oe</td><td>ou</td></tr>
+                    <tr align="center" class="table-active"><td>한음</td><td>ㅘ</td><td>ㅙ</td><td>ㅗㅓ</td><td>ㅗㅜ</td></tr>
+                    <tr align="center" class=" table-primary"><td>ENU</td><td>oa</td><td>oà</td><td>oe</td><td>ou</td></tr>
+                </table>
+                <br/>
+             <b>元音组合(4):<span class="chai">u+ : ue=ㅝ=(ㅜ+ㅓ),uè=uie=ㅞ=(ㅜ+ㅔ),ui=(ㅜ+ㅣ),ua=(ㅜ+ㅏ)</span></b>
+             <table border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>ue</td><td>uè</td><td>ui</td><td>ua</td></tr>
+                    <tr align="center" class="table-active"><td>한음</td><td>ㅝ</td><td>ㅞ</td><td>ㅜㅣ</td><td>ㅜㅏ</td></tr>
+                    <tr align="center" class=" table-primary"><td>ENU</td><td>ue</td><td>uè</td><td>ui</td><td>ua</td></tr>
+                </table>
+                <br/>
+             <b>元音组合(4):<span class="chai">a+ : au=(ㅏ+ㅜ),ao=(ㅏ+ㅗ),ai=(ㅏ+ㅣ),ae=(ㅏ+ㅓ)</span></b>
+             <table  border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>au</td><td>ao</td><td>ai</td><td>ae</td></tr>
+                    <tr align="center" class="table-active"><td>한음</td><td>ㅏㅜ</td><td>ㅏㅗ</td><td>ㅏㅣ</td><td>ㅏㅓ</td></tr>
+                    <tr align="center" class=" table-primary"><td>ENU</td><td>au</td><td>ao</td><td>ai</td><td>ae</td></tr>
+                </table>
+                <br/>
+             <b>元音组合(4):<span class="chai">e+ : eu=(ㅓ+ㅜ),eo=(ㅓ+ㅗ),ei=(ㅓ+ㅣ),ea=(ㅓ+ㅏ),</span></b>
+             <table border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>eu</td><td>eo</td><td>ei</td><td>ea</td></tr>
+                    <tr align="center" class="table-active"><td>한음</td><td>ㅓㅜ</td><td>ㅓㅗ</td><td>ㅓㅣ</td><td>ㅓㅏ</td></tr>
+                    <tr align="center" class=" table-primary"><td>ENU</td><td>eu</td><td>eo</td><td>ei</td><td>ea</td></tr>
+                </table>
+                <br/>
+             <b>纯元音字加前缀：<span class="chai">l+ 其中l是不发音，只是字符间结合中首字符元音时区分音标识作用。<br/>
+             l+: leo=(어오),lei=(어이),lea=(어아),<br/>
+             leu=(어우)：注意点在义音中是一个音节leu 而韩音中只能用两个音节(어우)表示义言的一个音Leu,<br/>
+             mu=무 与 mulu=무우的区分</span></b>
+             <table border=1 style="font-size:1.5em;">
+                    <tr align="center" class="chai table-success"><td>Chai</td><td>Lai</td><td>Leu</td><td>Loa</td><td>Mu</td><td>MuLu</td></tr>
+                    <tr align="center" class="table-active"><td>한음</td><td>아이</td><td>어우</td><td>와</td><td>무</td><td>무우</td></tr>
+                    <tr align="center" class=" table-primary"><td>ENU</td><td>Lai</td><td>Leu</td><td>Loa</td><td>Mu</td><td>MuLu</td></tr>
+                </table>
+          <br/>
+             <b>辅音的发音: 辅音+元音的y作为基本发音。</b>
+            <br/>
+            <b>
+                    <span class="chai">
+                            d=dy=드,w=wy=뜨,t=ty=트;<br/>
+                            n=ny=느,r=ry=르;<br/>
+                            m=my=므;l=ly=으,h=hy=흐;<br/>
+                            v=vy=브,b=by=쁘,p=py=프,f=fy=<u>&#12645;</u> <br/>
+                            s=sy=스,x=sy=쓰; <br/>
+                            g=gy=그,q=qy=끄,k=ky=크;<br/>
+                            z=zy=즈,j=jy=쯔,c=cy=츠;   
+                            </span>
+            </b>
+             <table border=1 style="font-size:1.5em;">
+                 <tr align="center" class="chai"><td>Chai</td>
+                    <td class="chai table-danger">Dy</td><td class="chai table-danger">Wy</td><td class="chai table-danger">Ty</td>
+                    <td></td>
+                    <td class="chai table-warning">Ry</td><td class="chai table-warning">Ny</td>
+                    <td></td>
+                    <td class="chai table-active">My</td><td class="chai table-active">Ly</td><td class="chai table-active">Hy</td>
+                    <td></td>
+                    <td class="chai table-success">Vy</td><td class="chai table-success">By</td><td class="chai table-success">Py</td><td class="chai table-success">Fy</td>
+                    <td></td>
+                    <td class="chai table-primary">Sy</td><td class="chai table-primary">Xy</td>
+                    <td></td>
+                    <td class="chai table-secondary" >Gy</td><td class="chai table-secondary">Qy</td><td class="chai table-secondary">Ky</td>
+                    <td></td>
+                    <td class="chai table-info">Zy</td><td class="chai table-info">Jy</td><td class="chai table-info">Cy</td>
+                    
+                </tr>
+                 <tr align="center"><td>한글</td>
+                    <td class=" table-danger">드</td><td class=" table-danger">뜨</td><td class=" table-danger">트</td>
+                    <td></td>
+                    <td class=" table-warning">르</td><td class=" table-warning">느</td>
+                    <td></td>
+                    <td class=" table-active">므</td><td class=" table-active">으</td><td class=" table-active">흐</td>
+                    <td></td>
+                    <td class=" table-success">브</td><td class=" table-success">쁘</td><td class=" table-success">프</td><td class=" table-success"><u>&#12645;</u></td>
+                    <td></td>
+                    <td class=" table-primary">스</td><td class=" table-primary">쓰</td>
+                    <td></td>
+                    <td class=" table-secondary">그</td><td class=" table-secondary">끄</td><td class=" table-secondary">크</td>
+                    <td></td>
+                    <td class=" table-info">즈</td><td class=" table-info">쯔</td><td class=" table-info">츠</td>
+                    
+                </tr>
+                <tr align="center" ><td>ENU</td>
+                    <td class=" table-danger">Dy</td><td class=" table-danger">Wy</td><td class=" table-danger">Ty</td>
+                    <td></td>
+                    <td class=" table-warning">Ry</td><td class=" table-warning">Ny</td>
+                    <td></td>
+                    <td class=" table-active">My</td><td class=" table-active">Ly</td><td class=" table-active">Hy</td>
+                    <td></td>
+                    <td class=" table-success">Vy</td><td class=" table-success">By</td><td class=" table-success">Py</td><td class=" table-success">Fy</td>
+                    <td></td>
+                    <td class=" table-primary">Sy</td><td class=" table-primary">Xy</td>
+                    <td></td>
+                    <td class=" table-secondary" >Gy</td><td class=" table-secondary">Qy</td><td class=" table-secondary">Ky</td>
+                    <td></td>
+                    <td class=" table-info">Zy</td><td class=" table-info">Jy</td><td class=" table-info">Cy</td>
+                    
+                </tr>
+             </table>
+        <br/>
+        <b>蔡氏义言的字母发音：</b>
+          
+        <table border=1 style="font-size:1.5em;">
+            <tr align="center">
+                <td>0</td><td></td><td class="chai">义言</td><td>音频</td><td>英语</td><td>韩语</td><td>汉语</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=3 class="table-success">1</td><td></td><td class="chai">D</td><td ><button class="btn btn-outline-success" class="btn btn-outline-success" onclick="new Audio('m4a/D.m4a').play()">&#128265;sound<td>D</td><td>ㄷ</td><td>的'相近</td>
+            </tr>
+            <tr align="center" >
+                    <td></td><td class="chai">W</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/W.m4a').play()">&#128265;sound</td><td>W</td><td>ㄸ</td><td>大'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">T</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/T.m4a').play()">&#128265;sound </td><td>T</td><td>ㅌ</td><td>特'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=3 class="table-primary">2</td><td></td><td class="chai">R</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/R.m4a').play()">&#128265;sound </td><td>R</td><td>ㄹ	</td><td>日'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">N</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/N.m4a').play()">&#128265;sound </td><td>N</td><td>ㄴ</td><td>呢'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">H</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/H.m4a').play()">&#128265;sound </td><td>H</td><td>ㅎ</td><td>合'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=2 class="table-success">3</td><td></td><td class="chai">M</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/M.m4a').play()">&#128265;sound </td><td>M</td><td>ㅁ</td><td>母'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">L</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/L.m4a').play()">&#128265;sound </td><td>L</td><td>ㅇ</td><td>工'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=4 class="table-primary">4</td><td></td><td class="chai">V</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/V.m4a').play()">&#128265;sound </td><td>V</td><td>ㅂ</td><td>波'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">B</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/B.m4a').play()">&#128265;sound </td><td>B</td><td>ㅃ</td><td>八'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">P</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/P.m4a').play()">&#128265;sound </td><td>P</td><td>ㅍ</td><td>破'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">F</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/F.m4a').play()">&#128265;sound </td><td>F</td><td>ㅥ</td><td>福'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=2 class="table-success">5</td><td></td><td class="chai">S</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/S.m4a').play()">&#128265;sound </td><td>S</td><td>ㅅ	</td><td>丝'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai" >X</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/X.m4a').play()">&#128265;sound </td><td>X</td><td>ㅆ</td><td>四'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=3 class="table-primary">6</td><td></td><td class="chai">G</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/G.m4a').play()">&#128265;sound </td><td>G</td><td>ㄱ</td><td>哥'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">Q</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/Q.m4a').play()">&#128265;sound </td><td>Q</td><td>ㄲ</td><td>尬'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">K</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/K.m4a').play()">&#128265;sound </td><td>K</td><td>ㅋ</td><td>克'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=3 class="table-success">7</td><td></td><td class="chai">Z</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/Z.m4a').play()">&#128265;sound </td><td>Z</td><td>ㅈ</td><td>滋'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">J</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/J.m4a').play()">&#128265;sound </td><td>J</td><td>ㅉ</td><td>字'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">C</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/C.m4a').play()">&#128265;sound </td><td>C</td><td>ㅊ</td><td>吃'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=6 class="table-danger">8</td><td></td><td class="chai">Y</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/Y.m4a').play()">&#128265;sound </td><td>Y</td><td>ㅡ</td><td>之'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">I</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/I.m4a').play()">&#128265;sound </td><td>I</td><td>ㅣ</td><td>义'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">E</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/E.m4a').play()">&#128265;sound </td><td>E</td><td>ㅓ</td><td>额'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">A</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/A.m4a').play()">&#128265;sound </td><td>A</td><td>ㅏ</td><td>啊'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">O</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/O.m4a').play()">&#128265;sound </td><td>O</td><td>ㅗ</td><td>奥'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">U</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/U.m4a').play()">&#128265;sound </td><td>U</td><td>ㅜ</td><td>乌'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=4 class="table-warning">9</td><td></td><td class="chai">È/IE</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/IE.m4a').play()">&#128265;sound </td><td>È/IE</td><td>ㅔ</td><td>给'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">À/IA</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/IA.m4a').play()">&#128265;sound </td><td>À/IA</td><td>ㅐ</td><td>哎'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">Ò/IO</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/IO.m4a').play()">&#128265;sound </td><td>Ò/IO</td><td>ㅚ</td><td>月'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">Ù/IU</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/IU.m4a').play()">&#128265;sound </td><td>Ù/IU</td><td>ㅟ</td><td>鱼'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=4 class="table-danger">10</td><td></td><td class="chai">YE</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YE.m4a').play()">&#128265;sound</td><td>YE</td><td>ㅕ</td><td>呦'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">YA</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YA.m4a').play()">&#128265;sound </td><td>YA</td><td>ㅑ</td><td>呀'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">YO</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YO.m4a').play()">&#128265;sound </td><td>YO</td><td>ㅛ</td><td>要'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">YU</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YU.m4a').play()">&#128265;sound </td><td>YU</td><td>ㅠ</td><td>有'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=6 class="table-danger">11</td><td></td><td class="chai">OA</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/OA.m4a').play()">&#128265;sound </td><td>OA</td><td>ㅘ</td><td>哇'相近</td>
+            </tr>
+        
+            <tr align="center">
+                    <td></td><td class="chai">UE</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/UE.m4a').play()">&#128265;sound </td><td>UE</td><td>ㅝ</td><td>我'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">UÈ/UIE</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/UIE.m4a').play()">&#128265;sound </td><td>UIE/UÈ</td><td>ㅞ</td><td>为'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">OÀ/OIA</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/OIA.m4a').play()">&#128265;sound </td><td>OIA/OÀ</td><td>ㅙ</td><td>外'相近</td>
+            </tr>
+        
+            <tr align="center">
+                    <td></td><td class="chai">YÀ/YIA</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YIA.m4a').play()">&#128265;sound </td><td>YÀ/YIA</td><td>ㅒ</td><td>雅'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">YÈ/YIE</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/YIE.m4a').play()">&#128265;sound </td><td>YÈ/YIE</td><td>ㅖ</td><td>页'相近</td>
+            </tr>
+            <tr align="center">
+                    <td rowspan=4 class="table-danger">12</td><td></td><td class="chai">AI</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/AI.m4a').play()">&#128265;sound </td><td>AI</td><td>아이</td><td>爱'相近</td>
+            </tr>
+        
+            <tr align="center">
+                    <td></td><td class="chai">ÈI/IEI</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/IEI.m4a').play()">&#128265;sound </td><td>ÈI/IEI</td><td>에이</td><td>欸'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">OU</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/OU.m4a').play()">&#128265;sound </td><td>OU</td><td>오우</td><td>奥'相近</td>
+            </tr>
+            <tr align="center">
+                    <td></td><td class="chai">EU</td><td><button class="btn btn-outline-success" onclick="new Audio('m4a/EU.m4a').play()">&#128265;sound </td><td>EU</td><td>어우</td><td>偶'相近</td>
+            </tr>
+            
+        
+        </table>
+        
+        <br/>
+        
+        <b>义言字母对称排序:</b>
+        <table border="1" style="font-size:1.5em;">
+            <tr align="center" class="table-active" >
+                <td >编号</td> <td>-14</td><td>-13</td><td>-12</td><td>-11</td><td>-10</td><td>-9</td><td>-8</td><td>-7</td><td>-6</td><td>-5</td><td>-4</td><td>-3</td><td>-2</td><td>-1</td>
+                <td>0</td>
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td> <td>13</td>
+                <td>14</td><td>15</td>
+            </tr>
+            <tr class="chai table-info" align="center">
+                <td>Chai</td><td>ù</td><td>p</td><td>h</td><td>m</td><td>d</td><td>q</td><td>x</td><td>v</td><td>f</td><td>a</td><td>y</td><td>u</td><td>n</td><td>l</td>
+                <td>r</td>
+                <td>g</td><td>z</td><td>c</td><td>j</td><td>t</td><td>e</td><td>k</td><td>w</td><td>i</td><td>o</td><td>b</td><td>s</td><td>è</td>
+                <td>à</td><td>ò</td>
+            </tr>
+            <tr class="chai table-success" align="center">
+                <td>Chai</td><td>lù</td><td>py</td><td>hy</td><td>my</td><td>dy</td><td>qy</td><td>xy</td><td>vy</td><td>fy</td><td>la</td><td>ly</td><td>lu</td><td>ny</td><td>ly</td>
+                <td>ry</td>
+                <td>gy</td><td>zy</td><td>cy</td><td>jy</td><td>ty</td><td>le</td><td>ky</td><td>wy</td><td>li</td><td>lo</td><td>by</td><td>sy</td><td>lè</td>
+                <td>là</td><td>lò</td>
+            </tr>
+            <tr class="chai table-secondary" align="center">
+                <td>한글</td><td>ㅟ</td><td>ㅍ</td><td>ㅎ</td><td>ㅁ</td><td>ㄷ</td><td>ㄲ</td><td>ㅆ</td><td>ㅂ</td><td>ㅥ</td><td>ㅏ</td><td>ㅡ</td><td>ㅕ</td><td>ㄴ</td><td>ㅇ</td>
+                <td>ㄹ</td>
+                <td>ㄱ</td><td>ㅈ</td><td>ㅊ</td><td>ㅉ</td><td>ㅌ</td><td>ㅓ</td><td>ㅋ</td><td>ㄸ</td><td>ㅣ</td><td>ㅗ</td><td>ㅃ</td><td>ㅅ</td><td>ㅔ</td>
+                <td>ㅐ</td><td>ㅚ</td>
+        
+            </tr>
+            <tr class="table-secondary" align="center">
+                <td>English</td><td>ù</td><td>p</td><td>h</td><td>m</td><td>d</td><td>q</td><td>x</td><td>v</td><td>f</td><td>a</td><td>y</td><td>u</td><td>n</td><td>l</td>
+                <td>r</td>
+                <td>g</td><td>z</td><td>c</td><td>j</td><td>t</td><td>e</td><td>k</td><td>w</td><td>i</td><td>o</td><td>b</td><td>s</td><td>è</td>
+                <td>à</td><td>ò</td>
+            </tr>
+            <tr class="chai table-active" align="center">
+                <td>意义</td><td>为</td><td>外</td><td>空</td><td>母</td><td>增</td><td>向</td><td>系</td><td>分</td><td>内</td><td>金</td><td>支</td><td>水</td><td>并</td><td>动</td>
+                <td>量</td>
+                <td>高</td><td>育</td><td>变</td><td>角</td><td>减</td><td>火</td><td>看</td><td>度</td><td>木</td><td>土</td><td>父</td><td>时</td><td>反</td>
+                <td>爱</td><td>问</td>
+            </tr>
+        
+        </table>
+        <br/>
+        <b>义言字母Alphabet排序:</b>
+        <table border="1" style="font-size:1.5em;">
+            <tr class="table-active" align="center">
+                    <td>English</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+                    <td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td><td></td><td>è/ie</td><td>à/ia</td>
+                    <td>ò/io</td><td>ù/iu</td>
+            <tr class="chai table-info" align="center">
+                <td>Chai</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+                <td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td><td></td><td>è/ie</td><td>à/ia</td>
+                <td>ò/io</td><td>ù/iu</td>
+            </tr>
+            <tr class="chai table-success" align="center">
+                <td>Chai</td><td>a</td><td>by</td><td>cy</td><td>dy</td><td>e</td><td>fy</td><td>gy</td><td>hy</td><td>i</td><td>jy</td><td>ky</td><td>ly</td><td>my</td><td>ny</td><td>o</td>
+                <td>py</td><td>qy</td><td>ry</td><td>sy</td><td>ty</td><td>u</td><td>vy</td><td>wy</td><td>xy</td><td>y</td><td>zy</td><td></td><td>ie</td><td>ia</td>
+                <td>io</td><td>iu</td>
+            </tr>
+            <tr class="chai table-active" align="center">
+                <td>한글</td><td>ㅏ</td><td>ㅃ</td><td>ㅊ</td><td>ㄷ</td><td>ㅓ</td><td>ㅥ</td><td>ㄱ</td><td>ㅎ</td><td>ㅣ</td><td>ㅉ</td><td>ㅋ</td><td>ㅇ</td><td>ㅁ</td><td>ㄴ</td><td>ㅗ</td>
+                <td>ㅍ</td><td>ㄲ</td><td>ㄹ</td><td>ㅅ</td><td>ㅌ</td><td>ㅜ</td><td>ㅂ</td><td>ㄸ</td><td>ㅆ</td><td>ㅡ</td><td>ㅈ</td><td></td><td>ㅔ</td><td>ㅐ</td>
+                <td>ㅚ</td><td>ㅟ</td>
+        
+            </tr>
+        </table>
+        
+        
+        
+        <br />
+        
+        <br /> 
+        <b>元音的方位：<span class="chai">O:上,U: 下,Y:外,R: 中,I: 里, E: 左, A: 右</span></b> <br/>
+        <b>元音的方位：<span class="chai">O:正义,U: 倒反,Y:本音,R: 中,I: 反, E: 左旋, A: 右转</span></b>
+        <table border=1 class="chai" style="font-size:1.5em;">
+            <tr>
+                <td>
+                    <table border=1 >
+                            <tr align="center"><td rowspan=3 class="table-danger">e</td><td class="table-primary">o</td><td rowspan=3 class="table-info">a</td></tr>
+                            <tr align="center" class="table-active"><td>yri</td></tr>
+                            <tr align="center" class="table-success"><td>u</td></tr> 
+                    </table>
+                </td>
+                <td></td>
+                <td>
+                    <table border=1 >
+                        <tr align="center"><td rowspan=3 class="table-danger">⥀</td><td class="table-primary">+</td><td rowspan=3 class="table-info">⥁</td></tr>
+                        <tr align="center" class="table-active"><td>yri</td></tr>
+                        <tr align="center" class="table-success"><td>-</td></tr> 
+                    </table>
+                </td>
+            </tr>
+            <tr  align="center">
+                <td>方位</td><td></td><td>旋转</td>
+            </tr>
+               
+        </table> 
+        
+        
+        <br/>
+        <p><b>义符用义言表音规则：</b></p>
+        <ol>
+            <li><p>义符号是义言字母时，后缀加 +y，以本音来标识, <span class="chai">M=My</span>。</p></li>
+            <li><p>义符号是源字符时，后缀加 o = +o, 以义符号对应象位的辅音字母加+o来标识音，<span class="chai">⢒=Bo。</span></p></li>
+            <li><p>义符号是义言字母，由逆时针90度转变生成的,本音节后缀加 +e来标识音, <span class="chai">⢗=Be。</span></p></p></li>
+            <li><p>义符号是义言字母，由逆时针90度转变生成的,本音节后缀加 +a来标识音, <span class="chai">⢂=Ma。</span></p></li>
+            <li><p>义符号是义言字母，由逆时针180度转变生成的,本音节后缀加 +u来标识音, <span class="chai">⢗=Mu。</span></p></li>
+            <li><p>符号由源音节 180度转变生成的,源音节后缀加 +u;</p></li>
+        </ol>
+        <table style="font-size:1.5em;">
+            <tr><td>
+                <table>
+                    <tr>
+                        <td>
+                            <table class="chai table-primary" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">+</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">y/o</td></tr>
+                                <tr align="center"><td>m</td><td>-</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">my/mo</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">므/모</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-danger" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">⤿</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">e</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr align="center"><td>b</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">b=me</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">b=머</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-info" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">⤾</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">a</td></tr>
+                                <tr align="center"><td>-</td><td>&#10434;</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10434;=ma</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10434;=마</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-success" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">u</td></tr>
+                                <tr align="center"><td>-</td><td></td></tr>
+                                <tr align="center"><td>-</td><td>&#10455;</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10455;=mu</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10455;=무</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+            <tr><td>
+            <table>
+                    <tr>
+                        <td>
+                            <table class="chai table-primary" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">y/o</td></tr>
+                                <tr align="center"><td>b</td><td>-</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">by/bo</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">쁘/뽀</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-danger" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">e</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr align="center"><td>&#10455;</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10455;=be</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10455;=뻐</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-info" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">a</td></tr>
+                                <tr align="center"><td>-</td><td>m</td></tr>
+                                <tr align="center"><td>-</td><td>-</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">m=ba</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">m=빠</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="chai table-success" border=1 align="center">
+                                <tr><td colspan=2 align="center" class="chai table-active">u</td></tr>
+                                <tr align="center"><td>-</td><td></td></tr>
+                                <tr align="center"><td>-</td><td>&#10434;</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10434;=bu</td></tr>
+                                <tr><td colspan=2 align="center" class="chai table-active">&#10434;=뿌</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+        </table>
+         
+        <br/>
+        <h5>义符、易象、盲文、键盘和发音对照表</h5>
+        乾﹑坤﹑屯﹑蒙﹑需﹑讼﹑师﹑比﹑小畜﹑履﹑泰﹑否﹑同人﹑大有﹑谦﹑豫﹑随﹑蛊﹑临﹑观﹑噬嗑﹑
+        贲﹑剥﹑复﹑无妄﹑大畜﹑颐﹑大过﹑坎﹑离﹑咸﹑恒﹑遁﹑大壮﹑晋﹑明夷﹑家人﹑睽﹑蹇﹑解﹑损﹑
+        益﹑夬﹑姤﹑萃﹑升﹑困﹑井﹑革﹑鼎﹑震﹑艮﹑渐﹑归妹﹑丰﹑旅﹑巽﹑兑﹑涣﹑节﹑中孚﹑小过﹑既济﹑未济
+        keyboard descript:
+        <table border=1 style="font-size:1.5em;">
+        <tr align="center" class="table-active"><td></td><td>键</td><td>名</td><td>义</td><td>盲</td><td>盲序</td><td>易</td><td>易名</td><td>易序</td><td> 方位  </td><td>本</td><td class="chai">变</td><td> 注释  </td><td>义音</td><td>义写</td><td>韩音</td><td>日语</td><td>汉字</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>`</td><td class="chai">IEHO</td><td class="chai">È</td><td class="chai">⠊</td><td>11</td><td class="chai">䷧</td><td>解</td><td>40</td><td> 右上 </td><td class="chai">F</td><td class="chai">FA</td><td>右转</td><td class="chai">È</td><td class="chai">IE</td><td>ㅔ</td><td>う</td><td>叶</td></tr>
+        <tr align="center" class="table-success"><td></td><td>`</td><td class="chai">ZEHO</td><td class="chai">⢪</td><td class="chai">⠪</td><td>43</td><td class="chai">䷿</td><td>未济</td><td>64</td><td>右上</td><td class="chai">Z</td><td class="chai">ZE</td><td>左旋</td><td class="chai">ZE</td><td class="chai">ZE</td><td>저</td><td>ze</td><td>则</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>~</td><td class="chai">ZAHO</td><td class="chai">⢱⢪</td><td class="chai">⠪</td><td>43</td><td class="chai">䷿</td><td>未济</td><td>64</td><td>右上</td><td class="chai">Z</td><td class="chai">ZA</td><td>右转</td><td class="chai">ZA</td><td class="chai">ZA</td><td>자</td><td>ざ</td><td>杂</td></tr>
+        <tr align="center" class="table-success"><td></td><td>!</td><td class="chai">CEHO</td><td class="chai">⢹</td><td class="chai">⠹</td><td>58</td><td class="chai">䷘</td><td>无妄</td><td>25</td><td>正上</td><td class="chai">C</td><td class="chai">CE</td><td>左旋</td><td class="chai">CE</td><td class="chai">CE</td><td>처</td><td>hanzi</td><td>测</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>@</td><td class="chai">POHO</td><td class="chai">⢉</td><td class="chai">⠉</td><td>10</td><td class="chai">䷲</td><td>震</td><td>51</td><td>正上</td><td class="chai">P</td><td class="chai">PO</td><td>本义</td><td class="chai">PO</td><td class="chai">PO</td><td>포</td><td>ぽ</td><td>炮</td></tr>
+        <tr align="center" class="table-success"><td></td><td>#</td><td class="chai">NOHO</td><td class="chai">⢭</td><td class="chai">⠭</td><td>46</td><td class="chai">䷝</td><td>离</td><td>30</td><td>左下</td><td class="chai">N</td><td class="chai">NO</td><td>本义</td><td class="chai">NO</td><td class="chai">NO</td><td>노</td><td>の</td><td>恼</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>$</td><td class="chai">BOHO</td><td class="chai">⢒</td><td class="chai">⠒</td><td>19</td><td class="chai">䷜</td><td>坎</td><td>29</td><td>右上</td><td class="chai">B</td><td class="chai">BO</td><td>本义</td><td class="chai">BO</td><td class="chai">BO</td><td>뽀</td><td>ぼ</td><td>瀑</td></tr>
+        <tr align="center" class="table-success"><td></td><td>%</td><td class="chai">KOHO</td><td class="chai">⢛</td><td class="chai">⠛</td><td>28</td><td class="chai">䷹</td><td>兑</td><td>58</td><td>正左</td><td class="chai">K</td><td class="chai">KO</td><td>本义</td><td class="chai">KO</td><td class="chai">KO</td><td>코	</td><td>こ</td><td>靠</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>^</td><td class="chai">TOHO</td><td class="chai">⢤</td><td class="chai">⠤</td><td>37</td><td class="chai">䷳</td><td>艮</td><td>52</td><td>正右</td><td class="chai">T</td><td class="chai">TO</td><td>本义</td><td class="chai">TO</td><td class="chai">TO</td><td>토</td><td>と</td><td>套</td></tr>
+        <tr align="center" class="table-success"><td></td><td>&amp;</td><td class="chai">QOHO</td><td class="chai">⢶</td><td class="chai">⠶</td><td>57</td><td class="chai">䷸</td><td>巽</td><td>57</td><td>正下</td><td class="chai">Q</td><td class="chai">QO</td><td>本义</td><td class="chai">QO</td><td class="chai">QO</td><td>꼬</td><td>ご</td><td>高</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>*</td><td class="chai">WOHO</td><td class="chai">⢀</td><td class="chai">&#10240;</td><td>1</td><td class="chai">䷁</td><td>坤</td><td>2</td><td>左上</td><td class="chai">W</td><td class="chai">WO</td><td>本义</td><td class="chai">WO</td><td class="chai">WO</td><td>또</td><td>ど</td><td>道</td></tr>
+        <tr align="center" class="table-success"><td></td><td>(</td><td class="chai">QONHO</td><td class="chai">⢰</td><td class="chai">⠰</td><td>49</td><td class="chai">䷓</td><td>观</td><td>20</td><td>左上</td><td class="chai">Q</td><td class="chai">QON</td><td>本义</td><td class="chai">QON</td><td class="chai">QON</td><td>꼰</td><td>ごん</td><td>棍</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>)</td><td class="chai">QAHO</td><td class="chai">⢲</td><td class="chai">⠲</td><td>51</td><td class="chai">䷺</td><td>涣 </td><td>59</td><td>右上	</td><td class="chai">Q</td><td class="chai">QA</td><td>右转</td><td class="chai">QA</td><td class="chai">QA</td><td>까</td><td>が</td><td>嘎</td></tr>
+        <tr align="center" class="table-success"><td></td><td>-</td><td class="chai">VAHO</td><td class="chai">⢟</td><td class="chai">⠟</td><td>32</td><td class="chai">䷪</td><td>夬 </td><td>43</td><td>右下	</td><td class="chai">V</td><td class="chai">VA</td><td>右转</td><td class="chai">VA</td><td class="chai">VA</td><td>바</td><td>ば</td><td>吧</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>_</td><td class="chai">JUHO</td><td class="chai">⢱⢟</td><td class="chai">⠟</td><td>32</td><td class="chai">䷪</td><td>夬 </td><td>43</td><td>右下</td><td class="chai">J</td><td class="chai">JU</td><td>对移</td><td class="chai">JU</td><td class="chai">JU</td><td>쭈</td><td>ず</td><td>就</td></tr>
+        <tr align="center" class="table-success"><td></td><td>=</td><td class="chai">WUHO</td><td class="chai">⢑</td><td class="chai">⠑</td><td>18</td><td class="chai">䷂</td><td>屯 </td><td>3</td><td>右下	</td><td class="chai">W</td><td class="chai">WU</td><td>对移</td><td class="chai">WU</td><td class="chai">WU</td><td>뚜</td><td>づ</td><td>度</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>+</td><td class="chai">XEHO</td><td class="chai">⢱⢑</td><td class="chai">⠑</td><td>18</td><td class="chai">䷂</td><td>屯 </td><td>3</td><td>右下</td><td class="chai">X</td><td class="chai">XE</td><td>左旋</td><td class="chai">XE</td><td class="chai">XE</td><td>써</td><td>せ</td><td>色</td></tr>
+        <tr align="center" class="table-success"><td></td><td>1</td><td class="chai">LIHO</td><td class="chai">1</td><td class="chai">⠳</td><td>52</td><td class="chai">䷼</td><td>中孚 </td><td>61</td><td>右下</td><td class="chai">I</td><td class="chai">YI</td><td>本义</td><td class="chai">LI</td><td class="chai">LI</td><td>이</td><td>い</td><td>义</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>2</td><td class="chai">NEHO</td><td class="chai">2</td><td class="chai">⠅</td><td>6</td><td class="chai">䷣</td><td>明夷 </td><td>36</td><td>右下</td><td class="chai">N</td><td class="chai">NE</td><td>左旋</td><td class="chai">NE</td><td class="chai">NE</td><td>너</td><td>ね</td><td>呢</td></tr>
+        <tr align="center" class="table-success"><td></td><td>3</td><td class="chai">CUHO</td><td class="chai">3</td><td class="chai">⠻</td><td>60</td><td class="chai">䷉</td><td>履 </td><td>10</td><td>右下</td><td class="chai">C</td><td class="chai">CU</td><td>对移</td><td class="chai">CU</td><td class="chai">CU</td><td>추</td><td>つ</td><td>出</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>4</td><td class="chai">KUHO</td><td class="chai">4</td><td class="chai">⠜</td><td>29</td><td class="chai">䷞</td><td>咸 </td><td>31</td><td>右下</td><td class="chai">K</td><td class="chai">KU</td><td>对移</td><td class="chai">KU</td><td class="chai">KU</td><td>쿠</td><td>く</td><td>哭</td></tr>
+        <tr align="center" class="table-success"><td></td><td>5</td><td class="chai">DUHO</td><td class="chai">5</td><td class="chai">⠦</td><td>39</td><td class="chai">䷑</td><td>蛊 </td><td>18</td><td>右下</td><td class="chai">D</td><td class="chai">D</td><td>本义</td><td class="chai">DU</td><td class="chai">DU</td><td>두</td><td>づ</td><td>独</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>6</td><td class="chai">PUHO</td><td class="chai">6</td><td class="chai">⠁</td><td>2</td><td class="chai">䷗</td><td>复 </td><td>24</td><td>右下</td><td class="chai">P</td><td class="chai">PU</td><td>对移</td><td class="chai">PU</td><td class="chai">PU</td><td>푸</td><td>ぷ</td><td>普</td></tr>
+        <tr align="center" class="table-success"><td></td><td>7</td><td class="chai">GEHO</td><td class="chai">7</td><td class="chai">⠸</td><td>57</td><td class="chai">䷋</td><td>否 </td><td>12</td><td>右下</td><td class="chai">G</td><td class="chai">GE</td><td>左旋</td><td class="chai">GE</td><td class="chai">GE</td><td>거</td><td>げ</td><td>歌</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>8</td><td class="chai">XUHO</td><td class="chai">8</td><td class="chai">⠓</td><td>20</td><td class="chai">䷻</td><td>节 </td><td>60</td><td>右下</td><td class="chai">X</td><td class="chai">XU</td><td>对移</td><td class="chai">XU</td><td class="chai">XU</td><td>쑤</td><td>す</td><td>数</td></tr>
+        <tr align="center" class="table-success"><td></td><td>9</td><td class="chai">FUHO</td><td class="chai">9</td><td class="chai">⠏</td><td>16</td><td class="chai">䷡</td><td>大壮</td><td>34</td><td>右下</td><td class="chai">F</td><td class="chai">FU</td><td>对移</td><td class="chai">FU</td><td class="chai">FU</td><td>FU</td><td>ふ</td><td>福</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>0</td><td class="chai">RAHO</td><td class="chai">0</td><td class="chai">⠫</td><td>44</td><td class="chai">䷥</td><td>睽 </td><td>38</td><td>右下</td><td class="chai">R</td><td class="chai">RA</td><td>右转</td><td class="chai">RA</td><td class="chai">RA</td><td>라</td><td>ら</td><td>啦</td></tr>
+        <tr align="center" class="table-success"><td></td><td>Q</td><td class="chai">QYHO</td><td class="chai">Q</td><td class="chai">⠠</td><td>33</td><td class="chai">䷖</td><td>剥 </td><td>23</td><td>右下</td><td class="chai">Q</td><td class="chai">Q</td><td>本义</td><td class="chai">QY</td><td class="chai">QY</td><td>ㄲ</td><td>hanzi</td><td>个</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>W</td><td class="chai">WYHO</td><td class="chai">W</td><td class="chai">⠖</td><td>23</td><td class="chai">䷯</td><td>井 </td><td>48</td><td>右下</td><td class="chai">W</td><td class="chai">W</td><td>本义</td><td class="chai">WY</td><td class="chai">WY</td><td>ㄸ</td><td>hanzi</td><td>地</td></tr>
+        <tr align="center" class="table-success"><td></td><td>E</td><td class="chai">LEHO</td><td class="chai">E</td><td class="chai">⠋</td><td>12</td><td class="chai">䷵</td><td>归妹 </td><td>54</td><td>右下</td><td class="chai">E</td><td class="chai">E</td><td>本义</td><td class="chai">E</td><td class="chai">LE</td><td>어</td><td>え</td><td>呃</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>R</td><td class="chai">RYHO</td><td class="chai">R</td><td class="chai">⠬</td><td>45</td><td class="chai">䷷</td><td>旅</td><td>56</td><td>右下</td><td class="chai">R</td><td class="chai">R</td><td>本义</td><td class="chai">R</td><td class="chai">RY</td><td>ㄹ</td><td>ら</td><td>日</td></tr>
+        <tr align="center" class="table-success"><td></td><td>T</td><td class="chai">TYHO</td><td class="chai">T</td><td class="chai">⠄</td><td>5</td><td class="chai">䷎</td><td>谦</td><td>15</td><td>右下</td><td class="chai">T</td><td class="chai">T</td><td>本义</td><td class="chai">T</td><td class="chai">TY</td><td>ㅌ</td><td>た </td><td>特</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>Y</td><td class="chai">YHO</td><td class="chai">Y</td><td class="chai">⠙</td><td>26</td><td class="chai">䷐</td><td>随</td><td>17</td><td>右下</td><td class="chai">Y</td><td class="chai">Y</td><td>本义</td><td class="chai">Y</td><td class="chai">LY</td><td>ㅡ</td><td>hanzi</td><td>嗯</td></tr>
+        <tr align="center" class="table-success"><td></td><td>U</td><td class="chai">UHO</td><td class="chai">U</td><td class="chai">⠾</td><td>63</td><td class="chai">䷫</td><td>姤</td><td>44</td><td>右下</td><td class="chai">U</td><td class="chai">U</td><td>本义</td><td class="chai">U</td><td class="chai">LU</td><td>우</td><td>う</td><td>无</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>I</td><td class="chai">IHO</td><td class="chai">I</td><td class="chai">⠴</td><td>53</td><td class="chai">䷴</td><td>渐</td><td>53</td><td>右下</td><td class="chai">I</td><td class="chai">I</td><td>本义</td><td class="chai">I</td><td class="chai">I</td><td>ㅣ</td><td>hanzi</td><td>一</td></tr>
+        <tr align="center" class="table-success"><td></td><td>O</td><td class="chai">OHO</td><td class="chai">O</td><td class="chai">⠿</td><td>64</td><td class="chai">䷀</td><td>乾</td><td>1</td><td>右下</td><td class="chai">O</td><td class="chai">O</td><td>本义</td><td class="chai">O</td><td class="chai">O</td><td>오</td><td>お</td><td>奥</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>P</td><td class="chai">PYHO</td><td class="chai">P</td><td class="chai">⠎</td><td>15</td><td class="chai">䷟</td><td>恒</td><td>32</td><td>右下</td><td class="chai">P</td><td class="chai">PY</td><td>本义</td><td class="chai">PY</td><td class="chai">PY</td><td>프</td><td>hanzi</td><td>泊</td></tr>
+        <tr align="center" class="table-success"><td></td><td>[</td><td class="chai">PENHO</td><td class="chai">⢌</td><td class="chai">⠌</td><td>13</td><td class="chai">䷽</td><td>小过</td><td>62</td><td>右下</td><td class="chai">P</td><td class="chai">PE</td><td>左旋</td><td class="chai">PEN</td><td class="chai">PEN</td><td>펀</td><td>hanzi</td><td>喷</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>]</td><td class="chai">FEHO</td><td class="chai">⢍</td><td class="chai">⠍</td><td>14</td><td class="chai">䷶</td><td>丰</td><td>55</td><td>右下</td><td class="chai">F</td><td class="chai">FE</td><td>左旋</td><td class="chai">FE</td><td class="chai">FE</td><td>FE</td><td>hanzi</td><td>佛</td></tr>
+        <tr align="center" class="table-success"><td></td><td>{</td><td class="chai">PIENHO</td><td class="chai">⢱⢌</td><td class="chai">⠌</td><td>13</td><td class="chai">䷽</td><td>小过</td><td>62</td><td>右下</td><td class="chai">P</td><td class="chai">PÈN</td><td>左旋</td><td class="chai">PIEN</td><td class="chai">PÈN</td><td>펜</td><td>hanzi</td><td>片</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>}</td><td class="chai">VIEHO</td><td class="chai">⢱⢍</td><td class="chai">⠍</td><td>14</td><td class="chai">䷶</td><td>丰</td><td>55</td><td>右下</td><td class="chai">V</td><td class="chai">VÈ</td><td>左旋</td><td class="chai">VÈ</td><td class="chai">VÈ</td><td>베</td><td>hanzi</td><td>别</td></tr>
+        <tr align="center" class="table-success"><td></td><td>|</td><td class="chai">QIAHO</td><td class="chai">⢱</td><td class="chai">⠱</td><td>50</td><td class="chai">䷩</td><td>益</td><td>42</td><td>右下</td><td class="chai">Q</td><td class="chai">QÀ</td><td>右转</td><td class="chai">QÀ</td><td class="chai">QÀ</td><td>깨</td><td>hanzi</td><td>该</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>\</td><td class="chai">QUHO</td><td class="chai">⢷</td><td class="chai">⠷</td><td>56</td><td class="chai">䷈</td><td>小畜</td><td>9</td><td>右下</td><td class="chai">Q</td><td class="chai">QU</td><td>对移</td><td class="chai">QU</td><td class="chai">QU</td><td>꾸</td><td>hanzi</td><td>雇</td></tr>
+        <tr align="center" class="table-success"><td></td><td>\</td><td class="chai">IAHO</td><td class="chai">À</td><td class="chai">⠧</td><td>40</td><td class="chai">䷙</td><td>大畜</td><td>26</td><td>右下</td><td class="chai">Q</td><td class="chai">QU</td><td>对移</td><td class="chai">À</td><td class="chai">LÀ</td><td>애</td><td>え</td><td>哎</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>A</td><td class="chai">LAHO</td><td class="chai">A</td><td class="chai">⠣</td><td>36</td><td class="chai">䷨</td><td>损</td><td>41</td><td>右下</td><td class="chai">A</td><td class="chai">A</td><td>本义</td><td class="chai">A</td><td class="chai">LA</td><td>아</td><td>あ</td><td>啊</td></tr>
+        <tr align="center" class="table-success"><td></td><td>S</td><td class="chai">SYHO</td><td class="chai">S</td><td class="chai">⠮</td><td>47</td><td class="chai">䷱</td><td>鼎</td><td>50</td><td>右下</td><td class="chai">S</td><td class="chai">S</td><td>本义</td><td class="chai">S</td><td class="chai">SY</td><td>스</td><td>す</td><td>时</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>D</td><td class="chai">DYHO</td><td class="chai">D</td><td class="chai">⠡</td><td>34</td><td class="chai">䷚</td><td>颐</td><td>27</td><td>右下</td><td class="chai">D</td><td class="chai">D</td><td>本义</td><td class="chai">D</td><td class="chai">DY</td><td>드</td><td>づ</td><td>德</td></tr>
+        <tr align="center" class="table-success"><td></td><td>F</td><td class="chai">FYHO</td><td class="chai">F</td><td class="chai">⠈</td><td>9</td><td class="chai">䷏</td><td>豫</td><td>16</td><td>右下</td><td class="chai">F</td><td class="chai">F</td><td>本义</td><td class="chai">F</td><td class="chai">FY</td><td>F</td><td>hanzi</td><td>佛</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>G</td><td class="chai">GYHO</td><td class="chai">G</td><td class="chai">⠺</td><td>59</td><td class="chai">䷅</td><td>讼</td><td>6</td><td>右下</td><td class="chai">G</td><td class="chai">G</td><td>本义</td><td class="chai">G</td><td class="chai">GY</td><td>그</td><td>hanzi</td><td>格</td></tr>
+        <tr align="center" class="table-success"><td></td><td>H</td><td class="chai">HYHO</td><td class="chai">H</td><td class="chai">⠩</td><td>42</td><td class="chai">䷔</td><td>噬嗑</td><td>21</td><td>右下</td><td class="chai">H</td><td class="chai">H</td><td>本义</td><td class="chai">H</td><td class="chai">HY</td><td>흐</td><td>hanzi</td><td>和</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>J</td><td class="chai">JYHO</td><td class="chai">J</td><td class="chai">⠘</td><td>25</td><td class="chai">䷬</td><td>萃</td><td>45</td><td>右下</td><td class="chai">J</td><td class="chai">J</td><td>本义</td><td class="chai">J</td><td class="chai">JY</td><td>쯔</td><td>hanzi</td><td>这</td></tr>
+        <tr align="center" class="table-success"><td></td><td>K</td><td class="chai">KYHO</td><td class="chai">K</td><td class="chai">⠃</td><td>4</td><td class="chai">䷒</td><td>临</td><td>19</td><td>右下</td><td class="chai">K</td><td class="chai">K</td><td>本义</td><td class="chai">K</td><td class="chai">KY</td><td>크</td><td>hanzi</td><td>克</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>L</td><td class="chai">LYHO</td><td class="chai">L</td><td class="chai">⠽</td><td>62</td><td class="chai">䷌</td><td>同人</td><td>13</td><td>右下</td><td class="chai">L</td><td class="chai">L</td><td>本义</td><td class="chai">L</td><td class="chai">LY</td><td>으</td><td>hanzi</td><td>额</td></tr>
+        <tr align="center" class="table-success"><td></td><td>;</td><td class="chai">MAHO</td><td class="chai">⢂</td><td class="chai">⠂</td><td>3</td><td class="chai">䷆</td><td>师</td><td>7</td><td>右下</td><td class="chai">MA</td><td class="chai">MA</td><td>右转</td><td class="chai">MA</td><td class="chai">MA</td><td>마</td><td>hanzi</td><td>吗</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>:</td><td class="chai">BUHO</td><td class="chai">⢱⢂</td><td class="chai">⠂</td><td>3</td><td class="chai">䷆</td><td>师</td><td>7</td><td>右下</td><td class="chai">BU</td><td class="chai">BU</td><td>对移</td><td class="chai">BU</td><td class="chai">BU</td><td>뿌</td><td>hanzi</td><td>不</td></tr>
+        <tr align="center" class="table-success"><td></td><td>'</td><td class="chai">MUHO</td><td class="chai">⢗</td><td class="chai">⠗</td><td>24</td><td class="chai">䷄</td><td>需</td><td>5</td><td>右下</td><td class="chai">MU</td><td class="chai">MU</td><td>对移</td><td class="chai">MU</td><td class="chai">MU</td><td>무</td><td>hanzi</td><td>木</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>"</td><td class="chai">BEHO</td><td class="chai">⢱⢗</td><td class="chai">⠗</td><td>24</td><td class="chai">䷄</td><td>需</td><td>5</td><td>右下</td><td class="chai">BE</td><td class="chai">BE</td><td>左旋</td><td class="chai">BE</td><td class="chai">BE</td><td>뻐</td><td>hanzi</td><td>目</td></tr>
+        <tr align="center" class="table-success"><td></td><td>Enter</td><td class="chai">GAHO</td><td class="chai">⢇</td><td class="chai">⠇</td><td>8</td><td class="chai">䷊</td><td>泰</td><td>11</td><td>右下</td><td class="chai">GA</td><td class="chai">GA</td><td>右转</td><td class="chai">GA</td><td class="chai">GA</td><td>가</td><td>hanzi</td><td>嘎</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>Z</td><td class="chai">ZYHO</td><td class="chai">Z</td><td class="chai">⠯</td><td>48</td><td class="chai">䷍</td><td>大有</td><td>14</td><td>右下</td><td class="chai">Z</td><td class="chai">Z</td><td>本义</td><td class="chai">Z</td><td class="chai">Z</td><td>즈</td><td>hanzi</td><td>字</td></tr>
+        <tr align="center" class="table-success"><td></td><td>X</td><td class="chai">XYHO</td><td class="chai">X</td><td class="chai">⠔</td><td>21</td><td class="chai">䷦</td><td>蹇</td><td>39</td><td>右下</td><td class="chai">X</td><td class="chai">X</td><td>本义</td><td class="chai">X</td><td class="chai">X</td><td>쓰</td><td>hanzi</td><td>四</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>C</td><td class="chai">CYHO</td><td class="chai">C</td><td class="chai">⠼</td><td>61</td><td class="chai">䷠</td><td>遁</td><td>33</td><td>右下</td><td class="chai">C</td><td class="chai">C</td><td>本义</td><td class="chai">C</td><td class="chai">C</td><td>츠</td><td>hanzi</td><td>词</td></tr>
+        <tr align="center" class="table-success"><td></td><td>V</td><td class="chai">VYHO</td><td class="chai">V</td><td class="chai">⠚</td><td>27</td><td class="chai">䷮</td><td>困</td><td>47</td><td>右下</td><td class="chai">V</td><td class="chai">V</td><td>本义</td><td class="chai">V</td><td class="chai">V</td><td>브</td><td>hanzi</td><td>补</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>B</td><td class="chai">BYHO</td><td class="chai">B</td><td class="chai">⠕</td><td>22</td><td class="chai">䷾</td><td>既济</td><td>63</td><td>右下</td><td class="chai">B</td><td class="chai">B</td><td>本义</td><td class="chai">B</td><td class="chai">B</td><td>쁘</td><td>hanzi</td><td>部</td></tr>
+        <tr align="center" class="table-success"><td></td><td>N</td><td class="chai">NYHO</td><td class="chai">N</td><td class="chai">⠨</td><td>41</td><td class="chai">䷢</td><td>晋</td><td>35</td><td>右下</td><td class="chai">N</td><td class="chai">N</td><td>本义</td><td class="chai">N</td><td class="chai">N</td><td>느</td><td>hanzi</td><td>怒</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>M</td><td class="chai">MYHO</td><td class="chai">M</td><td class="chai">⠐</td><td>17</td><td class="chai">䷇</td><td>比</td><td>8</td><td>右下</td><td class="chai">M</td><td class="chai">M</td><td>本义</td><td class="chai">M</td><td class="chai">M</td><td>므</td><td>hanzi</td><td>么</td></tr>	
+        <tr align="center" class="table-success"><td></td><td>,</td><td class="chai">VUHO</td><td class="chai">⢝</td><td class="chai">⠝</td><td>30</td><td class="chai">䷰</td><td>革</td><td>49</td><td>右下</td><td class="chai">VU</td><td class="chai">VU</td><td>对移</td><td class="chai">VU</td><td class="chai">VU</td><td>부</td><td>hanzi</td><td>福</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>.</td><td class="chai">YUHO</td><td class="chai">⢞</td><td class="chai">⠞</td><td>31</td><td class="chai">䷛</td><td>大过</td><td>28</td><td>右下</td><td class="chai">YU</td><td class="chai">YU</td><td>对移</td><td class="chai">YU</td><td class="chai">YU</td><td>유</td><td>hanzi</td><td>有</td></tr>
+        <tr align="center" class="table-success"><td></td><td>&lt;</td><td class="chai">JENHO</td><td class="chai">⢱⢝</td><td class="chai">⠝</td><td>30</td><td class="chai">䷰</td><td>革</td><td>49</td><td>右下</td><td class="chai">JEN</td><td class="chai">JEN</td><td>左旋</td><td class="chai">JEN</td><td class="chai">JEN</td><td>쩐</td><td>hanzi</td><td>怎</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>&gt;</td><td class="chai">KEHO</td><td class="chai">⢱⢞</td><td class="chai">⠞</td><td>31</td><td class="chai">䷛</td><td>大过</td><td>28</td><td>右下</td><td class="chai">KE</td><td class="chai">KE</td><td>左旋</td><td class="chai">KE</td><td class="chai">KE</td><td>커</td><td>hanzi</td><td>克</td></tr>
+        <tr align="center" class="table-success"><td></td><td>?</td><td class="chai">LOIAHO</td><td class="chai">⢱⢵</td><td class="chai">⠢</td><td>35</td><td class="chai">䷃</td><td>蒙</td><td>4</td><td>右下</td><td class="chai">LOÀ</td><td class="chai">LOÀ</td><td>本义</td><td class="chai">LOÀ	</td><td class="chai">LOÀ	</td><td>왜</td><td>hanzi</td><td>为</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>?</td><td class="chai">LIOHO</td><td class="chai">Ò</td><td class="chai">⠢</td><td>35</td><td class="chai">䷃</td><td>蒙</td><td>4</td><td>右下</td><td class="chai">LÒ</td><td class="chai">LÒ</td><td>本义</td><td class="chai">LÒ</td><td class="chai">LÒ</td><td>외</td><td>hanzi</td><td>月</td></tr>
+        <tr align="center" class="table-success"><td></td><td>/</td><td class="chai">QEHO</td><td class="chai">⢵</td><td class="chai">⠵</td><td>54</td><td class="chai">䷤</td><td>家人</td><td>37</td><td>右下</td><td class="chai">QE</td><td class="chai">QE</td><td>左旋</td><td class="chai">QE</td><td class="chai">QE</td><td>꺼</td><td>hanzi</td><td>个</td></tr>
+        <tr align="center" class="table-primary"><td></td><td>/</td><td class="chai">LIUHO</td><td class="chai">Ù</td><td class="chai">⠥</td><td>38</td><td class="chai">䷕</td><td>贲</td><td>22</td><td>右下</td><td class="chai">LÙ</td><td class="chai">LÙ</td><td>对移</td><td class="chai">LÙ</td><td class="chai">LÙ</td><td>위</td><td>hanzi</td><td>卧</td></tr>
+        <tr align="center" class="table-success"><td></td><td>Space</td><td class="chai">QIEHO</td><td class="chai">⢆</td><td class="chai">⠆</td><td>7</td><td class="chai">䷭</td><td>升</td><td>46</td><td>右下</td><td class="chai">QÈ</td><td class="chai">QÈ</td><td>左旋</td><td class="chai">QÈ</td><td class="chai">QÈ</td><td>께</td><td>げ</td><td>给</td></tr>
+        
+        </table>							
+        
+        <br/>
+        <h5><td>义符号与QWERRT键盘上对照表</td></h5>
+        
+        <table border=1 style="font-size:1.5em;"> 
+            <tr align="center" class="table-primary"><td>`</td><td>`</td><td>~</td><td>!</td><td>@</td><td>#</td><td>$</td><td>%</td><td>^</td><td>&amp;</td><td>*</td><td>(</td><td>)</td><td>-</td><td>_</td><td>=</td><td>+</td></tr>
+            <tr align="center" class="chai table-success"><td>⢊</td><td>⢪</td><td>⢱⢪</td><td>⢹</td><td>⢉</td><td>⢭</td><td>⢒</td><td>⢛</td><td>⢤</td><td>⢶</td><td>⢀</td><td>⢰</td><td>⢲</td><td>⢟</td><td>⢱⢟</td><td>⢑</td><td>⢱⢑</td></tr>
+            <tr align="center" class="chai table-info"><td>LÈ</td><td>ZE</td><td>ZA</td><td>CE</td><td>PO</td><td>NO</td><td>BO</td><td>KO</td><td>TO</td><td>QO</td><td>WO</td><td>QON</td><td>QA</td><td>VA</td><td>JU</td><td>WU</td><td>XE</td></tr>
+            <tr align="center" class="table-active"><td>에</td><td>저</td><td>자</td><td>처</td><td>포</td><td>노</td><td>뽀</td><td>코</td><td>토</td><td>꼬</td><td>또</td><td>꼰</td><td>까</td><td>바</td><td>쭈</td><td>뚜</td><td>써</td></tr>
+            <tr align="center" class="table-primary"><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td colspan=4></td></tr>
+            <tr align="center" class="chai table-success"><td></td><td></td><td></td><td>LI</td><td>NE</td><td>CU</td><td>KU</td><td>DU</td><td>PU</td><td>GE</td><td>XU</td><td>FU</td><td>RA</td><td colspan=4></td></tr>
+            <tr align="center" class="chai table-active"><td></td><td></td><td></td><td>이</td><td>너</td><td>추</td><td>쿠</td><td>두</td><td>푸</td><td>거</td><td>쑤</td><td>FU</td><td>라</td><td colspan=4></td></tr>
+            <tr align="center" class="table-primary"><td>Q</td><td>W</td><td>E</td><td>R</td><td>T</td><td>Y</td><td>U</td><td>I</td><td>O</td><td>P</td><td>[</td><td>]</td><td>{</td><td>}</td><td>| </td><td>\ </td><td>\ </td></tr>
+            <tr align="center" class="chai table-success"><td>Q</td><td>W</td><td>E</td><td>R</td><td>T</td><td>Y</td><td>U</td><td>I</td><td>O</td><td>P</td><td>⢌</td><td>⢍</td><td>⢱⢌</td><td>⢱⢍</td><td>⢱</td><td>⢷</td><td>⢧</td></tr>
+            <tr align="center" class="chai table-info"><td>QY</td><td>WY</td><td>E</td><td>RY</td><td>TY</td><td>LY</td><td>LU</td><td>LI</td><td>LO</td><td>PY</td><td>PEN</td><td>VE</td><td>PÈN</td><td>VÈ</td><td>QÀ </td><td>QU </td><td>LÀ</td></tr>
+            <tr align="center" class="table-active"><td>ㄲ</td><td>ㄸ</td><td>어</td><td>ㄹ</td><td>ㅌ</td><td>으</td><td>우</td><td>이</td><td>오</td><td>ㅍ</td><td>펀</td><td>버</td><td>펜</td><td>베</td><td>깨 </td><td>꾸 </td><td>애</td></tr>
+            <tr align="center" class="table-primary"><td>A</td><td>S</td><td>D</td><td>F</td><td>G</td><td>H</td><td>J</td><td>K</td><td>L</td><td>;</td><td>:</td><td>'</td><td>"</td><td colspan=4>Enter</td></tr>
+            <tr align="center" class="chai table-success"><td>A</td><td>S</td><td>D</td><td>F</td><td>G</td><td>H</td><td>J</td><td>K</td><td>L</td><td>;</td><td>:</td><td>'</td><td>"</td><td colspan=4>⢇</td></tr>
+            <tr align="center" class="chai table-info"><td>LA</td><td>SY</td><td>DY</td><td>FY</td><td>GY</td><td>HY</td><td>JY</td><td>KY</td><td>LY</td><td>MA</td><td>BU</td><td>MU</td><td>BE</td><td colspan=4>GA</td></tr>
+            <tr align="center" class="table-active"><td>아</td><td>ㅅ</td><td>ㄷ</td><td>ㅥ</td><td>ㄱ</td><td>ㅎ</td><td>ㅉ</td><td>ㅋ</td><td>ㅇ</td><td>마</td><td>뿌</td><td>무</td><td>뻐</td><td colspan=4>가</td></tr>
+            <tr align="center" class="table-primary"><td>Z</td><td>X</td><td>C</td><td>V</td><td>B</td><td>N</td><td>M</td><td>,</td><td>.</td><td>&lt; </td><td>&gt;</td><td>?</td><td>?</td><td>/</td><td>/</td><td colspan=2>Space</td></tr>
+            <tr align="center" class="chai table-success"><td>Z</td><td>X</td><td>C</td><td>V</td><td>B</td><td>N</td><td>M</td><td>⢝</td><td>⢞</td><td>⢱⢝</td><td>⢱⢞</td><td>⢱⢢</td><td>⢢</td><td>⢵</td><td>⢥</td><td colspan=2>⢆</td></tr>
+            <tr align="center" class="chai table-info"><td>ZY</td><td>XY</td><td>CY</td><td>VY</td><td>BY</td><td>NY</td><td>MY</td><td>VU</td><td>YU</td><td>JEN </td><td>KE</td><td>LOÀ</td><td>LÒ</td><td>LUÈ</td><td>LÙ</td><td colspan=2>QÈ</td></tr>
+            <tr align="center" class="table-active"><td>ㅈ</td><td>ㅆ</td><td>ㅊ</td><td>ㅂ</td><td>ㅃ</td><td>ㄴ</td><td>ㅁ</td><td>부</td><td>유</td><td>쩐 </td><td>커</td><td>왜</td><td>외</td><td>웨</td><td>위</td><td colspan=2>께</td></tr>
+            
+        </table>
+        
+        <br/>
+        <h5>蔡氏田字键盘，英文字母和义言手势对照表</h5>
+        <br/>
+        <span class="chai">⢰左上角为起始点，⢲⢵⢷</span>
+        <table border="1" style="font-size:1.5em;">
+            <tr class="table-active" align="center"><td>起始点</td><td>左上键圈</td><td>右上键圈</td><td>左下键圈</td><td>右下角键圈</td></tr>
+            <tr class="chai table-active" align="center"><td>标记</td><td>⢰</td><td>⢲</td><td>⢵</td><td>⢷</td></tr>
+            <tr class="table-active" align="center"><td>点击</td><td>左上键圈</td><td>右上键圈</td><td>左下键圈</td><td>右下键圈</td></tr>
+            <tr class="chai table-active" align="center"><td>标记</td><td>⢉⢰</td><td>⢲⢉</td><td>.⢵</td><td>⢷.</td></tr>
+        </table>
+        <b>义言字母Alphabet排序:</b>
+        <table border="1" style="font-size:1.5em;">
+            <tr class="table-active" align="center">
+                    <td>English</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+                    <td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td><td></td><td>è</td><td>à</td>
+                    <td>ò</td><td>ù</td>
+            <tr class="chai table-info" align="center">
+                <td>Chai</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+                <td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td><td></td><td>è</td><td>à</td>
+                <td>ò</td><td>ù</td>
+            <tr class="chai table-primary" align="center">
+                    <td>Cai</td><td>⢰a</td><td>⢰b</td><td>⢰c</td><td>⢰d</td><td>⢰e</td><td>⢰f</td><td>⢰g</td><td>⢰h</td><td>⢰⣴</td><td>⢰⣘</td><td>⢰k</td><td>⢰l</td><td>⢰m</td><td>⢰n</td><td>⢰o</td>
+                    <td>⢰p</td><td>⢰q</td><td>⢰r</td><td>⢰s</td><td>⢰t</td><td>⢰u</td><td>⢰v</td><td>⢰w</td><td>⢰x</td><td>⢰y</td><td>⢰z</td><td></td><td>⢰è</td><td>⢰à</td>
+                    <td>⢰ò</td><td>⢰ù</td>
+            </tr>
+            <tr class="table-active" align="center">
+                <td>English</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td>
+                <td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td><td></td><td>È</td><td>À</td>
+                <td>Ò</td><td>Ù</td>
+            </tr>
+            <tr class="chai table-info" align="center">
+                    <td>English</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td>
+                    <td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td><td></td><td>È</td><td>À</td>
+                    <td>Ò</td><td>Ù</td>
+                </tr>
+            <tr class="chai table-primary" align="center">
+                    <td>Chai</td><td>⢉⢰a</td><td>⢉⢰b</td><td>⢉⢰c</td><td>⢉⢰d</td><td>⢉⢰e</td><td>⢉⢰f</td><td>⢉⢰g</td><td>⢉⢰h</td><td>⢉⢰⣴</td><td>⢉⢰⣘</td><td>⢉⢰k</td><td>⢉⢰l</td><td>⢉⢰m</td><td>⢉⢰n</td><td>⢉⢰o</td>
+                    <td>⢉⢰p</td><td>⢉⢰q</td><td>⢉⢰r</td><td>⢉⢰s</td><td>⢉⢰t</td><td>⢉⢰u</td><td>⢉⢰v</td><td>⢉⢰w</td><td>⢉⢰x</td><td>⢉⢰y</td><td>⢉⢰z</td><td></td><td>⢉⢰è</td><td>⢉⢰à</td>
+                    <td>⢉⢰ò</td><td>⢉⢰ù</td>
+                    
+            </tr>
+            <tr align="center" class="table-active"><td>English</td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td colspan=15></td>
+            </tr>
+            <tr align="center" class="chai table-info"><td>Chai</td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td colspan=15></td>
+            </tr>
+            <tr align="center" class="chai table-primary"><td>Cai</td><td></td><td>⢲⢳</td><td>⢲2</td><td>⢲3</td><td>⢲4</td><td>⢲5</td><td>⢲6</td><td>⢲7</td><td>⢲8</td><td>⢲9</td><td>⢲0</td><td colspan=15></td>
+            </tr>
+            <tr align="center" class="table-active"><td>English</td><td>`</td><td>~</td><td>!</td><td>@</td><td>#</td><td>$</td><td>%</td><td>^</td><td>&amp;</td><td>*</td><td>(</td><td>)</td><td>-</td><td>_</td><td>=</td><td>+</td><td colspan=10></td>
+            </tr>
+            <tr align="center" class="chai table-info"><td>Chai</td><td>⢝	</td><td>N	</td><td>⢱</td><td>A</td><td>O</td><td>2</td><td>5</td><td>⢞</td><td>S</td><td>8</td><td>⢽</td><td>⢇</td><td>⢆</td><td>⢆</td><td>⢆</td><td>⢆</td><td colspan=10></td>
+            </tr>
+            <tr align="center" class="chai table-primary"><td>Cai</td><td>⢷⢝	</td><td>⢷N	</td><td>⢷⢱</td><td>⢷A</td><td>⢷O</td><td>⢷Z</td><td>⢷5</td><td>⢷⢞</td><td>⢷S</td><td>⢷8</td><td>⢷⢽</td><td>⢵⢇</td><td>⢲↤</td><td>⢷↹</td><td>⢵↹</td><td>⢰↦</td><td colspan=10></td>
+            </tr>
+            <tr align="center" class="table-active"><td>English</td><td>[</td><td>]</td><td>{</td><td>}</td><td>| </td><td>\ </td><td>/</td><td colspan=19></td></tr>
+            <tr align="center" class="chai table-info"><td>Chai</td><td>3</td><td>C</td><td>⢌</td><td>⢍</td><td>| </td><td>\ </td><td>/ </td><td colspan=19></td></tr>
+            <tr align="center" class="chai table-primary"><td>Cai</td><td>⢷3</td><td>⢵C</td><td>⢷⢌</td><td>⢵⢍</td><td>⢵⤒ </td><td>⢷↖ </td><td>⢵↗ </td><td colspan=19></td></tr>
+            <tr align="center" class="table-active"><td>English</td><td>;</td><td>:</td><td>'</td><td>"</td><td colspan=3>Tab</td><td colspan=3>CapsLock</td><td colspan=4>Enter</td><td colspan=12></td></tr>
+            <tr align="center" class="chai table-info"><td>Chai</td><td>⢱</td><td>⢱</td><td>⢱</td><td>⢱</td><td colspan=3>⣝</td><td colspan=3>⢉</td><td colspan=4>.</td><td colspan=12></td></tr>
+            <tr align="center" class="chai table-primary"><td>Cai</td><td>⢵⤓⥮</td><td>⢷⤓⥮</td><td>⢰⤓</td><td>⢵⣞</td><td colspan=3>⢵⣝</td><td colspan=3>⢉⢰</td><td colspan=4>⢷.</td><td colspan=12></td></tr>
+            <tr align="center" class="table-active"><td>English</td><td>,</td><td>.</td><td>&lt; </td><td>&gt;</td><td>?</td><td colspan=3>Space</td><td colspan=3>BackSpace</td><td colspan=3>Delete</td><td colspan=12></td></tr>
+            <tr align="center" class="chai table-info"><td>Chai</td><td>⢱</td><td>⢱</td><td>4 </td><td>⢘</td><td>G</td><td colspan=3>⢉</td><td colspan=3>V</td><td colspan=3>Y</td><td colspan=12></td></tr>
+            <tr align="center" class="chai table-primary"><td>Cai</td><td>⢵⥮</td><td>⢷⥮</td><td>⢷4 </td><td>⢵⢘</td><td>⢷G</td><td colspan=3>⢲⢉</td><td colspan=3>⢲V</td><td colspan=3>⢲Y</td><td colspan=12></td></tr>
+        </table>
+        <br/>
+        <h5>蔡氏田字多国语言输入法：</h5>
+        输入法特征：
+        <ul>
+        <li>使用蔡氏田字键盘输入其他语言文字。</li>
+        <li>输入使用义言字母的形状，画在田字键盘上输入。</li>
+        <li>输入中日韩文字时，使用统一的义言音拼来输入。</li>
+        <li>输入英文时义言字母和英文对应表输入。</li>
+        <li>输入其他国家语言时以义言音拼标识来输入。</li>
+        </ul>
+        <table border=1 style="font-size:1.5em;">
+            <tr><td><a href=#>英文输入法</a></td><td><a href=#>中文输入法</a></td><td><a href=#>日文输入法</a></td><td><a href=#>韩文输入法</a></td></tr>
+            <tr><td><a href=#>盲文输入法</a></td><td><a href=#>阿拉伯语输入法</a></td><td><a href=#>印地语输入法</a></td><td><a href=#>俄语输入法</a></td></tr>
+            <tr><td><a href=#>法语输入法</a></td><td><a href=#>德语输入法</a></td><td><a href=#>西班牙语输入法</a></td><td><a href=#>葡萄牙语输入法</a></td></tr>
+            <tr><td><a href=#>...</a></td><td><a href=#></a></td><td><a href=#></a></td><td><a href=#></a></td></tr>
+          
+        </table>
+        <br/>
+        <h4>三义-义语：</h4>
+        <h5>义语言词汇表：</h5>
+        <table border=1 style="font-size:1.5em;">
+            <tr><td></td><td class="chai">wou</td><td>道</td><td>道路和运行结合之象，方法</td></tr>
+            <tr><td></td><td class="chai">ron</td><td>假</td><td>日的外环之象，假</td></tr>
+            <tr><td></td><td class="chai">ri</td><td>真</td><td>日的内心之象，真</td></tr>
+            <tr><td></td><td class="chai">ronri</td><td>逻辑</td><td>假和真结合之象，逻辑</td></tr>
+            <tr><td></td><td class="chai">ronriwou</td><td>逻辑学</td><td>逻辑和方法组合词，逻辑学习的方法</td></tr>
+            <tr><td></td><td class="chai">zy</td><td>阴</td><td>时间分离之象，</td></tr>
+            <tr><td></td><td class="chai">ni</td><td>阳</td><td>空间分离之象，</td></tr>
+            <tr><td></td><td class="chai">gil</td><td>冲</td><td>时空结合之象，</td></tr>
+            <tr><td></td><td class="chai">lig</td><td>码</td><td>编码code，</td></tr>
+            <tr><td></td><td class="chai">sy</td><td>虚</td><td></td></tr>
+            <tr><td></td><td class="chai">hi</td><td>实</td><td></td></tr>
+            <tr><td></td><td class="chai">him</td><td>力</td><td></td></tr>
+            <tr><td></td><td class="chai">wul</td><td>动</td><td></td></tr>
+            <tr><td></td><td class="chai">jil</td><td>静</td><td></td></tr>
+            <tr><td></td><td class="chai">TOD</td><td>羽</td><td></td></tr>
+            <tr><td></td><td class="chai">den</td><td>던开始</td><td></td></tr>
+            <tr><td></td><td class="chai">ta</td><td>타结束</td><td></td></tr>
+            <tr><td></td><td class="chai">denta</td><td>던타区域</td><td></td></tr>
+            <tr><td></td><td class="chai">xuwo</td><td>数学</td><td></td></tr>
+            <tr><td></td><td class="chai">jiwo</td><td>几何学</td><td></td></tr>
+            <tr><td></td><td class="chai">jyo</td><td>角</td><td></td></tr>
+            <tr><td></td><td>true</td><td class="chai">ri</td><td>리=o+i(i)</td></tr>
+            <tr><td></td><td>false</td><td class="chai">ron</td><td>론=o+i(o)n</td></tr>
+            <tr><td></td><td>combin</td><td class="chai">tia</td><td>태对立,转换</td></tr>
+            <tr><td></td><td>combin</td><td class="chai">ait</td><td>아이트分，边界</td></tr>
+            <tr><td></td><td>combin</td><td class="chai">at</td><td>아트合</td></tr>
+            <tr><td></td><td>none</td><td class="chai">toa</td><td>톼</td></tr>
+            <tr><td></td><td>center</td><td class="chai">zon</td><td>태</td></tr>
+            <tr><td></td><td>center</td><td class="chai">zin</td><td>태</td></tr>
+            <tr><td></td><td>or</td><td class="chai">ki</td><td>키</td></tr>
+            <tr><td></td><td>not</td><td class="chai">zoa</td><td>좌</td></tr>
+            <tr><td></td><td>and</td><td class="chai">zod</td><td>졷</td></tr>
+            <tr><td></td><td>xor</td><td class="chai">soki</td><td>소키</td></tr>
+            <tr><td></td><td>xo</td><td class="chai">so</td><td>소</td></tr>
+            <tr><td></td><td>step</td><td class="chai">sil</td><td>싱</td></tr>
+            <tr><td></td><td>start</td><td class="chai">del</td><td>덩</td></tr>
+            <tr><td></td><td>function</td><td class="chai">fun</td><td>분</td></tr>
+            <tr><td></td><td>return</td><td class="chai">gol</td><td>공</td></tr>
+            <tr><td></td><td>end</td><td class="chai">ta</td><td>타</td></tr>
+            <tr><td></td><td>if</td><td class="chai">kil</td><td>킹</td></tr>
+            <tr><td></td><td>else</td><td class="chai">jil</td><td>찡</td></tr>
+            <tr><td></td><td>elif</td><td class="chai">iel</td><td>엥</td></tr>
+            <tr><td></td><td>break</td><td class="chai">iel</td><td>엥</td></tr>
+            <tr><td></td><td>contiue</td><td class="chai">iel</td><td>엥</td></tr>
+            <tr><td></td><td>number</td><td class="chai">iel</td><td>엥</td></tr>
+            <tr><td></td><td>string</td><td class="chai">iel</td><td>엥</td></tr>
+            <tr><td></td><td>file</td><td class="chai">firo</td><td>엥</td></tr>
+            <tr><td></td><td>case</td><td class="chai">mil</td><td>밍</td></tr>
+            <tr><td></td><td>while</td><td class="chai">poil</td><td>포잉</td></tr>
+            <tr><td></td><td>until</td><td class="chai">foil</td><td>보잉</td></tr>
+            <tr><td></td><td>class</td><td class="chai">rieb</td><td>레쁘</td></tr>
+            <tr><td></td><td>print</td><td class="chai">poi</td><td>레쁘</td></tr>
+            <tr><td></td><td>head</td><td class="chai">bo</td><td>레쁘</td></tr>
+            <tr><td></td><td>body</td><td class="chai">mo</td><td>레쁘</td></tr>
+            <tr><td></td><td>body</td><td class="chai">mya</td><td>레쁘</td></tr>
+            <tr><td></td><td>foot</td><td class="chai">bu</td><td>레쁘</td></tr>
+            <tr><td></td><td>net</td><td class="chai">xy</td><td>보잉</td></tr>
+            <tr><td></td><td>总线网</td><td class="chai">mixy</td><td>미쓰</td></tr>
+            <tr><td></td><td>环形网</td><td class="chai">loxy</td><td>오쓰</td></tr>
+            <tr><td></td><td>网状网</td><td class="chai">woxy</td><td>또쓰</td></tr>
+            <tr><td></td><td>树形网</td><td class="chai">jyoxy</td><td>쬬쓰</td></tr>
+            <tr><td></td><td>眼镜</td><td class="chai">OvO</td><td>오보</td></tr>
+            <tr><td></td><td>树形网</td><td class="chai">oTo</td><td>오토自行车</td></tr>
+        
+        </table>
+        
+        
+        <br/>
+        <b>义语言计算机程序</b>
+            <pre class="table-active"><code class="chai ">
+            # 类
+            rieb Yim: 
+            #den： 开始区  
+            # 赋值  
+              ro = 0, li = 1, na = 2, cu = 3, ku = 4, du = 5, pu = 6, ge = 7, xu = 8, fu = 9
+            # 列表
+              xuzy = [ro, li, na, cu, ku, du, pu, ge, xu, fu]
+            # 词典
+              ronri = {ron:0, ri:1}
+            # 函数
+              fun oan(n, z):
+                c = n + z
+                gol c
+            #ta： 结束区
+            
+            # 流程语句
+            # 条件
+            kil ro = li:
+              poi("ri")
+            sil ro = na:
+              poi("toa")
+            jil:
+              poi("ron")
+            # 排选
+            hi = cu
+            mil (hi):
+              ron: poi("ron")
+              ri: poi("ri")
+              na: poi("na")
+              cu: poi("cu")
+            # 循环1
+            poil hi &lt;= 0:
+              hi = hi - 1
+            # 循环1
+            foil hi &gt;= 9:
+              hi = hi + 1    
+            
+            </code></pre>
+        
+        <h5>义语处理：</h5>
+        <ul>
+            <li>信息传递模型</li>
+            <li>自然语言的机器处理</li>
+            <li>文字符号的起源</li>
+            <li>字形的变化</li>
+            <li>字形的结构</li>
+            <li>言-字-词-句-义</li>
+            <li>分词</li>
+            <li>概率</li>
+            <li>编码</li>
+            <li>逻辑</li>
+            <li>词性</li>
+            <li>语块</li>
+            <li>句法结构</li>
+            <li>依存句法</li>
+            <li>句法树</li>
+            <li>形式语言</li>
+            <li>语料库</li>
+            <li>语义知识库</li>
+            <li>神经网</li>
+            <li>语义网</li>
+            <li>认知语义</li>
+        </ul>
+        <h5>义语言的应用：</h5>
+        <table border=1 style="font-size:1.5em;">
+            <tr align="center" class="table-active"><td>互联网</td><td>物联网</td><td>语义网</td></tr>
+            <tr align="center" class="table-primary"><td>连接</td><td>感知</td><td>知识</td></tr>
+        </table>
+        
+        <br/>
+        <b>英文字母:</b> 
+        <b > abcefghijklmnopqrstuvwxyz ñàèòù 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ Ñ À È Ò Ù</b>
+        <br/>
+        <b>蔡义字母:</b>
+          <b class="chai"> abcefghijklmnopqrstuvwxyz ñàèòù 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ Ñ À È Ò Ù </b>
+        
+        <div align="center">Copyright(C) 2013-2018 by Daway.Caiguangxian</div>
+    </div>
+<!-- end chai -->

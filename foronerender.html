@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<!--
+作者：蔡光贤(Daway.Cai)
+邮件：caixnet@outlook.com
+链接：https://caixnet.github.io
+来源：github
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- chaiforone CSS -->
+    <link rel="stylesheet" href="css/chaiforone.css">
+    <title>Chai-ForOne keybaord IME Demo</title>
+    <!-- <link rel="stylesheet" href="css/foronedemo.css"> -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" /> -->
+
+    <!-- <script src="js/foronedemo.js"></script> -->
+    <script src="js/forone.js"></script>
+</head>
+
+<body>
+    <!-- begin Menu here -->
+    <nav class="nav navbar bg-dark " align="left">
+        <div class="btn-group" role="group" aria-label="caiXnet">
+            <a class="btn btn-dark" href="#" role="button" onclick="javascript:window.location.reload()">cai
+                <img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet">net</a>
+            <a class="btn btn-dark " href="index.html" role="button">chai</a>
+            <a class="btn btn-dark " href="chaiForoneTouch.html" role="button">forone</a>
+            <a class="btn btn-dark " href="foroneditor.html" role="button">editor</a>
+            <a class="btn btn-dark active" href="#" role="button">render</a>
+        </div>
+    </nav>
+    <!-- end Menu here -->
+
+
+    <!-- begin render -->
+    <div class="container">
+        <!-- begin Nav tabs -->
+        <ul class="nav nav-tabs  nav-justified table-active" role="tablist">
+
+            <li class="nav-item " style="margin:0;border:0;padding:0;">
+                <a id="nav1" class="nav-link text-warning active" data-toggle="tab" href="#chaiFRMzone" onclick="forone.triaCHS.selectRD('chaiFRMtext')">Home</a>
+
+            </li>
+
+            <li class="nav-item " style="margin:0;border:0;padding:0;">
+                <a id="nav2" class="nav-link text-success " data-toggle="tab" href="#chaiHTMLzone" onclick="forone.triaCHS.selectRD('chaiHTMLtext')">HTML</a>
+
+            </li>
+
+            <li class="nav-item " style="margin:0;border:0;padding:0;">
+                <a id="nav3" class="nav-link text-danger" data-toggle="tab" href="#chaiCSSzone" onclick="forone.triaCHS.selectRD('chaiCSStext')">CSS</a>
+
+            </li>
+
+            <li class="nav-item " style="margin:0;border:0;padding:0;">
+                <a id="nav4" class="nav-link text-primary" data-toggle="tab" href="#chaiJSzone" onclick="forone.triaCHS.selectRD('chaiJStext')">JS</a>
+
+            </li>
+            <li class="nav-item " style="margin:0;border:0;padding:0;">
+                <a id="nav4" class="nav-link text-secondary" data-toggle="tab" href="#chaiSETzone" onclick="">SET</a>
+
+            </li>
+
+        </ul>
+        <!-- end Nav tabs -->
+
+        <!-- Tab panes -->
+        <div class="tab-content" style="margin:0;border:0;">
+            <h5></h5>
+            <!-- begin Home Render -->
+            <div id="chaiFRMzone" class="container tab-pane " style="margin:0;border:0;padding:0;">
+                <iframe id="chaiFRMtext" scrolling="no" sandbox="allow-scripts allow-same-origin  allow-popups allow-popups-to-escape-sandbox"
+                    src="./foroneframe.html" style="display: block;height:72vh;width:90vw;"></iframe>
+            </div>
+            <!-- end Home Render -->
+
+            <!-- begin HTML Render -->
+            <div id="chaiHTMLzone" class="container tab-pane fade" style="margin:0;border:0;padding:0;height:72vh;width:90vw;">
+                <textarea id="chaiHTMLtext" rows="10" calss="chaiText table-success" style="width:inherit;height:inherit;font-size:1em;overflow-y:scroll;">Hello, <b class="chai text-success">Chai</b> <i>World!</i> <br/>
+<script>test();</script>
+<p class="alert alert-primary" role="alert"> This is a bootstrap4 css click!</p>
+</textarea>
+            </div>
+            <!-- end HTML Render -->
+
+            <!-- begin CSS Render -->
+            <div id="chaiCSSzone" class="container tab-pane fade active" style="margin:0;border:0;padding:0;height:72vh;width:90vw;">
+                <textarea id="chaiCSStext" rows="5" calss="chaiText table-danger" style="width:inherit;height:inherit;font-size:1em;overflow-y:scroll;">i {color:red;}</textarea>
+            </div>
+            <!-- end CSS Render -->
+
+            <!-- begin JS Render -->
+            <div id="chaiJSzone" class="container tab-pane fade" style="margin:0;border:0;padding:0;height:72vh;width:90vw;">
+                <textarea id="chaiJStext" calss="chaiText table-primary" style="width:inherit;height:inherit;font-size:1em;overflow-y:scroll;">// javascript
+function test(){
+document.write("Call me?!");
+}
+//jquery
+$(document).ready(function(){
+    $("p").click(function(){
+      $(this).hide();
+    });
+});
+</textarea>
+            </div>
+            <!-- end JS Render -->
+
+            <!-- begin CSS Render -->
+            <div id="chaiSETzone" class="container tab-pane fade active" style="margin:0;border:0;padding:0;height:72vh;width:90vw;">
+                <label id="chaiSETtext" rows="5" calss="chaiText table-warning" style="width:inherit;height:inherit;font-size:1em;overflow-y:scroll;">
+                    <a class="btn btn-dark " href="#" role="button">configure</a>
+                </label>
+            </div>
+            <!-- end CSS Render -->
+
+        </div>
+        <!-- end Tab panes -->
+
+    </div>
+    <!-- end render -->
+
+
+
+    <!-- begin chai forone keyboard -->
+    <div id="chai41keyboard" running="true"> </div>
+    <!-- end chai forone keyboard -->
+
+    <!-- end chai forone body -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+</body>
+
+
+</html>

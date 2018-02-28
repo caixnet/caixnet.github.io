@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+作者：蔡光贤(Daway.Cai)
+邮件：caixnet@outlook.com
+链接：https://caixnet.github.io
+来源：github
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- chaiforone CSS -->
+    <link rel="stylesheet" href="css/chaiforone.css">
+    <title>Chai-ForOne keybaord IME Demo</title>
+    <!-- <link rel="stylesheet" href="css/foronedemo.css"> -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <link rel="shortcut icon" href="#" />
+    <!-- <script src="js/foronedemo.js"></script> -->
+    <script src="js/forone.js"></script>
+</head>
+
+<body>
+    <!-- begin Menu here -->
+    <nav class="nav navbar bg-dark " align="left">
+        <div class="btn-group" role="group" aria-label="caiXnet">
+            <!-- <button type="button" class="btn btn-dark ">
+                cai<input type="file">
+                <img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet">net
+            </button> -->
+            <a class="btn btn-dark" href="#" role="button" onclick="javascript:window.location.reload()">cai
+                <img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet">net</a>
+            <a class="btn btn-dark " href="index.html" role="button">chai</a>
+            <a class="btn btn-dark active" href="#" role="button">forone</a>
+            <a class="btn btn-dark " href="foroneditor.html" role="button">editor</a>
+            <a class="btn btn-dark " href="foronerender.html" role="button">render</a>
+        </div>
+    </nav>
+    <!-- end Menu here -->
+    <!-- begin brand mark -->
+    <div class="container">
+        <div class="nav-justified nav-justified btn-group" role="group">
+            <a href="chaiForoneMouse.html" class="btn btn-primary" role="button">Mouse</a>
+            
+            <a class="btn btn-light " role="button" href="#chaiDemoHelp" data-toggle="collapse" >chai forone<img src="images/caiXnet.png" width="30" height="30" class=" badge badge-light d-inline-block align-top" alt="caiXnet"> keyboard</a>
+            
+             <a href="demo.html#chaiForoneDemo" class="btn btn-primary " role="button">Help</a>
+
+        </div>
+    </div>
+
+    <!-- end brand mark -->
+ 
+<!-- begin chai demo help -->
+
+<!-- end chai demo help -->
+
+
+    <!-- begin chai forone keyboard -->
+    <div id="chai41keyboard" running="true"> </div>
+    <!-- end chai forone keyboard -->
+
+    <!-- begin chai forone demo -->
+    <div id="chai41demo" play="false" width="viewport" style="position:static; top:'10px' width='100%'; "></div>
+    <!-- end chai forone demo -->
+
+    <!-- begin chai forone input area -->
+    <!-- style="position:fixed; top:180px; width:100%; font-size: 4em;" -->
+    <div id="chaiTextDemo" class="chaiTextDemo">
+
+        <textarea id="chaiText" class="form-control table-success" style="height:72vh;width:98vw;overflow:auto;font-size:2em;"></textarea>
+    </div>
+    <!-- end chai forone input area -->
+
+
+    <!-- begin chai forone web-keybord demo -->
+    <nav id="oneforHideDemo" class="oneforHideDemo" display="block" style="z-index:99999;" onclick="hideDemo()">
+        <div id="oneforHideDemoIn" class="oneforHideDemoIn"></div>
+        <div id="oneforHideDemoOut" class="oneforHideDemoOut"></div>
+    </nav>
+    <script>
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        document.getElementById("oneforHideDemo").style.display = "block";
+        console.log("sript do", w, h);
+        var mHideForOne = false;
+        function hideForone() {
+            return mHideForOne = !mHideForOne;
+        }
+        function hideDemo() {
+            if (hideForone()) {
+                document.getElementById("chai41demo").style.display = "none";
+                document.getElementById("chaiTextDemo").style.cssText = "position:absolute; top:24px;";
+
+            } else {
+                document.getElementById("chai41demo").style.display = "block";
+                document.getElementById("chaiTextDemo").style.display = "block";
+                document.getElementById("chaiTextDemo").style.cssText = "position:fixed; top:180px; ";
+            }
+        } 
+    </script>
+    <!-- end chai forone web-keybord demo -->
+
+    <!-- begin chai badge -->
+    <div style="position: fixed; float:left; bottom: 1px;">
+        <b>
+            <span class="badge badge-active ">chai forone web-keybaord demo(test on safari/chrome)</span>
+        </b>
+    </div>
+    <!-- end chai badge -->
+
+</body>
+
+</html>

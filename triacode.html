@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!--
+作者：蔡光贤(Daway.Cai)
+邮件：caixnet@outlook.com
+链接：https://caixnet.github.io
+来源：github
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- chaiforone CSS -->
+    <link rel="stylesheet" href="css/chaiforone.css">
+    <script>
+        function loadXMLDoc(url, option=false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { document.write(xmlhttp.responseText); } }; xmlhttp.open("GET", url, option); xmlhttp.send(); }
+        //<link id="chai01" href="docs/chai_english.html" rel="import">
+        function include(DocId, itemId) { var includeDocId = 'link[id="' + DocId + '"]'; var includeItemsId = '#' + itemId; var htmlImport = document.querySelector(includeDocId); var htmlDoc = htmlImport.import; var htmlMessage = htmlDoc.querySelector(includeItemsId); document.body.appendChild(htmlMessage.cloneNode(true)); }
+    </script>
+    <title>caiXnet (Chai Code)</title>
+</head>
+
+<body class="home blog">
+
+
+    <!-- begin Chai Menu -->
+  <!-- begin Menu here -->
+    <nav id="chaiMenu" class="nav navbar bg-dark" align="left">
+        <div class="btn-group" role="group" aria-label="caiXnet">
+            <a class="btn btn-dark" href="#" role="button" onclick="javascript:window.location.reload()">cai
+                <img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet">net</a>
+            <a class="btn btn-dark " href="index.html" role="button">chai</a>
+            <a class="btn btn-dark " href="chaiForoneTouch.html" role="button">forone</a>
+            <a class="btn btn-dark active" href="triacode.html" role="button">code</a>
+            <a class="btn btn-dark " href="chaiAbout.html" role="button">about</a>
+        </div>
+    </nav>
+ <!-- end Menu here -->
+    <!-- end Chai Menu -->
+
+
+    <!-- begin Chai & triacode -->
+    <script>
+        loadXMLDoc('docs/chai_triacode.html');
+    </script>
+    <!-- end Chai & triacode -->
+
+    <!-- begin Chai & triacode -->
+    <script>
+        loadXMLDoc('docs/triacode_logic.html');
+    </script>
+    <!-- end Chai & triacode -->
+
+    <!-- begin Chai & triacode -->
+    <script>
+        loadXMLDoc('docs/triacode.html');
+    </script>
+    <!-- end Chai & triacode -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

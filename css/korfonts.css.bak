@@ -1,0 +1,15 @@
+/* Korean Font */
+
+@font-face {
+    font-family: 'KorFont';
+    src: url('../fonts/KorFont.woff') format('woff');
+    font-style: normal;
+  }
+  
+  .kr {
+  font-family: Batang,Gulim,KorFont;
+  }
+  
+  #koreanID {
+  font-family: Batang,Gulim,KorFont;
+  }

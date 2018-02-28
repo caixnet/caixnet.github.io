@@ -1,27 +1,15 @@
-/* Chai Font */
+/* Chai ForOne Fonts */
 @font-face {                 
-  font-family: 'Chai';                 
-  src: url(https://caixnet.github.io/fonts/Chai.woff) format("woff"),
-  url(https://caixnet.github.io/fonts/Chai.ttf) format("truetype"),
-  url(https://caixnet.github.io/fonts/Chai.otf) format("opentype"),
-  url(https://caixnet.github.io/fonts/Chai.svg#Chai) format("svg");              
+  font-family: 'ChaiForOne';    
+  /* src: url(https://caixnet.github.io/fonts/ChaiForOne.woff) format("woff"),
+  url(https://caixnet.github.io/fonts/ChaiForOne.ttf) format("truetype"),
+  url(https://caixnet.github.io/fonts/ChaiForOne.otf) format("opentype");                */
+  src: url(https://caixnet.github.io/fonts/ChaiForOne.woff) format("woff"),
+  url(https://caixnet.github.io/fonts/ChaiForOne.ttf) format("truetype"),
+  url(https://caixnet.github.io/fonts/ChaiForOne.otf) format("opentype");              
   font-style: normal;                 
-  }  
-
+  }
+    
 .chai {
-font-family: Chai;
-}
-
-/* Braille Font */
-@font-face {                 
-  font-family: 'Braille';                 
-  src: url(https://caixnet.github.io/fonts/Braille.woff) format("woff"),
-  url(https://caixnet.github.io/fonts/Braille.ttf) format("truetype"),
-  url(https://caixnet.github.io/fonts/Braille.otf) format("opentype"),
-  url(https://caixnet.github.io/fonts/Braille.svg#Braille) format("svg");
-  font-style: normal;                 
-  }  
-
-.braille {
-font-family: Braille;
+font-family: ChaiForOne;
 }

@@ -1,0 +1,10 @@
+/* chinese Font */
+@font-face {
+    font-family: 'HeiTiZy';
+    src: url('../fonts/HeiTiZy.woff') format('woff');
+    font-weight: 800;
+  }
+
+.cn {
+font-family:SimHei,STHeiti,Heiti,NSimSun,MingLiU,SimSun,'HeiTiZy',Arial;
+}

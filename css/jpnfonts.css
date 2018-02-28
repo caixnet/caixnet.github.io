@@ -1,0 +1,10 @@
+/* japanese Font */
+  @font-face {
+    font-family: 'JapaneseFont';
+    src: url('../fonts/JpnFont.woff') format('woff');
+    font-weight: 800;
+  }
+  
+  .jp {
+    font-family: 'MS PGothic', Osaka, 'JapaneseFont', Arial,sans-serif;
+  }

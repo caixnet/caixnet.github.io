@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta charset="UTF-8">
+   <meta name="Author" content="Daway.Cai">
+    <meta name="Keywords" content="Chai Forone">
+  <title>Chai Forone Render</title>
+  <!-- <link rel="stylesheet" href="css/chai.css"> -->
+  <link rel="stylesheet" href="css/chaiforone.css">
+  <style></style>
+  <script></script> 
+ </head>
+ <body>
+  <div id="chaiforonehtml">
+  <p id="pId"> hello</p>
+   
+  <input type="button" name="call parent" value="call parent" onclick="callParent()"/>
+  </div>
+  <div><p class="chai">abcdefghijklmnopqrstuvwxyz</p></div>
+  <a href="mailto:caixnet@outlook.com">Email</a>
+ <script>
+  	function childFunction() {
+		console.log('function in child');
+	}
+	function callParent() {
+		parent.parentFunction();
+	}
+  </script>
+ </body>
+</html>
+ 

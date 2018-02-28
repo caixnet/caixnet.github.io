@@ -1,0 +1,12 @@
+/* Chai ForOne Fonts */
+@font-face {                 
+  font-family: 'ChaiForOne';                 
+  src: url(../fonts/ChaiForOne.woff) format("woff"),
+  url(../fonts/ChaiForOne.ttf) format("truetype"),
+  url(../fonts/ChaiForOne.otf) format("opentype");              
+  font-style: normal;                 
+  }  
+.chai {
+font-family: ChaiForOne;
+}
+

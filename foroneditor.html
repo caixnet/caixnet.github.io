@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+作者：蔡光贤(Daway.Cai)
+邮件：caixnet@outlook.com
+链接：https://caixnet.github.io
+来源：github
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- chaiforone CSS -->
+    <link rel="stylesheet" href="css/chaiforone.css">
+    <title>Chai-ForOne keybaord IME Demo</title>
+    <!-- <link rel="stylesheet" href="css/foronedemo.css"> -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <link rel="shortcut icon" href="#" />
+
+    <!-- <script src="js/foronedemo.js"></script> -->
+    <script src="js/forone.js"></script>
+    <style>
+   
+    </style>
+
+</head>
+
+<body>
+    <!-- begin Menu here -->
+    <nav class="nav navbar bg-dark " align="left">
+        <div class="btn-group" role="group" aria-label="caiXnet">
+            <a class="btn btn-dark" href="#" role="button" onclick="javascript:window.location.reload()">cai
+                <img src="images/caiXnet.png" width="23" height="23" class="d-inline-block align-top" alt="caiXnet">net</a>
+            <a class="btn btn-dark " href="index.html" role="button">chai</a>
+            <a class="btn btn-dark " href="chaiForoneTouch.html" role="button">forone</a>
+            <a class="btn btn-dark active" href="#" role="button">editor</a>
+            <a class="btn btn-dark " href="foronerender.html" role="button">render</a>
+        </div>
+    </nav>
+    <!-- end Menu here -->
+
+    <!-- begin chai forone keyboard -->
+    <div id="chai41keyboard" running="true"> </div>
+    <!-- end chai forone keyboard -->
+
+    <!-- begin Chai Editor -->
+    <div class="container">
+
+        <!-- begin Chai MarkDown Editor Carousel -->
+        <div id="chaiCarousel" class="carousel slide carousel-fade" data-interval="false" data-param-auto="false" data-ride="carousel">
+
+            <!-- begin Carousel Slice item tag -->
+            <ul class="carousel-indicators">
+                <li data-target="#chaiCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#chaiCarousel" data-slide-to="1"></li>
+                <li data-target="#chaiCarousel" data-slide-to="2"></li>
+            </ul>
+            <!-- end Carousel Slice item tag -->
+
+            <!-- begin Carousel Context Slice -->
+            <div class="carousel-inner table-active">
+                <!--begin chai editor -->
+                <div id="ChaiMarkDownEditor" class="carousel-item active" style="height:80vh;width:100vw;">
+                    <textarea id="chaiHTMLtext" class="form-control bg-dark text-light" style="cursor:text;overflow-x:scroll;overflow-y:scroll;height:80vh;width:100vw;overflow:auto;font-size:1.2em;">
+
+
+# ``Chai`` markdown editor 
+1. Click right side to switch edit/show.
+2. Click red button to show forone keyboard!
+3. guesture to hide forone keyboard!
+---
+### forone editor  
+- support normal markdown  
+- add chai script `` Chai``  
+
+#### Number:  
+- [ ] *1234567890*  
+- [x] ``1234567890``  
+
+#### Alphabet:  
+- [] **abcdefghijklmnopqrstuvwxyz**
+- [X]  ``abcdefghijklmnopqrstuvwxyz ``  
+ 
+---
+
+table 
+ this| right | center   | *left*
+-----|-------:|:--------:|:------
+``chai`` | ``chai``  | ``ene`` | ``zamo`` 
+Enu  | chai  | language    | character
+Num  | 01   | 23456     | 789
+``xuzy`` | ``01``   | ``23456``| ``789``
+
+---
+this| `` chai`` | ``s``   | *left*
+-----|-------:|:--------:|:------
+`` chai`` | ``chai``  | `` ene`` | `` zamo`` 
+Enu  | chai  | language    | character
+Num  | 01   | 23456     | 789
+`` xuzy`` | `` 01``   | `` 23456``| `` 789``
+---
+- [ ] Chai ForOne  
+- [X] Test one  
+---
+> abc  `` abc``  %%abc%% 
+> a\2\ + b\2\ = c\2\
+> A/1/+A/2/+A/3/=C;  
+
+_`` abc``_ __`` abc``__ ___`` abc``___   
+**abc** *abc* ***abc***  
+**`` abc``**  ***`` abc``***   
+~abc~ ~~abc~~ ~~~abc~~~  
+
+<http://caixnet.github.io>  
+mail: <caixnet@outlook.com>  
+[Chai ForOne](http://chaiforone.github.io)  
+
+
+a\2\ + b\2\ = c\2\ ;  
+A/1/+A/2/+A/3/=C;  
+
+ ```  
+// javascript code
+function demo(){
+  console.log("Hello, Wolrd!");
+}
+ ```
+                    </textarea>
+                </div>
+                <!--end chai editor -->
+                <!--begin chai markdown -->
+                <div id="ChaiMarkDown" class="carousel-item table-primary" style="height:80vh;width:100vw;">
+                    <div>
+                        <label id="chaiMDtext" class="form-control list-group-item-secondary text-left" style="overflow-x:scroll;overflow-y:scroll;height:80vh;width:100vw;overflow:auto;font-size:1.2em;">
+                            Chai Markdown Editor Demo
+                        </label>
+                    </div>
+                </div>
+                <!--end chai markdown -->
+
+                <!--begin chai markdown -->
+                <div id="ChaiConfig" class="carousel-item table-success text-left" style="height:80vh;width:100vw;">
+                    <div>
+                        <!-- begin File -->
+                        <div class="card ">
+                            <div class="card-header list-group-item-primary">
+                                <a class="nav-link  text-dark " href="#chaiEdtFile" data-toggle="collapse" data-target="#chaiEdtFile">File</a>
+                            </div>
+                            <div id="chaiEdtFile" class="card-body collapse">
+                                <ul id="chaiMainNav" class="nav flex-column ">
+                                    <li class="nav-item list-group-item-primary">
+                                        <a class="nav-link " href="#">Save</a>
+                                    </li>
+                                    <li class="nav-item list-group-item-success">
+                                        <a class="nav-link " href="#">Save As</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end File -->
+                        <!-- begin Edit -->
+                        <div class="card">
+                            <div class="card-header list-group-item-primary">
+                                <a class="nav-link  text-dark " href="#chaiEdtDoc" data-toggle="collapse" data-target="#chaiEdtDoc">Edit</a>
+                            </div>
+                            <div id="chaiEdtDoc" class="card-body collapse">
+                                <ul id="chaiMainNav" class="nav flex-column">
+                                    <li class="nav-item list-group-item-primary">
+                                        <a class="nav-link " href="#" onclick="forone.triaMD.editClear()">Clear</a>
+                                    </li>
+                                    <li class="nav-item list-group-item-success">
+                                        <a class="nav-link " href="#" onclick="forone.triaMD.editSelectAll()">Select All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end Edit -->
+    
+
+                    </div>
+
+                </div>
+
+
+                <!--end chai markdown -->
+
+            </div>
+            <!-- End Carousel Context Slice -->
+
+            <!-- begin carouse control left/right = prev/next -->
+            <a class="carousel-control-prev" href="#chaiCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon " style="color:black"></span>
+            </a>
+            <a class="carousel-control-next" href="#chaiCarousel" data-slide="next">
+                <span class="carousel-control-next-icon "></span>
+            </a>
+            <!-- end carouse control left/right = prev/next -->
+
+        </div>
+        <!-- begin Chai MarkDown Editor Carousel -->
+
+    </div>
+    <!-- end Chai Editor -->
+
+
+    <!-- end chai forone body -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script>
+        $('#chaiCarousel').on('slid.bs.carousel', function (e) {
+            var isMarkdownProcess = $(".active", e.target).index()
+            if (isMarkdownProcess == 1) {
+                forone.triaMD.markDown();
+            }
+            if (isMarkdownProcess == 2) {
+                console.log("markdown configure");
+            }
+        });
+        //forone.hideForoneApp();
+        $(document).ready(function () { forone.hideForoneApp(); });  
+    </script>
+
+</body>
+
+
+</html>

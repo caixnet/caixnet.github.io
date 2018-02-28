@@ -6,14 +6,20 @@
   <style type="text/css">
    <![CDATA[
     @charset "utf-8";
-    @font-face {
-        font-family: 'Noto Sans KR';
-          src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
-         url('../fonts/NotoSansKR-Medium.woff') format('woff'),
-         url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+  
+	@font-face {
+    font-family: 'KorFont';
+    src: url('../fonts/KorFont.woff') format('woff');
     font-style: normal;
     }
-	#koreanID {font-family: 'Noto Sans KR','BatangChe';}
+  
+   .kr {
+   font-family: Batang,Gulim,KorFont,Arial;
+   }
+  
+   #koreanID {
+   font-family: Batang,Gulim,KorFont,Arial;
+   }
    ]]>
  </style>
 </defs>
