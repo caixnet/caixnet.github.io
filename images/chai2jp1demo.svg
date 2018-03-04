@@ -6,13 +6,14 @@
   <style type="text/css">
    <![CDATA[
     @font-face {
-	font-family: 'KeiFont-w';
-	src: url('../fonts/KeiFont.woff') format('woff'),
-	url('../fonts/KeiFont.ttf') format('truetype');
+	font-family: 'JapaneseFont';
+	src: url('../fonts/JpnFont.woff') format('woff');
 	}
-	#japaneseID {font-family: 'KeiFont-w';}
-
-	'MS PGothic', Osaka, Arial, sans-serif;
+	#japaneseID {font-family: 'MS PGothic', Osaka, Arial,'JapaneseFont'}
+	.jp {
+   font-family:'MS PGothic', Osaka, Arial,'JapaneseFont';
+   }
+  
    ]]>
  </style>
 </defs>
@@ -34,21 +35,21 @@
 
 
 var chia2japanese  = { 
-"a":"あ", "i":"い", "u":"う", "ie":"え", "o":"お",
-"ka":"か", "ki":"き", "ku":"く", "kie":"け", "ko":"こ",
-"sa":"さ", "si":"し", "su":"す", "sie":"せ", "so":"そ",
-"ta":"た", "ji":"ち","jy":"つ", "tie":"て", "to":"と",
-"na":"な", "ni":"に", "nu":"ぬ", "nie":"ね", "no":"の",
-"ha":"は", "hi":"ひ", "hu":"ふ", "hie":"へ", "ho":"ほ",
-"ma":"ま", "mi":"み", "mu":"む", "mie":"め", "mo":"も",
-"ra":"ら", "ri":"り", "ru":"る", "rie":"れ", "ro":"ろ",
+"a":"あ", "i":"い", "u":"う", "è":"え", "o":"お",
+"ka":"か", "ki":"き", "ku":"く", "kè":"け", "ko":"こ",
+"sa":"さ", "si":"し", "su":"す", "sè":"せ", "so":"そ",
+"ta":"た", "ji":"ち","jy":"つ", "tè":"て", "to":"と",
+"na":"な", "ni":"に", "nu":"ぬ", "nè":"ね", "no":"の",
+"ha":"は", "hi":"ひ", "hu":"ふ", "hè":"へ", "ho":"ほ",
+"ma":"ま", "mi":"み", "mu":"む", "mè":"め", "mo":"も",
+"ra":"ら", "ri":"り", "ru":"る", "rè":"れ", "ro":"ろ",
 "ya":"や", "yu":"ゆ", "yo":"よ",   
 "oa":"わ", "lo":"を", "l":"ん",
-"ga":"が", "gi":"ぎ", "gu":"ぐ", "gie":"げ", "go":"ご",
-"za":"ざ", "zi":"じ", "zu":"ず", "zie":"ぜ", "zo":"ぞ",
-"da":"だ", "jhi":"ぢ", "jhy":"づ", "die":"で", "do":"ど",
-"va":"ば", "vi":"び", "vu":"ぶ", "vie":"べ", "vo":"ぼ",
-"pa":"ぱ", "pi":"ぴ", "pu":"ぷ", "pie":"ぺ", "po":"ぽ",
+"ga":"が", "gi":"ぎ", "gu":"ぐ", "gè":"げ", "go":"ご",
+"za":"ざ", "zi":"じ", "zu":"ず", "zè":"ぜ", "zo":"ぞ",
+"da":"だ", "di":"ぢ", "dy":"づ", "dè":"で", "do":"ど",
+"va":"ば", "vi":"び", "vu":"ぶ", "vè":"べ", "vo":"ぼ",
+"pa":"ぱ", "pi":"ぴ", "pu":"ぷ", "pè":"ぺ", "po":"ぽ",
 "kya":"きゃ", "kyu":"きゅ", "kyo":"きょ",
 "gya":"ぎゃ", "gyu":"ぎゅ", "gyo":"ぎょ",
 "sya":"しゃ", "syu":"しゅ", "syo":"しょ",
@@ -61,21 +62,21 @@ var chia2japanese  = {
 "pya":"ぴゃ", "pyu":"ぴゅ", "pyo":"ぴょ",
 "mya":"みゃ", "myu":"みゅ", "myo":"みょ",
 "rya":"りゃ", "ryu":"りゅ", "ryo":"りょ",
-"A":"ア", "I":"イ", "U":"ウ", "IE":"エ", "O":"オ",
-"Ka":"カ", "Ki":"キ", "Ku":"ク", "Kie":"ケ", "Ko":"コ",
-"Sa":"サ", "Si":"シ", "Su":"ス", "Sie":"セ", "So":"ソ",
-"Ta":"タ", "Ji":"チ","Jy":"ツ", "Tie":"テ", "To":"ト",
-"Na":"ナ", "Ni":"ニ", "Nu":"ヌ", "Nie":"ネ", "No":"ノ",
-"Ha":"ハ", "Hi":"ヒ", "Hu":"フ", "Hie":"ヘ", "Ho":"ホ",
-"Ma":"マ", "Mi":"ミ", "Mu":"ム", "Mie":"メ", "Mo":"モ",
+"A":"ア", "I":"イ", "U":"ウ", "è":"エ", "O":"オ",
+"Ka":"カ", "Ki":"キ", "Ku":"ク", "Kè":"ケ", "Ko":"コ",
+"Sa":"サ", "Si":"シ", "Su":"ス", "Sè":"セ", "So":"ソ",
+"Ta":"タ", "Ji":"チ","Jy":"ツ", "Tè":"テ", "To":"ト",
+"Na":"ナ", "Ni":"ニ", "Nu":"ヌ", "Nè":"ネ", "No":"ノ",
+"Ha":"ハ", "Hi":"ヒ", "Hu":"フ", "Hè":"ヘ", "Ho":"ホ",
+"Ma":"マ", "Mi":"ミ", "Mu":"ム", "Mè":"メ", "Mo":"モ",
 "Ya":"ヤ", "Yu":"ユ", "Yo":"ヨ",
-"Ra":"ラ", "Ri":"リ", "Ru":"ル", "Rie":"レ", "Ro":"ロ",
+"Ra":"ラ", "Ri":"リ", "Ru":"ル", "Rè":"レ", "Ro":"ロ",
 "Oa":"ワ", "Lo":"ヲ", "L":"ン",
-"Ga":"ガ", "Gi":")ギ", "Gu":"グ", "Gie":"ゲ", "Go":"ゴ",
-"Za":"ザ", "Zi":"ジ", "Zu":"ズ", "Zie":"ゼ", "Zo":"ゾ",
-"Da":"ダ", "Jhi":"ヂ", "Jhy":"ヅ", "Die":"デ", "Do":"ド",
-"Va":"バ", "Vi":"ビ", "Vu":"ブ", "Vie":"ベ", "Vo":"ボ",
-"Pa":"パ", "Pi":"ピ", "Pu":"プ", "Pie":"ペ", "Po":"ポ",
+"Ga":"ガ", "Gi":")ギ", "Gu":"グ", "Gè":"ゲ", "Go":"ゴ",
+"Za":"ザ", "Zi":"ジ", "Zu":"ズ", "Zè":"ゼ", "Zo":"ゾ",
+"Da":"ダ", "Di":"ヂ", "Dy":"ヅ", "Dè":"デ", "Do":"ド",
+"Va":"バ", "Vi":"ビ", "Vu":"ブ", "Vè":"ベ", "Vo":"ボ",
+"Pa":"パ", "Pi":"ピ", "Pu":"プ", "Pè":"ペ", "Po":"ポ",
 "Kya":"キャ", "Kyu":"キュ", "Kyo":"キョ",
 "Gya":"ギャ", "Gyu":"ギュ", "Gyo":"ギョ",
 "Sya":"シャ", "Syu":"シュ", "Syo":"ショ",
@@ -132,6 +133,8 @@ var chaicode = {
     "K" : "124", "L" : "143", "M" : "142132", "N" : "1423", "O" : "14321", 
     "P" : "12314", "Q" : "14213", "R" : "143123", "S" : "12431", "T" : "1231", 
     "U" : "1432", "V" : "142", "W" : "1342", "X" : "1324", "Y" : "132", "Z" : "1243", 
+   	"à" : "24134", "À" : "24134", "è" : "14312", "È" : "14312", 
+   "ò" : "42132", "Ò" : "42132", "ù" : "24134", "Ù" : "24134", 
     motion : function(pointArray, x = 0, y = 0){
         var xy = [];
         xy[0] = pointArray[0] + x;
@@ -191,7 +194,7 @@ var copyright = function(word){
 	svg.appendChild(text);
 	return text;
 }
-copyright("Chai Language & Japanese #2017 by Daway, caixnet@outlook.com");
+copyright("Chai & Japanese #2017 by Daway, caixnet@outlook.com");
 // define drawing char font
 var drawChai = function(pathArray,id=0){
 	var path = document.createElementNS(Svg.nx, "path");

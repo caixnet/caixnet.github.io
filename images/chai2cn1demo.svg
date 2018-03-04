@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="70">
+<!--  <script type="text/javascript" xlink:href="chai2kr.js"></script> -->
+<!-- <?xml-stylesheet  href="../css/custom-style.css" type="text/css" ?> -->
+<defs>
+  <style type="text/css">
+   <![CDATA[
+    @charset "utf-8";
+  
+	@font-face {
+    font-family: 'HeiTiZy';
+    src: url('../fonts/HeiTiZy.woff') format('woff');
+    font-weight: 800;
+    }
+  
+   .cn {
+   font-family:SimHei,STHeiti,Heiti,NSimSun,MingLiU,SimSun,'HeiTiZy',Arial;
+   }
+  
+   #chineseID {
+   font-family:SimHei,STHeiti,Heiti,NSimSun,MingLiU,SimSun,'HeiTiZy',Arial;
+   }
+
+
+   ]]>
+ </style>
+</defs>
+
+<script type="text/javascript">
+//
+/*
+* chai  - A simple digital language.
+* 
+@version 0.1.0 beta
+* https://caixnet.github.io/
+*
+@copyright Daway.Cai,guangxian (caixnet@outlook.com)
+* 
+@license Apache
+*
+* BUILT: 201/3/23  GMT+8 (BeiJing, China)
+*/
+
+					
+																														
+var chai2chinese = { 
+    "Be":"(玻)", "Pe":"(坡)", "Me":"(摸)", "Fe":"(佛)", "De":"(得)", "Te":"(特)", "Ne":"(讷)", "Re":"(勒)", 
+	"Qe":"(哥)", "Ke":"(科)", "He":"(喝)", "Ji":"(基)", "Ci":"(欺)", "Xi":"(希)", 
+	"Jy":"(知)","Cy":"(蚩)", "Xy":"(诗)", "Ry":"(日)", "Jry":"(资)", "Cry":"(雌)", "Xry":"(思)",
+																						
+    "I":"(衣)", "U":"(乌)", "Ù":"(迂)",   
+    "A":"(啊)", "Ya":"(呀)", "Oa":"(蛙)",
+    "O":"(喔)", "Ue":"(窝)",
+    "E":"(鹅)", "Yè":"(耶)", "Uè":"(约)", 
+	"Ai":"(哀)", "Oai":"(歪)", 
+	"Èi":"(诶)", "Uèi":"(威)",
+    "Ou":"(熬)", "Yo":"(腰)", 	
+	"Eu":"(欧)",  "Yu":"(忧)", 							
+	"An":"(安)", "Yàn":"(烟)", "Oai":"(弯)", "Oàn":"(冤)", 			
+	"En":"(恩)", "In":"(因)", "Uen":"(温)", "Ùn":"(晕)", 			
+	"Al":"(昂)", "Yal":"(央)", "Oal":"(汪)", 		
+	"El":"(亨)", "Il":"(英)", "Uel":"(翁)", 						
+	"Ul":"(轰)", "Yul":"(雍)",
+// A				
+    "a":"阿", "ai":"爱", "an":"安", "al":"昂", "ou":"奥",
+// B
+	"ba":"霸", "bai":"百", "ban":"半", "bal":"邦", "bou":"包", 
+	"bèi":"被", "ben":"本","bel":"崩", "bi":"必", "bàn":"边", 
+	"byo":"表", "bè":"憋", "bin":"宾", "bil":"并", "be":"波", "bu":"布",
+// C
+    "ca":"擦", "cai":"菜", "can":"参", "cal":"仓", "cou":"草", 
+	"ce":"策", "cel":"层", "cy":"次", "cul":"从", "ceu":"凑", 
+	"cu":"粗", "coan":"窜", "cui":"翠", "cun":"村", "cue":"错", 
+// CH	
+    "cen":"陈", "coai":"揣",  "coal":"创",   
+/* 
+"cha":"差", "chai":"拆", "chan":"产", "chal":"厂", "chou":"超",  "che":"车",
+"chel":"成", "cry":"吃",  "chul":"冲", "cheu":"抽", "cu":"出", "choan":"传",
+"chui":"吹", "chun":"春", "chue":"戳",
+*/
+// Q
+	"ci":"奇",
+    "cya":"洽", "càn":"签", "cyal":"樯", "cyo":"桥", "cè":"切",
+    "cin":"琴", "cil":"清", "cyul":"穷", "cyu":"球",
+    "cù":"区", "coàn":"全", "cuè":"缺", "cùn":"群",
+
+// D = W   
+	"wa":"大", "wai":"带", "wan":"单", "wal":"挡", "wou":"岛",
+    "we":"的", "wel":"邓", "wi":"帝", "wàn":"店",  "wyo":"调", 
+	"wè":"谍", "wil":"定", "wyu":"丢","wul":"动", "weu":"都", 
+	"wu":"渎", "woan":"段", "wui":"对", "wun":"吨", "wue":"多",
+// E
+	"e":"饿", "en":"恩", "er":"二", 
+// F
+	"fa":"发", "fan":"反", "fal":"放", "fèi":"费", "fen":"分", 
+	"fel":"风", "fe":"佛", "feu":"否", "fu":"富", 
+
+// G = Q
+	"qa":"嘎", "qai":"该",
+    "qan":"干", "qal":"刚",
+    "qou":"高", "qe":"各", "qèi":"给", "qen":"跟", "qel":"更", "qul":"工",
+    "qeu":"够", "qu":"故", "qoa":"挂", "qoai":"怪", "qoan":"关",
+    "qoal":"光", "qui":"贵", "qun":"棍", "que":"过",
+// H
+    "ha":"哈", "hai":"海", "han":"汗", "hal":"航", "hou":"好",
+	 "he":"河", "hèi":"黑", "hen":"很", "hel":"横", 
+	 "hul":"洪", "heu":"后", "hu":"户",
+     "hoa":"划", "hoai":"怀", "hoan":"换", "hoal":"黄", 
+	 "hui":"汇",  "hun":"混", "hue":"惑", 
+// J
+	"ji":"记", "jya":"家",
+    "jàn":"建", "jyal":"江", "jyo":"交", "jè":"结",
+    "jin":"金", "jil":"竞", "jyul":"炯", "jyu":"就", "jù":"居", 
+	"joàn":"卷", "juè":"决", "jùn":"钧",
+
+// Z
+    "ja":"扎", "jai":"在", "jan":"赞", "jal":"脏", "jou":"早", "je":"泽",
+    "jèi":"贼", "jen":"怎", "jel":"增", "jy":"字", "jul":"总",
+    "jeu":"走", "ju":"祖", "joan":"钻", "jui":"最",
+    "jun":"尊", "jue":"座", 
+
+// ZH
+     "joa":"抓", "joai":"拽", "joal":"壮", "jhun":"准", 
+/*
+"jra":"炸", "jhai":"宅",  "jhan":"站", "jhal":"帐", "jhou":"照", "jhe":"哲",
+"jen":"真", "jel":"证",  "jry":"职",  "jrul":"中",  "jheu":"州",  "jru":"猪", 
+"joan":"转", "jui":"追", "jhue":"桌",
+*/
+
+// K
+    "ka":"卡", "kai":"开", "kou":"考", "kan":"看", "kal":"康",
+    "ke":"可", "ken":"肯", "kel":"坑", "kul":"空",
+    "keu":"口", "ku":"库", "koa":"垮", "koai":"快",
+    "koan":"宽", "koal":"框", "kui":"亏", "kun":"困", "kue":"括", 
+
+// M
+	"ma":"马", "mai":"买", "mou":"猫", "man":"馒",
+    "mal":"忙", "me":"麽", "mei":"每", "men":"门",
+    "mel":"孟", "mi":"米", "myo":"苗", "màn":"面",
+    "mè":"灭", "min":"民", "mil":"名", "myu":"谬", 
+	"mue":"默", "meu":"某", "mu":"木", 
+// N	
+	"na":"那",
+    "nai":"奶", "nou":"脑", "nan":"南", "nal":"囊", "ne":"呢",
+    "nèi":"内", "nen":"嫩", "nel":"能", "ni":"你",
+    "nàn":"年", "nyal":"娘", "nyo":"鸟", "nè":"孽",
+    "nin":"您", "nil":"宁", "nyu":"牛", "nou":"耨", 
+	"nul":"农", "nu":"奴", "noan":"暖", "nue":"糯",
+    "nù":"女", "nuè":"虐", 
+// O
+	"eu":"藕", 
+// P	
+	"pa":"怕", "pai":"排",
+    "pou":"跑", "pan":"盘", "pal":"庞", "pèi":"培",
+    "pen":"喷", "pel":"烹", "pi":"匹", "pyo":"票",
+    "pàn":"片", "pè":"撇", "pin":"品", "pil":"苹", "pe":"破", "peu":"剖", "pu":"铺", 
+
+
+// L	
+	"ra":"拉", "rai":"来", "ran":"兰",
+    "ral":"狼", "rou":"老", "re":"了", "rei":"雷", "rel":"愣",
+    "ri":"厉", "ràn":"脸", "ryal":"良", "ryo":"疗",
+    "rè":"猎", "rin":"临", "ril":"零", "ryu":"溜",
+    "ro":"咯", "rul":"龙", "reu":"楼", 
+	"ru":"陆", "roan":"乱", "run":"轮", "rue":"洛", "rù":"律", "rùe":"掠", 
+
+// R
+    "ren":"人",  "ry":"日", "rui":"锐", 
+/* 
+	"ran":"燃","ral":"让", "rou":"绕", "re":"热","rel":"扔", "rul":"溶", 
+	"reu":"柔", "ru":"入", "roan":"软","rue":"弱", "run":"润",
+*/
+     
+// S
+	"xa":"撒", "xai":"塞", "xan":"三", "xal":"桑", "xou":"扫", 
+	"xe":"色", "xen":"森", "xel":"僧", "xy":"四",  "xul":"送", 
+	"xeu":"搜", "xu":"苏", "xoan":"算", "xui":"岁", "xun":"孙", "xue":"锁", 
+// SH
+    "xèi":"谁", "xoa":"刷", "xoai":"摔", "xoal":"双", 
+/* 
+"xra":"杀", "xan":"山", "xhai":"晒", "xal":"上", "xou":"少", "xhe":"设",
+ "xhen":"深", "xel":"生", "xry":"是","xeu":"手",  "xu":"术", "xhui":"税",
+  "xhun":"顺", "xhoan":"栓", "xue":"说", 
+ */	
+// X
+	"xi":"西", "xya":"下", "xàn":"县", "xyal":"象", "xyo":"小", 
+	"xè":"谢", "xin":"新", "xil":"兴", "xyul":"凶", 
+	"xyu":"修", "xù":"须", "xoàn":"旋", "xuè":"雪", "xùn":"训",
+
+// T
+	"ta":"她",
+    "tai":"台", "tan":"弹", "tal":"糖", "tou":"套", "te":"特",
+    "tel":"疼", "ti":"体", "tàn":"天", "tyo":"跳",
+    "tè":"铁", "til":"听", "tul":"同", "teu":"头",
+    "tu":"吐", "toan":"团", "tui":"退", "tun":"吞", "tue":"驼", 
+
+// W
+	"oa":"瓦", "oai":"外", "oan":"万", "oal":"忘", "uèi":"位", 
+	"uen":"文", "uel":"翁", "ue":"卧", "u":"无", 
+
+//  Y
+	"ya":"亚",
+    "yàn":"眼", "yal":"养", "yo":"腰", "yè":"业", "yi":"艺",
+    "yin":"饮", "yil":"影", "you":"哟", "yul":"永",
+    "yu":"有", "yù":"鱼", "yoan":"元", "yuè":"月",
+    "yùn":"云",
+
+}
+//
+</script>
+
+<script type="text/javascript">
+    <![CDATA[
+
+// begin chai demo program
+// define SVG 
+var Svg={};
+Svg.nx = 'http://www.w3.org/2000/svg';
+Svg.xlink = 'http://www.w3.org/1999/xlink';
+myWiki = 'https://github.com/caixnet/Chai/wiki';
+var svg = document.getElementById('drawing');
+
+// chai font image xy
+var chaifont = {
+    "eo" : [10,10], // left top
+    "ao" : [30,10], // right top
+    "au" : [30,50], // right button
+    "eu" : [10,50] // left button
+}
+// chai font frame pints
+var point = {
+    '1': chaifont.eo,
+    '2': chaifont.ao,
+    '3': chaifont.au,
+    '4': chaifont.eu
+}
+// define chai code
+var chaicode = {
+    "index" : 0,
+    "a" : "1431", "b" : "124134", "c" : "1234", "d" : "1421", "e" : "12342", 
+    "f" : "14324", "g" : "123", "h" : "14231", "i" : "13", "j" : "134", 
+    "k" : "124", "l" : "143", "m" : "142132", "n" : "1423", "o" : "14321", 
+    "p" : "12314", "q" : "14213", "r" : "143123", "s" : "12431", "t" : "1231", 
+    "u" : "1432", "v" : "142", "w" : "1342", "x" : "1324", "y" : "132", "z" : "1243", 
+    "0" : "234124", "1" : "24", "2" : "2134", "3" : "2143", "4" : "243", "5" : "2432",
+    "6" : "23413", "7" : "214", "8" : "2413", "9" : "21423",
+	"A" : "1431", "B" : "124134", "C" : "1234", "D" : "1421", "E" : "12342", 
+    "F" : "14324", "G" : "123", "H" : "14231", "I" : "13", "J" : "134", 
+    "K" : "124", "L" : "143", "M" : "142132", "N" : "1423", "O" : "14321", 
+    "P" : "12314", "Q" : "14213", "R" : "143123", "S" : "12431", "T" : "1231", 
+    "U" : "1432", "V" : "142", "W" : "1342", "X" : "1324", "Y" : "132", "Z" : "1243", 
+	"à" : "24134", "À" : "24134", "è" : "14312", "È" : "14312", 
+	"ò" : "42132", "Ò" : "42132", "ù" : "24134", "Ù" : "24134", 
+    motion : function(pointArray, x = 0, y = 0){
+        var xy = [];
+        xy[0] = pointArray[0] + x;
+        xy[1] = pointArray[1] + y;
+        return xy; 
+    },
+    get : function(chai, x = 0, y = 0){ 
+        var xys = [];
+        for (i in this[chai]) {
+            xys[i] =  this.motion(point[this[chai][i]],x,y);
+        }
+        return xys;
+    },
+    gets : function(word, x = 0, y = 0) {
+        var xyz = [];
+        for (i in word){
+            xyz[i] = this.get(word[i], x*i, y);
+        }
+        return xyz;
+    }
+} 
+
+// define demo of view window
+var rect = function(){
+	var rect = document.createElementNS(Svg.nx , 'rect');
+	rect.setAttribute('id','chaiDemo');
+	rect.setAttribute('width','320');
+	rect.setAttribute('height','70');
+	rect.setAttribute('fill','#ffffcc');
+	rect.setAttribute('stroke','#ffffcc');
+	rect.setAttribute('stroke-width','2');
+	rect.setAttribute('rx','7');
+//	rect.setAttribute('href',myWiki);
+//	rect.setAttribute('target',"_black");
+	svg.appendChild(rect);
+	return rect;
+}
+rect();
+// define link on SVG image
+var link = function(){
+	var link = document.createElementNS(Svg.nx , 'a');
+	link.setAttributeNS( Svg.xlink, "xlink:href", myWiki );
+	link.setAttribute('xlink:show','new');
+	link.appendChild(rect());
+	svg.appendChild(link);
+	return link;
+}
+//link();
+// define copyright text line.
+var copyright = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute('x', '5');
+	text.setAttribute('y', '65');
+	text.setAttribute('fill', '#000');
+	text.setAttribute("font-size","10");
+	text.textContent = word ;
+	svg.appendChild(text);
+	return text;
+}
+copyright("Chai & Chinese #2018 by Daway, caixnet@outlook.com");
+// define drawing char font
+var drawChai = function(pathArray,id=0){
+	var path = document.createElementNS(Svg.nx, "path");
+	path.setAttribute("id","chaiID"+id);
+    path.setAttribute("d","M"+ pathArray);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "#0033cc");
+    path.setAttribute("stroke-width", "4");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+	svg.appendChild(path);
+	return path;
+}
+// define chai display
+var chai=function(word="0"){
+   var svgchai = [];
+   var chars = chaicode.gets(word, 30); 
+   for (i in chars )
+   {
+	  svgchai[i]=drawChai(chars[i].join(" "),i);  
+   }
+
+   return svgchai;
+   
+}
+// define chinese display
+var drawchinese = function(word){
+	var text = document.createElementNS(Svg.nx, 'text');
+	text.setAttribute("id","chineseID");
+	text.setAttribute('x', '220');
+	text.setAttribute('y', '50');
+	text.setAttribute('fill', '#339900');
+	text.setAttribute("font-size","50");
+	text.textContent = word ;
+	//document.createTextNode(text)
+	svg.appendChild(text);
+	return text;
+}
+//  running state
+var state = {
+	locked:false,
+	closed:false,
+	lock:function(){ this.locked = true;},
+	unlock:function(){ this.locked = false; this.closed=false;},
+	close:function(){ this.closed = true;},
+}
+// remove resource
+var removeElements = function(svgList,svgHan){
+	var element_ko = document.getElementById('chineseID');
+	// remove chinese node
+	try{
+		svg.removeChild(element_ko);
+	} catch (err){
+		//console.log("remveding chinese error :"+err.message);
+	}
+    // remove Chai node
+	for( i = 0; i <= 5; i++){
+		var element_ch = document.getElementById('chaiID'+i);
+		try{
+			svg.removeChild(element_ch);
+		}
+		catch (err){
+		//	console.log("remveding chai error :"+err.message);
+		}
+	}
+    // release resource
+	state.unlock();
+}
+// define demo characters 
+var chaiList = Object.keys(chai2chinese);
+var chineseList = Object.values(chai2chinese);
+var items = chaiList.length;
+var count = 0;
+var loopID = 0;
+// deifne demo display
+var demo=function(){
+	
+	var chaiElement = document.getElementById('chaiID');
+	var chineseElement = document.getElementById('chineseID');
+
+	if (count >= items){	
+		//clearInterval(loopID);
+		count = 0;
+	}else {
+		if (state.locked == false && state.closed == false){
+			ch = chai(chaiList[count]);
+			kr = drawchinese(chineseList[count]);
+			state.lock();
+		} else if ( state.closed == false && state.locked == true ){
+			//console.log("remove.."+"ch:"+chaiList[count]+",kr:"+chineseList[count]);
+			count++;
+			state.close();
+			setTimeout(function(){  removeElements(ch,kr);}, 1000);
+		} else{
+			//console.log("locking... chai:"+chaiList[count]+",chinese:"+chineseList[count])
+		}
+
+	}
+	
+}
+// Chai Demo main function
+var main=function(){
+
+	// loop
+	loopID = setInterval(demo, 100);
+}
+main();
+// end chai demo program
+
+    ]]>
+</script>
+
+
+</svg>

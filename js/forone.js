@@ -487,13 +487,13 @@ var forone = {
         var strArray = forone.mTextContent.split("\n");
         var mCol = -1, mRow = -1;
         for (i in strArray) {
-            if (strArray[i].indexOf(forone.cusorTag) != -1) {
-                strArray[i]= strArray[i].replace(forone.cusorTag,'');
+            if (strArray[i].indexOf(forone.cusorTag) != -1) {           
                 strArray.splice(i, 0, strArray[i]);  
+                 strArray[i]= strArray[i].replace(forone.cusorTag,'');
                 break;
             }
         }
-
+        
         forone.mTextContent = strArray.join('\n');
         forone.mCursor[0] = forone.mTextContent.indexOf(forone.cusorTag);
         forone.idText.value = forone.mTextContent;
@@ -501,6 +501,7 @@ var forone = {
         forone.hideNormalKeyboard();
         forone.logc("duplicateline", "DUP")
     },
+
     // forone Input Process
     InputProcess: function (txt) {
         forone.getCusor();
@@ -662,6 +663,7 @@ var forone = {
     // on touch end forone zone 
     oneTouchEnd: function (ev) {
         ev.preventDefault();
+        // ev.stopPropagation();
         forone.mPoint = forone.checkInOne(forone.getXY(ev));
         forone.setOneColor(forone.mPoint);
         forone.mPath += forone.mPoint;
@@ -719,8 +721,6 @@ var forone = {
                 //    "2121": "EDITOR_HTML","2102": "EDITOR_CSS","2132": "EDITOR_JS", "201321": "EDITOR_RENDER",
                 forone.triaMD.markDown();
                 forone.duplicateLine();
-                //forone.triaMD.processMarkDown();
-                //forone.triaCHS.render();
             } else {
                 forone.InputProcess(forone.getCode(forone.mCode));
             }
@@ -795,7 +795,7 @@ var forone = {
             forone.logc(error, "no found Text Input!");
         }
     },
-    /* end webSQL */
+    /* begin webSQL */
     DB: {
         canDB: false,
         initDB: function (dbName, dbSize = 65536, ver = '1.0', ) {

@@ -134,7 +134,7 @@ var copyright = function(word){
 	svg.appendChild(text);
 	return text;
 }
-copyright("Chai Language & English #2013 by Daway, caixnet@outlook.com");
+copyright("Chai & English #2013 by Daway, caixnet@outlook.com");
 // define chai font
 var drawChai = function(pathArray,id = 0){
 	var path = document.createElementNS(Svg.nx, "path");
