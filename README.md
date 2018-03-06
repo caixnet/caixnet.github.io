@@ -1,4 +1,5 @@
-# https://caixnet.github.io
+About Chai connect to # https://caixnet.github.io
+About Chai forone keyboard demo connect to #https://caixnet.githug.io/chaiForoneTouch.html
 
 ```html
 <!doctype html>

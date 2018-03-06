@@ -2,14 +2,16 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- chaiforone CSS -->
 <link rel="stylesheet" href="css/chaiforone.css">
+<script>function loadXMLDoc(url, option = false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { return document.write(xmlhttp.responseText); } }; try { xmlhttp.open("GET", url, option); xmlhttp.send(); } catch (e) { console.log(e) } }</script>
 
 
 
 <!-- begin Chai input animation -->
 <div id="chai02">
     <h2 class="text-center">Chai input animation </h2>
-    <object class="img-responsive center-block" data="images/chai2abcemo.svg" type="image/svg+xml" width="320" height="420" alt="please use chrome!">
-    </object>
+    <script>loadXMLDoc('docs/img_abcdemo.html');</script>
+    <!-- <object class="img-responsive center-block" data="images/chai2abcemo.svg" type="image/svg+xml" width="320" height="420" alt="please use chrome!">
+    </object> -->
 </div>
 <!-- end Chai input animation  -->
 
@@ -18,7 +20,8 @@
     <h2 class="text-center">Chai &amp Braille</h2>
     <h2 class="chai text-center">Chai &amp Brèirè</h2>
     <div class="center-block">
-        <img class="img-responsive" src="images/braille_chai.png" width="320" height="264">
+        <script>loadXMLDoc('docs/img_braille.html');</script>
+        <!-- <img class="img-responsive" src="images/braille_chai.png" width="320" height="264"> -->
     </div>
     <div>
         <ul>
@@ -117,7 +120,13 @@
 
     </div>
 <br/>
-    <h5>Poker：Chai learning Play cards</h5>
+<h5>Cube: Chai learning magic cube (54 symbols)</h5>
+<!-- begin TriaCode Cube -->
+<script>loadXMLDoc('docs/img_cube.html');</script>
+<!-- <img class="rounded mx-auto d-block" src="images/cube.png" border="0" alt="TriaCode Cube"> -->
+<!-- end TriaCode Cube -->
+<br/>
+    <h5>Poker：Chai learning Play cards (54 symbols)</h5>
     <table border=2 style="font-size:1.5em;">
             <tr align="center"><td></td><td>-</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
                 <td>7</td><td>8</td><td>9</td><td>0</td><td>J</td><td>Q</td><td>K</td><td>&#128196;</td></tr>

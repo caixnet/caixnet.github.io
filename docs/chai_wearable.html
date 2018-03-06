@@ -2,12 +2,17 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- chaiforone CSS -->
 <link rel="stylesheet" href="css/chaiforone.css">
+<script>function loadXMLDoc(url, option = false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { return document.write(xmlhttp.responseText); } }; try { xmlhttp.open("GET", url, option); xmlhttp.send(); } catch (e) { console.log(e) } }</script>
 
 <!-- Chai & Wearable begin -->
 <div class="container">
     <div class="text-center">
         <h2 class="text-center">Chai &amp; Wearable</h2>
     </div>
+
+    <script>loadXMLDoc('docs/img_triawatch.html');</script>
+    <!-- <img class="rounded mx-auto d-block" src="images/triawatch.png"  border="0" alt="tria watch"> -->
+    
     <div class="text-left">
         <ul>
             <li>Wearable devices require simply and unified gesture coding for handling the complicated input and output. What would be the idea selection for encoding? It is suitable for human to grasp and at the same time easy for machines to recognize and process with low error rate.</li>
@@ -32,5 +37,7 @@
         </ul>
 
     </div>
+    <script>loadXMLDoc('docs/img_weardevice.html');</script>
+    <!-- <img class="rounded mx-auto d-block"  src="images/triacodewearabledevice.png"  border="0" alt=""> -->
 </div>
 <!-- Chai & Wearable end -->

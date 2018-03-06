@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- chaiforone CSS -->
 <link rel="stylesheet" href="css/chaiforone.css">
-
+<script>function loadXMLDoc(url, option = false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { return document.write(xmlhttp.responseText); } }; try { xmlhttp.open("GET", url, option); xmlhttp.send(); } catch (e) { console.log(e) } }</script>
 
 
 <!-- begin Chai & English  -->
@@ -10,9 +10,11 @@
     <h2 class="text-left">Chai &amp English </h2>
     <h2 class="text-left chai ">Chai &amp IlGyRiSù </h2>
     <!-- <embed src="images/chai2en1demo.svg" class="img-responsive center-block" width="320" height="70" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /> -->
-    <object align="center" class="img-responsive center-block" data="images/chai2en1demo.svg" type="image/svg+xml" width="320"
+    <!-- <object align="center" class="img-responsive center-block" data="images/chai2en1demo.svg" type="image/svg+xml" width="320"
         height="70" alt="please use chrome!">
-    </object>
+    </object> -->
+    <script>loadXMLDoc('docs/img_en1demo.html');</script>
+
     <ul>
         <li>
             <b class="text-left">All Chai characters are from one structure on .</b>
@@ -253,5 +255,9 @@
                     <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>16</td>
                     </tr>
         </table>
+        <br/>
+        <h5>Chai ForOne touch keyboard</h5>
+        <script>loadXMLDoc('docs/img_phone.html');</script>
+        <!-- <img class="rounded mx-auto d-block" src="images/phone.png"  border="0" alt="chai phone"> -->
 </div>
 <!-- end Chai english table -->

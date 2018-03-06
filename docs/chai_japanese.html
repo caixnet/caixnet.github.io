@@ -4,15 +4,17 @@
 <link rel="stylesheet" href="css/chaiforone.css">
 <!-- japanese CSS -->
 <link rel="stylesheet" href="css/jpnfonts.css">
+<script>function loadXMLDoc(url, option = false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { return document.write(xmlhttp.responseText); } }; try { xmlhttp.open("GET", url, option); xmlhttp.send(); } catch (e) { console.log(e) } }</script>
 
 
 <!-- begin Chai & Japanese  -->
 <div>
         <h2 class="text-center">Chai & Japanese</h2>
         <h2 class="chai text-center">Chai & NiHolGo</h2>
-        <object class="img-responsive center-block jp" data="images/chai2jp1demo.svg" type="image/svg+xml" width="320" height="70"
+        <script>loadXMLDoc('docs/img_jp1demo.html');</script>
+        <!-- <object class="img-responsive center-block jp" data="images/chai2jp1demo.svg" type="image/svg+xml" width="320" height="70"
             alt="please use chrome!">
-        </object>
+        </object> -->
         <h1></h1>
         <ul>
 
@@ -425,9 +427,14 @@
         <h2></h2>
     </div>
 
-
+<br/>
 
 <!-- end Chai & Japanese  -->
+<!-- begin Chai tree -->
+<script>loadXMLDoc('docs/img_chaitree.html');</script>
+<!-- <img class="rounded mx-auto d-block" src="images/chaitree.png" border="0" alt="chai tree"> -->
+<!-- end Chai tree -->
+<br/>
 <!-- begin Chai & nihongo -->
 <table border=1 class="jp">
         <tr class="table-primary" align="center"><td>にほんご</td><td>あ</td><td>い</td><td>う</td> <td>え</td><td>お</td>
