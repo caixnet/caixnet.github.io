@@ -83,7 +83,7 @@ var forone = {
     keyEnter: false,
     keyOption: false,
     keyDelete: false,
-    debug: true,
+    debug: false,
     rectLeft: 0,
     rectTop: 0,
     // add CSS style text on head  
