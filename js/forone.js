@@ -83,7 +83,7 @@ var forone = {
     keyEnter: false,
     keyOption: false,
     keyDelete: false,
-    debug: false,
+    debug: true,
     rectLeft: 0,
     rectTop: 0,
     // add CSS style text on head  
@@ -2783,7 +2783,7 @@ forone.triacode.english = {
     "13": "CHAI_CURSOR_DOWN",
     "c13": "CHAI_CURSOR_DOWN",
     "212": "EDIT_DUPLICATELINE",
-  
+    "20312": "HIDE_FORONE_APP",
     // Number Key
     "12": "1",
     "1032": "2",
