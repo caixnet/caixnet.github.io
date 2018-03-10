@@ -20,7 +20,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <link rel="shortcut icon" href="#" />
-    <!-- <script src="js/foronedemo.js"></script> -->
+    <script src="js/custom.js"></script>
     <script src="js/forone.js"></script>
 </head>
 
@@ -83,26 +83,9 @@
         <div id="oneforHideDemoOut" class="oneforHideDemoOut"></div>
     </nav>
     <script>
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        document.getElementById("oneforHideDemo").style.display = "block";
-        console.log("sript do", w, h);
-        var mHideForOne = false;
-        function hideForone() {
-            return mHideForOne = !mHideForOne;
-        }
-        function hideDemo() {
-            if (hideForone()) {
-                document.getElementById("chai41demo").style.display = "none";
-                document.getElementById("chaiTextDemo").style.cssText = "position:absolute; top:24px;";
-
-            } else {
-                document.getElementById("chai41demo").style.display = "block";
-                document.getElementById("chaiTextDemo").style.display = "block";
-                document.getElementById("chaiTextDemo").style.cssText = "position:fixed; top:180px; ";
-            }
-        } 
-    </script>
+        forone.hideForoneApp();
+        connecturl("touch");
+     </script>
     <!-- end chai forone web-keybord demo -->
 
     <!-- begin chai badge -->
@@ -113,10 +96,6 @@
     </div>
     <!-- end chai badge -->
 <!-- hitwebcounter Code START -->
-<div>
-    <img id="uniCount" src="http://hitwebcounter.com/counter/counter.php?page=6909837&style=0006&nbdigits=9&type=ip&initCount=0" title="Free track counters" Alt="Free track uni counters"   border="0" hidden >
-    <img id="viwCount" src="http://hitwebcounter.com/counter/counter.php?page=6909839&style=0006&nbdigits=9&type=page&initCount=0" title="Free track counters" Alt="Free track viw counters"   border="0" hidden >  
-</div>
                                     
                                            
 </body>

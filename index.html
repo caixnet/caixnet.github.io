@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- chaiforone CSS -->
     <link rel="stylesheet" href="css/chaiforone.css">
-    <script>function loadXMLDoc(url, option = false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { return document.write(xmlhttp.responseText); } }; try { xmlhttp.open("GET", url, option); xmlhttp.send(); } catch (e) { console.log(e) } }</script>
+    <script src="js/custom.js"></script>
     <title>caiXnet (Chai is a guesture language)</title>
 </head>
 
@@ -25,7 +25,7 @@
 
     <!-- begin Chai Menu -->
     <script>
-        loadXMLDoc('docs/caixnet_menu.html');
+        loadXMLDoc('docs/caixnet_menu.html');   
     </script>
     <!-- end Chai Menu -->
 
@@ -96,6 +96,7 @@
             <div id="chaiEnglish" class="card-body collapse show">
                 <script>
                     loadXMLDoc('docs/chai_english.html');
+                    connecturl("index");
                 </script>
             </div>
             <div class="card-footer list-group-item-primary">
@@ -250,11 +251,7 @@
     </div>
     <!-- end chai forone demo -->
     <!-- hitwebcounter Code START -->  
-    <div>
-        <img id="uniCount" src="http://hitwebcounter.com/counter/counter.php?page=6909830&style=0006&nbdigits=9&type=ip&initCount=0"  Alt="Free track uni counters"   border="0" hidden >
-        <img id="viwCount" src="http://hitwebcounter.com/counter/counter.php?page=6909824&style=0006&nbdigits=9&type=page&initCount=0"  Alt="Free track viw counters"   border="0" hidden>
-    </div>
-     
+    
   
   <!-- hitwebcounter Code START -->                                                                          
     <!-- Optional JavaScript -->
@@ -262,6 +259,7 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper-1.12.9.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+   
 </body>
 
 </html>

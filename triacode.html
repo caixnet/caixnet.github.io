@@ -17,12 +17,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- chaiforone CSS -->
     <link rel="stylesheet" href="css/chaiforone.css">
-    <script>
-        function loadXMLDoc(url, option=false) { var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); } xmlhttp.onreadystatechange = function () { if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { document.write(xmlhttp.responseText); } }; xmlhttp.open("GET", url, option); xmlhttp.send(); }
-        //<link id="chai01" href="docs/chai_english.html" rel="import">
-        function include(DocId, itemId) { var includeDocId = 'link[id="' + DocId + '"]'; var includeItemsId = '#' + itemId; var htmlImport = document.querySelector(includeDocId); var htmlDoc = htmlImport.import; var htmlMessage = htmlDoc.querySelector(includeItemsId); document.body.appendChild(htmlMessage.cloneNode(true)); }
-    </script>
-    <title>caiXnet (Chai Code)</title>
+    <script src="js/custom.js"></script>
+    <title>caiXnet (triacode)</title>
 </head>
 
 <body class="home blog">
@@ -62,8 +58,7 @@
     </script>
     <!-- end Chai & triacode -->
 
-    <img src="http://hitwebcounter.com/counter/counter.php?page=6909896&style=0006&nbdigits=9&type=ip&initCount=0" title="counters" Alt="Free track uni counters"    border="0" hidden>
-    <img src="http://hitwebcounter.com/counter/counter.php?page=6909895&style=0006&nbdigits=9&type=page&initCount=0" title="counters" Alt="Free track viw counters"   border="0" hidden>
+    <script>connecturl("code");</script>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
