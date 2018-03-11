@@ -83,9 +83,25 @@
         <div id="oneforHideDemoOut" class="oneforHideDemoOut"></div>
     </nav>
     <script>
-        forone.hideForoneApp();
-        connecturl("touch");
-     </script>
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        document.getElementById("oneforHideDemo").style.display = "block";
+        var mHideForOne = false;
+        function hideForone() {
+            return mHideForOne = !mHideForOne;
+        }
+        function hideDemo() {
+            if (hideForone()) {
+                document.getElementById("chai41demo").style.display = "none";
+                document.getElementById("chaiTextDemo").style.cssText = "position:absolute; top:24px;";
+
+            } else {
+                document.getElementById("chai41demo").style.display = "block";
+                document.getElementById("chaiTextDemo").style.display = "block";
+                document.getElementById("chaiTextDemo").style.cssText = "position:fixed; top:180px; ";
+            }
+        } 
+    </script>
     <!-- end chai forone web-keybord demo -->
 
     <!-- begin chai badge -->
@@ -96,6 +112,7 @@
     </div>
     <!-- end chai badge -->
 <!-- hitwebcounter Code START -->
+<script>connecturl("touch");</script>
                                     
                                            
 </body>

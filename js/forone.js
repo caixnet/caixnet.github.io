@@ -651,6 +651,9 @@ var forone = {
     },
     // trigger forone App and onefor Mini show & hide
     hideForoneApp: function () {
+        forone.idApp = forone.idApp || forone.getApp();
+        forone.idOnefor = forone.idOnefor || forone.getOnefor();
+        forone.logc(forone.idApp );
         if (forone.hideForone()) {
             forone.idApp.style.display = "none";
             forone.idOnefor.style.display = "block";
