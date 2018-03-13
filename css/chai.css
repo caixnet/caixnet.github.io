@@ -1,9 +1,9 @@
 /* Chai ForOne Fonts */
 @font-face {                 
   font-family: 'ChaiForOne';    
-  src: url(https://caixnet.github.io/fonts/ChaiForOne.woff) format("woff"),
-  url(https://caixnet.github.io/fonts/ChaiForOne.ttf) format("truetype"),
-  url(https://caixnet.github.io/fonts/ChaiForOne.otf) format("opentype");              
+  src: url(../fonts/ChaiForOne.woff) format("woff"),
+  url(../fonts/ChaiForOne.ttf) format("truetype"),
+  url(../fonts/ChaiForOne.otf) format("opentype");              
   font-style: normal;                 
   }
     
